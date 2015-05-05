@@ -69,9 +69,9 @@
         <div class="content switch">
             <div class="alternatives">
                 <div class="pair">
-                    <img src="/img/logos/logo-microsoft-office.svg" alt="" title="Microsoft Office">
-                    <img src="/img/arrow.svg" alt="">
-                    <img src="/img/logos/logo-libreoffice.svg" alt="" title="LibreOffice">
+                    <img class="alternative" src="/img/logos/logo-microsoft-office.png" alt="" title="Microsoft Office">
+                    <img class="arrow" src="/img/arrow.svg" alt="">
+                    <img class="alternative" src="/img/logos/logo-libreoffice.png" alt="" title="LibreOffice">
                 </div>
             </div>
             <h2>If you work with Microsoft Office</h2>
@@ -79,9 +79,6 @@
         </div>
         <div class="content switch">
             <div class="browsers">
-                <img class="browser hide" src="/img/browsers/internet-explorer_128x128.png" alt="" title="Internet Explorer">
-                <img class="browser hide" src="/img/browsers/safari_128x128.png" alt="" title="Safari">
-                <img class="arrow hide" src="/img/arrow.svg" alt="">
                 <img class="browser" src="/img/browsers/chrome_128x128.png" alt="" title="Google Chrome">
                 <img class="browser" src="/img/browsers/firefox_128x128.png" alt="" title="Mozilla Firefox">
                 <img class="browser" src="/img/browsers/opera_128x128.png" alt="" title="Opera">
@@ -90,18 +87,18 @@
                 <img class="browser" src="/img/browsers/midori_128x128.png" alt="" title="Midori">
             </div>
             <h2>Browsing the Web</h2>
-            <p>While Internet Explorer and Safari are not available, popular web browsers, like Google Chrome, Mozilla Firefox and Opera support Linux. Not forgetting the other, quite capable platform-specific browsers.</p>
+            <p>You still have the best of the web available to you on Linux; popular browsers like Google Chrome, Mozilla Firefox and Opera support Linux. Plus the many other Linux-only browsers.</p>
         </div>
         <div class="content switch">
             <div class="alternatives">
-                <img class="alternative hide" src="/img/logos/logo-adobe-creative-cloud.png" alt="" title="Adobe Creative Cloud">
-                <img class="arrow hide" src="/img/arrow.svg" alt="">
-                <img class="alternative" src="/img/logos/logo-gimp.png" alt="" title="GIMP">
-                <img class="alternative" src="/img/logos/logo-inkscape.png" alt="" title="Inkscape">
-                <img class="alternative" src="/img/logos/logo-krita.png" alt="" title="Krita">
+                <a href="http://gimp.org/" target="_blank"><img class="alternative" src="/img/logos/logo-gimp.png" alt="" title="GIMP"></a>
+                <a href="http://inkscape.org/" target="_blank"><img class="alternative" src="/img/logos/logo-inkscape.png" alt="" title="Inkscape"></a>
+                <a href="http://krita.org/" target="_blank"><img class="alternative" src="/img/logos/logo-krita.png" alt="" title="Krita"></a>
+                <a href="http://blender.org/" target="_blank"><img class="alternative" src="/img/logos/logo-blender.png" alt="" title="Blender"></a>
+                <a href="http://ardour.org/" target="_blank"><img class="alternative" src="/img/logos/logo-ardour.png" alt="" title="Ardour"></a>
             </div>
             <h2>Open your Creativity</h2>
-            <p>The Adobe suite is quite popular and very powerful, and while it isn't available on free and open source platforms, apps like <a href="http://gimp.org/" target="_blank">The GIMP</a>, <a href="http://inkscape.org/" target="_blank">Inkscape</a> and <a href="http://krita.org/" target="_blank">Krita</a> are capable alternatives.</p>
+            <p>On other platforms, the creative field is dominated by some big names, such as Adobe, but there are capable open source alternatives: from the GIMP, Inkscape &amp; Krita for graphics editing, to Blender for animation and Ardour for digital audio.</p>
         </div>
         <div class="content switch">
             <div class="alternatives">
@@ -109,7 +106,7 @@
                 <img class="alternative hide" src="/img/logos/logo-wmp.png" alt="" title="Windows Media Player">
                 <img class="arrow hide" src="/img/arrow.svg" alt="">
                 <img class="alternative" src="/img/logos/logo-rhythmbox.png" alt="" title="Rhythmbox">
-                <img class="alternative" src="/img/logos/logo-gnome-music.png" alt="" title="Music">
+                <img class="alternative" src="/img/logos/logo-gnome-music.png" alt="" title="GNOME Music">
                 <img class="alternative" src="/img/logos/logo-amarok.png" alt="" title="Amarok">
                 <img class="alternative" src="/img/logos/logo-noise.png" alt="" title="Noise">
             </div>
@@ -118,12 +115,11 @@
         </div>
         <div class="content switch">
             <div class="alternatives">
-                <img class="alternative" src="/img/logos/logo-gaming.png" alt="">
                 <img class="alternative" src="/img/logos/logo-steam.png" alt="" title="Steam">
                 <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="" title="Ubuntu Software Center">
             </div>
             <h2>Game On</h2>
-            <p>Gaming on Linux has never been more possible. There are over 1000 games (and growing) available on Steam for Linux, and many indie games support Linux as a platform through the Ubuntu Software Center.</p>
+            <p>Gaming on Linux has never been more possible. There are over 1000 (and growing) game available on Steam for Linux, and many indie games support Linux as a platform through Ubuntu's Software Center.</p>
         </div>
     </section>
 </div>

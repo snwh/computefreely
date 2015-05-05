@@ -11,14 +11,14 @@ AUTHOR URI:http://snwh.org/
 /*----- Local Fonts -----*/
 
 @font-face {
-    font-family:"Ostrich";
-    src:local("Ostrich"), local("Ostrich Regular"), local(Ostrich-Regular), url(/fonts/ostrich-regular.ttf);
+    font-family:"Ostrich Sans";
+    src:local("Ostrich Sans"), local("Ostrich Sans Regular"), local(Ostrich-Sans-Regular), url(../fonts/ostrich-regular.ttf);
     font-weight:300;
 }
 
 @font-face {
-    font-family:"Ostrich Bold";
-    src:local("Ostrich Bold") local(Ostrich-Bold), url(/fonts/ostrich-bold.ttf);
+    font-family:"Ostrich Sans Bold";
+    src:local("Ostrich Sans Bold") local(Ostrich-Sans-Bold), url(../fonts/ostrich-bold.ttf);
     font-weight:600;
 }
 
@@ -337,7 +337,7 @@ header.absolute {
 
 .title {
     color: #fff;
-    font-family:"Ostrich Bold", "Oswald", "Helvetica", "Arial" , sans-serif;
+    font-family:"Ostrich Sans Bold", "Oswald", "Helvetica", "Arial" , sans-serif;
     font-size: 8.4em;
     padding: 0;
     margin-top:0.5em;
@@ -389,7 +389,7 @@ header.absolute {
 }
 
 .name {
-    font-family:"Ostrich", "Oswald", "Helvetica", "Arial" , sans-serif;
+    font-family:"Ostrich Sans", "Oswald", "Helvetica", "Arial" , sans-serif;
     font-size: 2.3em;
     display: block;
     text-align: center;
@@ -635,9 +635,32 @@ header.absolute {
     vertical-align: middle;
 }
 
+.alternatives a {
+    display: inline-block;
+    border:none;
+    padding: 0;
+}
+
+.alternatives a:hover {
+    border:none;
+    border-radius: 50%;
+    background: rgba(0,139,219,0.3);
+    transition:all 200ms;
+    -webkit-transition:all 200ms;
+}
+.alternatives a:active {
+    border:none;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    transition:all 200ms;
+    -webkit-transition:all 200ms;
+}
+
 img.alternative {
+    border:none;
     margin: 1em;
     display: inline-block;
+    height: 64px;
     width: 64px;
 }
 
