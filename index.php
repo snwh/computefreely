@@ -79,39 +79,39 @@
         </div>
         <div class="content switch">
             <div class="browsers">
-                <img class="browser hide" src="/img/browsers/internet-explorer_128x128.png" alt="Internet Explorer">
-                <img class="browser hide" src="/img/browsers/safari_128x128.png" alt="Safari">
-                <img class="arrow hide" src="/img/arrow.svg" alt="">
-                <img class="browser" src="/img/browsers/chrome_128x128.png" alt="Google Chrome">
-                <img class="browser" src="/img/browsers/firefox_128x128.png" alt="Mozilla Firefox">
-                <img class="browser" src="/img/browsers/opera_128x128.png" alt="Opera">
-                <img class="browser" src="/img/browsers/epiphany_128x128.png" alt="Epiphany">
-                <img class="browser" src="/img/browsers/chromium_128x128.png" alt="Chromium">
-                <img class="browser" src="/img/browsers/midori_128x128.png" alt="Midori">
+                <img class="browser hide" src="/img/browsers/internet-explorer_128x128.png" alt="" title="Internet Explorer">
+                <img class="browser hide" src="/img/browsers/safari_128x128.png" alt="" title="Safari">
+                <img class="arrow hide" src="/img/arrow.svg" alt="" title="">
+                <img class="browser" src="/img/browsers/chrome_128x128.png" alt="" title="Google Chrome">
+                <img class="browser" src="/img/browsers/firefox_128x128.png" alt="" title="Mozilla Firefox">
+                <img class="browser" src="/img/browsers/opera_128x128.png" alt="" title="Opera">
+                <img class="browser" src="/img/browsers/epiphany_128x128.png" alt="" title="Epiphany">
+                <img class="browser" src="/img/browsers/chromium_128x128.png" alt="" title="Chromium">
+                <img class="browser" src="/img/browsers/midori_128x128.png" alt="" title="Midori">
             </div>
             <h2>Browsing the Web</h2>
             <p>While Internet Explorer and Safari are not available, popular web browsers, like Google Chrome, Mozilla Firefox and Opera support Linux. Not forgetting the other, quite capable platform-specific browsers.</p>
         </div>
         <div class="content switch">
             <div class="alternatives">
-                <img class="alternative hide" src="/img/logos/logo-adobe-creative-cloud.png" alt="Adobe Creative Cloud">
-                <img class="arrow hide" src="/img/arrow.svg" alt="">
-                <img class="alternative" src="/img/logos/logo-gimp.png" alt="GIMP">
-                <img class="alternative" src="/img/logos/logo-inkscape.png" alt="Inkscape">
-                <img class="alternative" src="/img/logos/logo-krita.png" alt="Krita">
+                <img class="alternative hide" src="/img/logos/logo-adobe-creative-cloud.png" alt="" title="Adobe Creative Cloud">
+                <img class="arrow hide" src="/img/arrow.svg" alt="" title="">
+                <img class="alternative" src="/img/logos/logo-gimp.png" alt="" title="GIMP">
+                <img class="alternative" src="/img/logos/logo-inkscape.png" alt="" title="Inkscape">
+                <img class="alternative" src="/img/logos/logo-krita.png" alt="" title="Krita">
             </div>
             <h2>Open your Creativity</h2>
             <p>The Adobe suite is quite popular and very powerful, and while it isn't available on free and open source platforms, apps like <a href="http://gimp.org/" target="_blank">The GIMP</a>, <a href="http://inkscape.org/" target="_blank">Inkscape</a> and <a href="http://krita.org/" target="_blank">Krita</a> are capable alternatives.</p>
         </div>
         <div class="content switch">
             <div class="alternatives">
-                <img class="alternative hide" src="/img/logos/logo-itunes.png" alt="iTunes">
-                <img class="alternative hide" src="/img/logos/logo-wmp.png" alt="Windows Media Player">
-                <img class="arrow hide" src="/img/arrow.svg" alt="">
-                <img class="alternative" src="/img/logos/logo-rhythmbox.png" alt="Rhythmbox">
-                <img class="alternative" src="/img/logos/logo-gnome-music.png" alt="Music">
-                <img class="alternative" src="/img/logos/logo-amarok.png" alt="Amarok">
-                <img class="alternative" src="/img/logos/logo-noise.png" alt="Noise">
+                <img class="alternative hide" src="/img/logos/logo-itunes.png" alt="" title="iTunes">
+                <img class="alternative hide" src="/img/logos/logo-wmp.png" alt="" title="Windows Media Player">
+                <img class="arrow hide" src="/img/arrow.svg" alt="" title="">
+                <img class="alternative" src="/img/logos/logo-rhythmbox.png" alt="" title="Rhythmbox">
+                <img class="alternative" src="/img/logos/logo-gnome-music.png" alt="" title="Music">
+                <img class="alternative" src="/img/logos/logo-amarok.png" alt="" title="Amarok">
+                <img class="alternative" src="/img/logos/logo-noise.png" alt="" title="Noise">
             </div>
             <h2>Keep on Listening</h2>
             <p>Out of the box, many free and open source operating systems can manage your existing music library and keep you listening.</p>
