@@ -131,49 +131,49 @@
             <h3>There are thousands of free and open source Linux operating systems to try. Here are some of the most popular.</h3>
         </div>
         <div id="distro-list">
-            <a href="https://archlinux.org/" target="_blank" class="distro">
+            <a href="https://archlinux.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-arch-linux.svg" alt="" title="Arch Linux">
                 <h1 class="name">Arch Linux</h1>
                 <p class="difficulty hard">Advanced</p>
                 <p class="distro-text">Arch Linux is lightweight &amp; very customizable, however its installation process is definitely for an experienced user.</p>
                 <p class="distro-text">Arch's continuous update model can be taxing without the knowledge to fix any possible problems.</p>
             </a>
-            <a href="https://debian.org/" target="_blank" class="distro">
+            <a href="https://debian.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-debian.svg" alt="" title="Debian">
                 <h1 class="name">Debian</h1>
                 <p class="difficulty medium">Intermediate</p>
                 <p class="distro-text">As one of the oldest free software operating systems, Debian is very stable &amp; reliable.</p>
                 <p class="distro-text">However its complex development cycle results in infrequent updates and a tendency to lag behind the competition.</p>
             </a>
-            <a href="https://elementary.io/" target="_blank" class="distro">
+            <a href="https://elementary.io/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-elementary.svg" alt="" title="elementary">
                 <h1 class="name">elementary</h1>
                 <p class="difficulty easy">Beginner</p>
                 <p class="distro-text">elementary puts design first to ensure that it is not compromising on quality, usability or speed.</p>
                 <p class="distro-text">With a custom-built set of applications and desktop, elementary boasts a unique and cohesive experience.</p>
             </a>
-            <a href="https://getfedora.org/" target="_blank" class="distro">
+            <a href="https://getfedora.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-fedora.svg" alt="" title="Fedora">
                 <h1 class="name">Fedora</h1>
                 <p class="difficulty medium">Intermediate</p>
                 <p class="distro-text">Fedora has reputation for being cutting-edge and taking an innovative role with open source technologies.</p>
                 <p class="distro-text">The development team takes pride in Fedora being one of the most secure operating systems.</p>
             </a>
-            <a href="http://www.linuxmint.com/" target="_blank" class="distro">
+            <a href="http://www.linuxmint.com/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-linux-mint.svg" alt="" title="Linux Mint">
                 <h1 class="name">Linux Mint</h1>
                 <p class="difficulty easy">Beginner</p>
                 <p class="distro-text">Linux Mint sports a community developed desktop with the aim of providing a more user-friendly option.</p>
                 <p class="distro-text">Mint's diverse selection of included software gives it a more complete out-of-the-box experience.</p>
             </a>
-            <a href="https://www.opensuse.org/" target="_blank" class="distro">
+            <a href="https://www.opensuse.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-opensuse.svg" alt="" title="openSUSE">
                 <h1 class="name">openSUSE</h1>
                 <p class="difficulty medium">Intermediate</p>
                 <p class="distro-text">openSUSE is a rather general purpose operating system, built with stability and interoperability in mind.</p>
                 <p class="distro-text">openSUSE also boasts its own comprehensive and acclaimed configuration &amp; administration tools.</p>
             </a>
-            <a href="https://ubuntu.com/" target="_blank" class="distro">
+            <a href="https://ubuntu.com/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-ubuntu.svg" alt="" title="Ubuntu">
                 <h1 class="name">Ubuntu</h1>
                 <p class="difficulty easy">Beginner</p>
