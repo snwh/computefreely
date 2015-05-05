@@ -52,8 +52,8 @@ set_l10n_domain('layout');
         </div> -->
     </div>
     <div class="footer-list">
-        <span class=" first"><a href="/terms">Terms</a></span>
-        <span><a href="/privacy-policy">Privacy Policy</a></span>
+        <span class=" first"><a href="/terms.php">Terms</a></span>
+        <span><a href="/privacy-policy.php">Privacy Policy</a></span>
         <span><a href="https://github.com/snwh/computefreely/" target="_blank">Source Code</a></span>
         <span><a href="https://github.com/snwh/computefreely/issues" target="_blank">Site Issues</a></span>
     </div> 
