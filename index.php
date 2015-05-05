@@ -69,9 +69,9 @@
         <div class="content switch">
             <div class="alternatives">
                 <div class="pair">
-                    <img src="/img/logos/logo-microsoft-office.svg" alt="Microsoft Office">
+                    <img src="/img/logos/logo-microsoft-office.svg" alt="" title="Microsoft Office">
                     <img src="/img/arrow.svg" alt="">
-                    <img src="/img/logos/logo-libreoffice.svg" alt="LibreOffice">
+                    <img src="/img/logos/logo-libreoffice.svg" alt="" title="LibreOffice">
                 </div>
             </div>
             <h2>If you work with Microsoft Office</h2>
@@ -81,7 +81,7 @@
             <div class="browsers">
                 <img class="browser hide" src="/img/browsers/internet-explorer_128x128.png" alt="" title="Internet Explorer">
                 <img class="browser hide" src="/img/browsers/safari_128x128.png" alt="" title="Safari">
-                <img class="arrow hide" src="/img/arrow.svg" alt="" title="">
+                <img class="arrow hide" src="/img/arrow.svg" alt="">
                 <img class="browser" src="/img/browsers/chrome_128x128.png" alt="" title="Google Chrome">
                 <img class="browser" src="/img/browsers/firefox_128x128.png" alt="" title="Mozilla Firefox">
                 <img class="browser" src="/img/browsers/opera_128x128.png" alt="" title="Opera">
@@ -95,7 +95,7 @@
         <div class="content switch">
             <div class="alternatives">
                 <img class="alternative hide" src="/img/logos/logo-adobe-creative-cloud.png" alt="" title="Adobe Creative Cloud">
-                <img class="arrow hide" src="/img/arrow.svg" alt="" title="">
+                <img class="arrow hide" src="/img/arrow.svg" alt="">
                 <img class="alternative" src="/img/logos/logo-gimp.png" alt="" title="GIMP">
                 <img class="alternative" src="/img/logos/logo-inkscape.png" alt="" title="Inkscape">
                 <img class="alternative" src="/img/logos/logo-krita.png" alt="" title="Krita">
@@ -107,7 +107,7 @@
             <div class="alternatives">
                 <img class="alternative hide" src="/img/logos/logo-itunes.png" alt="" title="iTunes">
                 <img class="alternative hide" src="/img/logos/logo-wmp.png" alt="" title="Windows Media Player">
-                <img class="arrow hide" src="/img/arrow.svg" alt="" title="">
+                <img class="arrow hide" src="/img/arrow.svg" alt="">
                 <img class="alternative" src="/img/logos/logo-rhythmbox.png" alt="" title="Rhythmbox">
                 <img class="alternative" src="/img/logos/logo-gnome-music.png" alt="" title="Music">
                 <img class="alternative" src="/img/logos/logo-amarok.png" alt="" title="Amarok">
@@ -119,8 +119,8 @@
         <div class="content switch">
             <div class="alternatives">
                 <img class="alternative" src="/img/logos/logo-gaming.png" alt="">
-                <img class="alternative" src="/img/logos/logo-steam.png" alt="">
-                <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="">
+                <img class="alternative" src="/img/logos/logo-steam.png" alt="" title="Steam">
+                <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="" title="Ubuntu Software Center">
             </div>
             <h2>Game On</h2>
             <p>Gaming on Linux has never been more possible. There are over 1000 games (and growing) available on Steam for Linux, and many indie games support Linux as a platform through the Ubuntu Software Center.</p>
@@ -135,27 +135,6 @@
             <h3>There are thousands of free and open source Linux operating systems to try. Here are some of the most popular.</h3>
         </div>
         <div id="distro-list">
-            <a href="https://ubuntu.com/" target="_blank" class="distro">
-                <img class="logo" src="/img/logos/distro-ubuntu.svg" alt="" title="Ubuntu">
-                <h1 class="name">Ubuntu</h1>
-                <p class="difficulty easy">Beginner</p>
-                <p class="distro-text">Ubuntu has a very large userbase and community, as such it has a wealth of contributed support resources.</p>
-                <p class="distro-text">Ubuntu also receives the most attention from third-party app developers and companies.</p>
-            </a>
-            <a href="https://getfedora.org/" target="_blank" class="distro">
-                <img class="logo" src="/img/logos/distro-fedora.svg" alt="" title="Fedora">
-                <h1 class="name">Fedora</h1>
-                <p class="difficulty medium">Intermediate</p>
-                <p class="distro-text">Fedora has reputation for being cutting-edge and taking an innovative role with open source technologies.</p>
-                <p class="distro-text">The development team takes pride in Fedora being one of the most secure operating systems.</p>
-            </a>
-            <a href="https://elementary.io/" target="_blank" class="distro">
-                <img class="logo" src="/img/logos/distro-elementary.svg" alt="" title="elementary">
-                <h1 class="name">elementary</h1>
-                <p class="difficulty easy">Beginner</p>
-                <p class="distro-text">elementary puts design first to ensure that it is not compromising on quality, usability or speed.</p>
-                <p class="distro-text">With a custom-built set of applications and desktop, elementary boasts a unique and cohesive experience.</p>
-            </a>
             <a href="https://archlinux.org/" target="_blank" class="distro">
                 <img class="logo" src="/img/logos/distro-arch-linux.svg" alt="" title="Arch Linux">
                 <h1 class="name">Arch Linux</h1>
@@ -170,12 +149,19 @@
                 <p class="distro-text">As one of the oldest free software operating systems, Debian is very stable &amp; reliable.</p>
                 <p class="distro-text">However its complex development cycle results in infrequent updates and a tendency to lag behind the competition.</p>
             </a>
-            <a href="https://www.opensuse.org/" target="_blank" class="distro">
-                <img class="logo" src="/img/logos/distro-opensuse.svg" alt="" title="openSUSE">
-                <h1 class="name">openSUSE</h1>
+            <a href="https://elementary.io/" target="_blank" class="distro">
+                <img class="logo" src="/img/logos/distro-elementary.svg" alt="" title="elementary">
+                <h1 class="name">elementary</h1>
+                <p class="difficulty easy">Beginner</p>
+                <p class="distro-text">elementary puts design first to ensure that it is not compromising on quality, usability or speed.</p>
+                <p class="distro-text">With a custom-built set of applications and desktop, elementary boasts a unique and cohesive experience.</p>
+            </a>
+            <a href="https://getfedora.org/" target="_blank" class="distro">
+                <img class="logo" src="/img/logos/distro-fedora.svg" alt="" title="Fedora">
+                <h1 class="name">Fedora</h1>
                 <p class="difficulty medium">Intermediate</p>
-                <p class="distro-text">openSUSE is a rather general purpose operating system, built with stability and interoperability in mind.</p>
-                <p class="distro-text">openSUSE also boasts its own comprehensive and acclaimed configuration &amp; administration tools.</p>
+                <p class="distro-text">Fedora has reputation for being cutting-edge and taking an innovative role with open source technologies.</p>
+                <p class="distro-text">The development team takes pride in Fedora being one of the most secure operating systems.</p>
             </a>
             <a href="http://www.linuxmint.com/" target="_blank" class="distro">
                 <img class="logo" src="/img/logos/distro-linux-mint.svg" alt="" title="Linux Mint">
@@ -183,6 +169,20 @@
                 <p class="difficulty easy">Beginner</p>
                 <p class="distro-text">Linux Mint sports a community developed desktop with the aim of providing a more user-friendly option.</p>
                 <p class="distro-text">Mint's diverse selection of included software gives it a more complete out-of-the-box experience.</p>
+            </a>
+            <a href="https://www.opensuse.org/" target="_blank" class="distro">
+                <img class="logo" src="/img/logos/distro-opensuse.svg" alt="" title="openSUSE">
+                <h1 class="name">openSUSE</h1>
+                <p class="difficulty medium">Intermediate</p>
+                <p class="distro-text">openSUSE is a rather general purpose operating system, built with stability and interoperability in mind.</p>
+                <p class="distro-text">openSUSE also boasts its own comprehensive and acclaimed configuration &amp; administration tools.</p>
+            </a>
+            <a href="https://ubuntu.com/" target="_blank" class="distro">
+                <img class="logo" src="/img/logos/distro-ubuntu.svg" alt="" title="Ubuntu">
+                <h1 class="name">Ubuntu</h1>
+                <p class="difficulty easy">Beginner</p>
+                <p class="distro-text">Ubuntu has a very large userbase and community, as such it has a wealth of contributed support resources.</p>
+                <p class="distro-text">Ubuntu also receives the most attention from third-party app developers and companies.</p>
             </a>
         </div>
         <!-- Randomize list -->
