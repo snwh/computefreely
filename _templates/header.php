@@ -1,11 +1,4 @@
 <?php
-include_once __DIR__.'/l10n.php';
-
-$page['lang'] = get_page_lang();
-$page['lang-root'] = $sitewide['root'];
-if (isset($page['lang']) && $page['lang'] != 'en') {
-    $page['lang-root'] .= $page['lang'].'/';
-}
 if (!isset($page['path'])) {
     $page['path'] = str_replace($sitewide['root'], '/', $sitewide['path']);
     $page['path'] = str_replace('/'.$page['lang'].'/', '/', $page['path']);
@@ -16,14 +9,9 @@ if (!isset($page['name'])) {
         $page['name'] = 'index';
     }
 }
-
-init_l10n();
-
-set_l10n_domain('layout');
-begin_html_l10n();
 ?>
 <!doctype html>
-<html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>">
+<html>
 <head>
 
     <meta charset="UTF-8">
@@ -72,10 +60,6 @@ begin_html_l10n();
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png"><!--114x114-->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png"><!--144x144-->
 
-    <?php if (!empty($page['lang']) && $page['lang'] != 'en') { ?>
-    <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-    <?php } ?>
-
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -107,5 +91,3 @@ begin_html_l10n();
 
 </head>
 <body>
-<?php
-set_l10n_domain($page['name']);

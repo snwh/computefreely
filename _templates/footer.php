@@ -1,7 +1,3 @@
-<?php
-set_l10n_domain('layout');
-?>
-
 <!-- Jump links -->
 <script type="text/javascript">
      // This is a functions that scrolls to #{blah}link
@@ -27,30 +23,6 @@ set_l10n_domain('layout');
     <p><a href="/" style="border:none;font-weight:bold;">Compute Freely</a> – a friendly place to start for the Free &amp; Open Source Software and Linux curious.</p>
     <p>Brought to you and created by <a href="http://www.snwh.org/" target="_blank">Sam Hewitt</a>, thank him with a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=M5X9J2ED2PF66" target="_blank">coffee</a>. &#x1F60A;</p>
     <p>This site has been in no way endorsed by any of the featured projects.</p>  
-    <!-- Language Chooser
-    <div class="popover">
-        <span><a class="language-chooser" href=""><i class="fa fa-globe"></i> Language</a></span>
-        <div class="popover-content">
-            <strong>Change Site Language</strong>
-            <ul>
-            <?php
-            foreach (list_langs() as $langCode => $langName) {
-                $path = $sitewide['root'].$langCode.$page['path'];
-                ?>
-                <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>" data-l10n-off>
-                    <?php echo $langName; ?>
-                </a></li>
-                <?php
-                if ($langCode == 'en') {
-                    ?>
-                    <hr>
-                    <?php
-                }
-            }
-            ?>
-            </ul>
-        </div>
-    </div> -->
     <div class="footer-list">
         <span class=" first"><a href="/terms.php">Terms</a></span>
         <span><a href="/privacy-policy.php">Privacy Policy</a></span>
@@ -74,6 +46,3 @@ set_l10n_domain('layout');
 <![endif]-->
 </body>
 </html>
-<?php
-end_html_l10n();
-?>
