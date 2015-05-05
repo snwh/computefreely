@@ -1,9 +1,10 @@
-Compute Freely
---------------
+# Compute Freely
+----------------
 
 Compute Freely is a website that's meant to be a friendly place to start for the Free & Open Source Software and Linux curious.
 
-# Simple Templating
+## Simple Templating
+-------------------
 
 * PHP-based
 * Pages go in root as .php files
@@ -14,7 +15,8 @@ Compute Freely is a website that's meant to be a friendly place to start for the
   * `$page['description']`
   * `$page['author']`
 
-# Local Development
+## Local Development
+-------------------
 
 For a simple local development environment, you will need:
 
@@ -23,7 +25,8 @@ For a simple local development environment, you will need:
 Then inside the project directory, run `php -S localhost:8000 router.php` then, open http://localhost:8000/ to view the site.
 
 
-# Terms & Licensing
+## Terms & Licensing
+-------------------
 
 This website is copyright © 2015 Sam Hewitt, with some rights reserved.
 
@@ -32,3 +35,4 @@ Site content is licensed under the [Creative Commons Attribution-ShareAlike 3.0]
 Non-unique elements are licensed under the terms of their accompanying licenses, or stated within their source code.
 
 All logos used are trademarks of their respective projects and this site has been in no way endorsed by any of the featured projects.
+
