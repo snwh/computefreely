@@ -428,7 +428,7 @@ Options -MultiViews
 # You can add custom pages to handle 500 or 403 pretty easily, if you like.
 # If you are hosting your site in subdirectory, adjust this accordingly
 #    e.g. ErrorDocument 404 /subdir/404.html
-ErrorDocument 404 /404.html
+ErrorDocument 404.php
 
 
 # ----------------------------------------------------------------------
