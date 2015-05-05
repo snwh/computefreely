@@ -23,6 +23,8 @@
         <h2>Analytics</h2>
         <p>This site uses <a href="http://www.google.com/analytics/">Google Analytics</a>; analytic cookies are used to collect information about how visitors use this website, which is used to help improve it.</p>
         <p>The cookies collect information in an anonymous form, including the number of visitors to the site, where visitors have come to the site from and the pages they visited.</p>
+        <h2>Do Not Track</h2>
+        <p>This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present.</p>
         <h4 style="text-align:center;">You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</h4>
     </section>
 </div>
