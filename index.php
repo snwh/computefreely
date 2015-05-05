@@ -8,9 +8,9 @@
 <!-- Header -->
 <header>
     <div class="header-items">
-        <a href="#distros" id="distros-link" class="jump-link header-item header-link" title="What's Available?">What's Available?</a>
-        <a href="#make-the-switch" id="make-the-switch-link" class="jump-link header-item header-link" title="Switching">Switching</a>
-        <a href="#benefits" id="benefits-link" class="jump-link header-item header-link" title="Why Linux?">Why Linux?</a>
+        <a href="#distros" id="distros-link" class="jump-link header-item header-link right" title="What's Available?">What's Available?</a>
+        <a href="#make-the-switch" id="make-the-switch-link" class="jump-link header-item header-link right" title="Switching">Switching</a>
+        <a href="#benefits" id="benefits-link" class="jump-link header-item header-link right" title="Why Linux?">Why Linux?</a>
     </div>
 </header>
 
@@ -23,6 +23,7 @@
         </div>
     </section>
 </div>
+<span id="top"></span>
 <!-- Benefits Section -->
 <div id='benefits'>
     <section>
@@ -205,6 +206,9 @@
                 </a>
         </div>
     </section>
+<hr>
+<!-- Top -->
+<a class="jump-link" id="top-link" title="Go Top"><div class="top-arrow"></div></a>
 </div>
 
 <?php
