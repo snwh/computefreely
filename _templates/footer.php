@@ -49,8 +49,8 @@ set_l10n_domain('layout');
             }
             ?>
             </ul>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
     <div class="footer-list">
         <span class=" first"><a href="/terms.php">Terms</a></span>
         <span><a href="/privacy-policy.php">Privacy Policy</a></span>
