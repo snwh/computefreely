@@ -34,6 +34,10 @@
             <h2>Completely Free</h2>
             <p>Most open source operating systems are completely <b>free</b> both in-price &amp; licensing. There are typically no fees, lengthy legal agreements, or restrictive copyright protections. You are even free to modify them and make copies to distribute to your friends.</p>
         </div>
+        <!-- <div class="column">
+            <h2>Privacy &amp; Accountability</h2>
+            <p>Free and open source operating systems are developed in the open.</p>
+        </div> -->
         <div class="column">
             <h2>Safe &amp; Secure</h2>
             <p>The robust GNU/Linux system is at the heart of most free &amp; open source platforms, running everything from world governments to the International Space Station. It powers much of the World Wide Web and billions of smart devices worldwide.</p>
@@ -65,9 +69,9 @@
         <div class="content switch">
             <div class="alternatives">
                 <div class="pair">
-                    <img src="/img/logos/logo-microsoft-office.svg" alt="">
+                    <img src="/img/logos/logo-microsoft-office.svg" alt="Microsoft Office">
                     <img src="/img/arrow.svg" alt="">
-                    <img src="/img/logos/logo-libreoffice.svg" alt="">
+                    <img src="/img/logos/logo-libreoffice.svg" alt="LibreOffice">
                 </div>
             </div>
             <h2>If you work with Microsoft Office</h2>
@@ -75,39 +79,39 @@
         </div>
         <div class="content switch">
             <div class="browsers">
-                <img class="browser hide" src="/img/browsers/internet-explorer_128x128.png" alt="">
-                <img class="browser hide" src="/img/browsers/safari_128x128.png" alt="">
+                <img class="browser hide" src="/img/browsers/internet-explorer_128x128.png" alt="Internet Explorer">
+                <img class="browser hide" src="/img/browsers/safari_128x128.png" alt="Safari">
                 <img class="arrow hide" src="/img/arrow.svg" alt="">
-                <img class="browser" src="/img/browsers/chrome_128x128.png" alt="">
-                <img class="browser" src="/img/browsers/firefox_128x128.png" alt="">
-                <img class="browser" src="/img/browsers/opera_128x128.png" alt="">
-                <img class="browser" src="/img/browsers/epiphany_128x128.png" alt="">
-                <img class="browser" src="/img/browsers/chromium_128x128.png" alt="">
-                <img class="browser" src="/img/browsers/midori_128x128.png" alt="">
+                <img class="browser" src="/img/browsers/chrome_128x128.png" alt="Google Chrome">
+                <img class="browser" src="/img/browsers/firefox_128x128.png" alt="Mozilla Firefox">
+                <img class="browser" src="/img/browsers/opera_128x128.png" alt="Opera">
+                <img class="browser" src="/img/browsers/epiphany_128x128.png" alt="Epiphany">
+                <img class="browser" src="/img/browsers/chromium_128x128.png" alt="Chromium">
+                <img class="browser" src="/img/browsers/midori_128x128.png" alt="Midori">
             </div>
             <h2>Browsing the Web</h2>
             <p>While Internet Explorer and Safari are not available, popular web browsers, like Google Chrome, Mozilla Firefox and Opera support Linux. Not forgetting the other, quite capable platform-specific browsers.</p>
         </div>
         <div class="content switch">
             <div class="alternatives">
-                <img class="alternative hide" src="/img/logos/logo-adobe-creative-cloud.png" alt="">
+                <img class="alternative hide" src="/img/logos/logo-adobe-creative-cloud.png" alt="Adobe Creative Cloud">
                 <img class="arrow hide" src="/img/arrow.svg" alt="">
-                <img class="alternative" src="/img/logos/logo-gimp.png" alt="">
-                <img class="alternative" src="/img/logos/logo-inkscape.png" alt="">
-                <img class="alternative" src="/img/logos/logo-krita.png" alt="">
+                <img class="alternative" src="/img/logos/logo-gimp.png" alt="GIMP">
+                <img class="alternative" src="/img/logos/logo-inkscape.png" alt="Inkscape">
+                <img class="alternative" src="/img/logos/logo-krita.png" alt="Krita">
             </div>
             <h2>Open your Creativity</h2>
-            <p>The Adobe suite is quite popular and very powerful, and while it isn't available on free and open source platforms. Apps like <a href="http://gimp.org/" target="_blank">The GIMP</a>, <a href="http://inkscape.org/" target="_blank">Inkscape</a> and <a href="http://krita.org/" target="_blank">Krita</a> are capable alternatives.</p>
+            <p>The Adobe suite is quite popular and very powerful, and while it isn't available on free and open source platforms, apps like <a href="http://gimp.org/" target="_blank">The GIMP</a>, <a href="http://inkscape.org/" target="_blank">Inkscape</a> and <a href="http://krita.org/" target="_blank">Krita</a> are capable alternatives.</p>
         </div>
         <div class="content switch">
             <div class="alternatives">
-                <img class="alternative hide" src="/img/logos/logo-itunes.png" alt="">
-                <img class="alternative hide" src="/img/logos/logo-wmp.png" alt="">
+                <img class="alternative hide" src="/img/logos/logo-itunes.png" alt="iTunes">
+                <img class="alternative hide" src="/img/logos/logo-wmp.png" alt="Windows Media Player">
                 <img class="arrow hide" src="/img/arrow.svg" alt="">
-                <img class="alternative" src="/img/logos/logo-rhythmbox.png" alt="">
-                <img class="alternative" src="/img/logos/logo-gnome-music.png" alt="">
-                <img class="alternative" src="/img/logos/logo-amarok.png" alt="">
-                <img class="alternative" src="/img/logos/logo-noise.png" alt="">
+                <img class="alternative" src="/img/logos/logo-rhythmbox.png" alt="Rhythmbox">
+                <img class="alternative" src="/img/logos/logo-gnome-music.png" alt="Music">
+                <img class="alternative" src="/img/logos/logo-amarok.png" alt="Amarok">
+                <img class="alternative" src="/img/logos/logo-noise.png" alt="Noise">
             </div>
             <h2>Keep on Listening</h2>
             <p>Out of the box, many free and open source operating systems can manage your existing music library and keep you listening.</p>
