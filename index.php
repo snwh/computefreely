@@ -117,6 +117,7 @@
         <div class="content switch">
             <div class="alternatives">
                 <img class="alternative" src="/img/logos/logo-steam.png" alt="" title="Steam">
+                <a href="http://www.desura.com/" target="_blank"><img class="alternative" src="/img/logos/logo-desura.png" alt="Desura gaming platform" title="Desura" width="200" height="200"></a>
                 <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="" title="Ubuntu Software Center">
             </div>
             <h2>Game On</h2>
