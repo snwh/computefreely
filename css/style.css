@@ -12,13 +12,13 @@ AUTHOR URI:http://snwh.org/
 
 @font-face {
     font-family:"Ostrich Sans";
-    src:local("Ostrich Sans"), local("Ostrich Sans Regular"), local(Ostrich-Sans-Regular), url(../fonts/ostrich-regular.ttf);
+    src:local("Ostrich Sans"), local("Ostrich Sans Regular"), local(Ostrich-Sans-Regular), url(fonts/ostrich-regular.ttf);
     font-weight:300;
 }
 
 @font-face {
     font-family:"Ostrich Sans Bold";
-    src:local("Ostrich Sans Bold") local(Ostrich-Sans-Bold), url(../fonts/ostrich-bold.ttf);
+    src:local("Ostrich Sans Bold") local(Ostrich-Sans-Bold), url(fonts/ostrich-bold.ttf);
     font-weight:600;
 }
 
@@ -221,17 +221,6 @@ section {
     vertical-align: top;
 }
 
-.left {
-    float: left;
-}
-
-.center {
-}
-
-.right {
-    float: right;
-}
-
 @media only screen and (max-width :1780px) {
     .column {;
         width: 29%;
@@ -245,7 +234,6 @@ section {
         min-height: 8em;
     }
 }
-
 
 @media only screen and (max-width :1200px) {
     .column {;
@@ -262,6 +250,18 @@ section {
         margin: 2em auto;
         min-height: 10em;
     }
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.right {
+    float: right;
 }
 
 /*----- Header -----*/
@@ -295,7 +295,7 @@ header.absolute {
     line-height: 64px;
 }
 
-.header-title{
+.header-title {
     box-shadow: inset 0 -3px 0 0 #008BDB;
 }
 
@@ -390,16 +390,6 @@ header.absolute {
     color:#F8C300;
 }
 
-.bold-subtitle {
-    font-weight: 400;
-}
-
-.name {
-    font-family:"Ostrich Sans", "Oswald", "Helvetica", "Arial" , sans-serif;
-    font-size: 2.3em;
-    display: block;
-    text-align: center;
-}
 
 /*----- Benefits Section -----*/
 
@@ -486,6 +476,15 @@ header.absolute {
     text-align: left;
     text-shadow:0px 1px rgba(255,255,255,0.4);
 }
+
+
+.name {
+    font-family:"Ostrich Sans", "Oswald", "Helvetica", "Arial" , sans-serif;
+    font-size: 2.3em;
+    display: block;
+    text-align: center;
+}
+
 
 /*--------MEDIA QUERIES--------*/
 
@@ -701,7 +700,8 @@ img.browser{
     padding: 0 1em;
     height: 40px;
     line-height: 40px;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: bold;
     border-radius:20px;
     background-color: #fff;
     text-align: center;
@@ -816,7 +816,7 @@ footer p a:hover {
     padding-right: 0.5em;
 }
 
-.footer-list > span.first:before {
+.footer-list > span:nth-child(1):before {
     content: "";
 }
 

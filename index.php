@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['name'] = 'Compute Freely';
-    $page['title'] = 'Free your computer. Use Linux.';
+    $page['title'] = 'Free your computer. Use Linux. - Compute Freely';
     include $template['header'];
 ?>
 

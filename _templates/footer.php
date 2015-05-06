@@ -24,13 +24,12 @@
     <p>Brought to you and created by <a href="http://www.snwh.org/" target="_blank">Sam Hewitt</a>, thank him with a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=M5X9J2ED2PF66" target="_blank">coffee</a>. &#x1F60A;</p>
     <p>This site has been in no way endorsed by any of the featured projects.</p>  
     <div class="footer-list">
-        <span class=" first"><a href="/terms.php">Terms</a></span>
+        <span><a href="/terms.php">Terms</a></span>
         <span><a href="/privacy-policy.php">Privacy Policy</a></span>
         <span><a href="https://github.com/snwh/computefreely/" target="_blank">Source Code</a></span>
         <span><a href="https://github.com/snwh/computefreely/issues" target="_blank">Site Issues</a></span>
     </div> 
 </footer>
-
 <!--[if lt IE 9]>
     <div id="legacy-warning">
         <h1>The Compute Freely website is built on modern web technologies your browser doesn&rsquo;t support.</h1>
