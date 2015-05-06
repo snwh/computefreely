@@ -158,7 +158,7 @@
                 <h1 class="name">Fedora</h1>
                 <p class="difficulty medium">Intermediate</p>
                 <p class="distro-text">Fedora has reputation for being cutting-edge and taking an innovative role with open source technologies.</p>
-                <p class="distro-text">The development team takes pride in Fedora being one of the most secure operating systems.</p>
+                <p class="distro-text">However, being bleeding edge means each Fedora release is not supported for very long</p>
             </a>
             <a href="http://www.linuxmint.com/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-linux-mint.svg" alt="" title="Linux Mint">

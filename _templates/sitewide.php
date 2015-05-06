@@ -11,7 +11,7 @@ date_default_timezone_set('UTC');
 $sitewide['title'] = 'Compute Freely';
 $sitewide['author'] = 'Sam Hewitt';
 $sitewide['description'] = 'A friendly place to start for the Free &amp; Open Source Software and Linux curious.';
-$sitewide['keywords'] = 'Linux, distribution, Windows alternative, Mac alternative, free software, open source, best linux distro';
+$sitewide['keywords'] = 'Linux, distribution, choose distro, which linux distro, Windows alternative, Mac alternative, free software, open source, best linux distro';
 $sitewide['image'] = 'http://computefreely.org/img/promo.jpg';
 $sitewide['theme-color'] = '#008BDB';
 
