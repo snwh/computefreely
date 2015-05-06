@@ -33,7 +33,7 @@
         <br>
         <div class="column">
             <h2>Completely Free</h2>
-            <p>Most open source operating systems are completely <b>free</b> both in-price &amp; licensing. There are typically no fees, lengthy legal agreements, or restrictive copyright protections. You are even free to modify them and make copies to distribute to your friends.</p>
+            <p>Most open source operating systems are completely <b>free</b> both in price &amp; in licensing. There are typically no fees, lengthy legal agreements, or restrictive copyright protections. You are even free to modify them and make copies to distribute to your friends.</p>
         </div>
         <!-- <div class="column">
             <h2>Privacy &amp; Accountability</h2>
@@ -49,7 +49,7 @@
         </div>
         <div class="column">
             <h2>Community &amp; Support</h2>
-            <p>The Linux &amp; open source ecosystem has a vibrant community surrounding it, and with that you get a world of support –from written documentation and forums, to mailing lists and live chat, to name just a few.</p>
+            <p>The Linux &amp; open source ecosystem has a vibrant community surrounding it, and with that you get a world of support – from written documentation and forums, to mailing lists and live chat, to name just a few.</p>
         </div>
         <div class="column">
             <h2>Versatility</h2>
@@ -120,7 +120,7 @@
                 <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="" title="Ubuntu Software Center">
             </div>
             <h2>Game On</h2>
-            <p>Gaming on Linux has never been more possible. There are over 1000 (and growing) game available on Steam for Linux, and many indie games support Linux as a platform through Ubuntu's Software Center.</p>
+            <p>Gaming on Linux has never been more possible. There are over 1000 (and growing) games available on Steam for Linux, and many indie games support Linux as a platform through Ubuntu's Software Center.</p>
         </div>
     </section>
 </div>
