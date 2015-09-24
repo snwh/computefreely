@@ -26,7 +26,7 @@ Then inside the project directory, run `php -S localhost:8000 router.php` then, 
 
 This website is copyright © 2015 Sam Hewitt, with some rights reserved.
 
-Site content is licensed under the [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/), unless otherwise noted. Any unique source code is free software, licensed under the terms of the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0), unless otherwise noted.
+Site content is licensed under the [Creative Commons Attribution-ShareAlike 4.0](http://creativecommons.org/licenses/by-sa/4.0/), unless otherwise noted. Any unique source code is free software, licensed under the terms of the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0), unless otherwise noted.
 
 Non-unique elements are licensed under the terms of their accompanying licenses, or stated within their source code.
 
