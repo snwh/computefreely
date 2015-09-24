@@ -32,8 +32,8 @@
 </style>
 
 <!-- Main -->
-<div id='main'>
-    <section >
+<div class="row first" id='main'>
+    <section>
         <h1>Privacy Policy</h1>
         <p>This site (computefreely.org) makes use of cookies and services that use cookies.</p>
         <h2>Google Analytics</h2>

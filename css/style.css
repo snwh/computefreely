@@ -199,9 +199,13 @@ blockquote:after {
 section {
     padding-top: 2em;
     padding-bottom: 2em;
-    margin:0 20%;
+    margin:0 12%;
     color:#555;
 }
+
+@media only screen and (max-width:1480px) {section{margin:0 5%;}}
+@media only screen and (max-width:900px) {section{margin-left:2em;margin-right:2em;}}
+
 
 /*----- Columns -----*/
 
@@ -291,10 +295,6 @@ header.absolute {
     position:absolute;
 }
 
-.header-items {
-    margin-left: 12%;
-    margin-right: 12%;
-}
 
 .header-item {
     font-family:"Oswald", "Helvetica", "Arial" , sans-serif;
@@ -336,6 +336,11 @@ header.absolute {
     -webkit-transition:ease 200ms;
 }
 
+.header-items {
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
 @media only screen and (max-width :1480px) {.header-items {margin-left:5%;margin-right:5%;}}
 @media only screen and (max-width :1280px) {.header-items {margin-left:0;margin-right:0;}}
 @media only screen and (max-width : 480px), only screen and (max-width : 768px) {.header-items {margin:0;}}
@@ -347,7 +352,6 @@ header.absolute {
     color: #444;
     background-color: #fff;
 }
-
 
 /*----- Title Section -----*/
 
@@ -622,9 +626,12 @@ header.absolute {
 }
 
 .switch {
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
     padding: 2em 0;
 }
+@media only screen and (max-width :1200px) {.switch{width: 80%}}
+@media only screen and (max-width :1000px) {.switch{width: 100%}}
 
 #make-the-switch h1 {
     color: #149AD4;
@@ -767,6 +774,9 @@ footer {
     padding: 2em 15%;
     text-shadow:0px 1px rgba(0,0,0,0.2);
 }
+
+@media only screen and (max-width:1480px) {footer{padding-left:5%;padding-right:5%;}}
+@media only screen and (max-width:900px) {footer{padding-left:2em;margin-right:2em;}}
 
 footer p {
     font-size: 0.9em;
