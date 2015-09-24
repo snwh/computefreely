@@ -32,6 +32,7 @@
 <div class="row" id='benefits'>
     <section>
         <h1>Why use a free &amp; open source operating system?</h1>
+        <p style="margin-top:-3em;opacity:0.5;">(like Linux)</p>
         <br>
         <div class="col third">
             <h2>Completely Free</h2>
