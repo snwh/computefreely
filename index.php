@@ -80,7 +80,7 @@
                 </div>
             </div>
             <h2>If you work with Microsoft Office</h2>
-            <p>Many free and open source operating systems have the LibreOffice suite available which lets you create documents, spreadsheets, and presentations as you would with Microsoft Office. With LibreOffice, you can also open and edit any Word, Powerpoint, or Excel files you may already have.</p>
+            <p>Many free and open source operating systems have the <a href="https://libreoffice.org" target="_blank">LibreOffice suite</a> available which lets you create documents, spreadsheets, and presentations as you would with Microsoft Office. With LibreOffice, you can also open and edit any Word, Powerpoint, or Excel files you may already have.</p>
         </div>
         <div class="switch">
             <div class="browsers">
@@ -124,7 +124,7 @@
                 <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="" title="Ubuntu Software Center">
             </div>
             <h2>Game On</h2>
-            <p>Gaming on Linux has never been more possible. There are over 1000 (and growing) games available on Steam for Linux, and many indie games support Linux as a platform through Ubuntu's Software Center.</p>
+            <p>Gaming on Linux has never been more possible. There are over 1500 (and growing) games available on Steam for Linux, and many indie games support Linux as a platform through Ubuntu's Software Center.</p>
         </div>
     </section>
 </div>
@@ -196,11 +196,6 @@
             list.appendChild(list.children[Math.random() * i | 0]);
         }
         </script>
-    </section>
-    <section>
-        <a class="share googleplus" href="/niche" target="_blank">
-            <span>More Niche distros</span>
-        </a>
     </section>
 </div>
 
