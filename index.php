@@ -14,6 +14,9 @@
     </div>
 </header>
 
+<!-- CSS Import -->
+<style type="text/css">@import url(/css/title.css);</style>
+
 <!-- Title -->
 <div class="row first" id='title'>
     <section>
@@ -21,6 +24,9 @@
         <h2 class="subtitle">Free your computer. <b>Use Linux</b>.</h2>
     </section>
 </div>
+
+<!-- CSS Import -->
+<style type="text/css">@import url(/css/benefits.css);</style>
 
 <!-- Benefits Section -->
 <div class="row" id='benefits'>
@@ -57,6 +63,9 @@
         </div>
     </section>
 </div>
+
+<!-- CSS Import -->
+<style type="text/css">@import url(/css/switching.css);</style>
 
 <!-- Switching Section -->
 <div class="row" id='make-the-switch'>
@@ -119,6 +128,9 @@
         </div>
     </section>
 </div>
+
+<!-- CSS Import -->
+<style type="text/css">@import url(/css/distros.css);</style>
 
 <!-- Distros Section -->
 <div class="row" id='distros'>
@@ -185,10 +197,18 @@
         }
         </script>
     </section>
+    <section>
+        <a class="share googleplus" href="/niche" target="_blank">
+            <span>More Niche distros</span>
+        </a>
+    </section>
 </div>
 
+<!-- CSS Import -->
+<style type="text/css">@import url(/css/share.css);</style>
+
 <!-- Social Section -->
-<div class="row last" id='quote'>
+<div class="row last" id='share'>
     <section>
         <blockquote>I used your website to introduce my friend to Linux. I will be helping to load either Linux Mint or elementary OS tomorrow. Thanks for this great website, you made Linux a lot cooler!﻿</blockquote>
         <hr class="short">
