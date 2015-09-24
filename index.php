@@ -136,7 +136,7 @@
 
 <!-- Distros Section -->
 <div class="row" id='distros'>
-    <section>
+    <section class="distro-section">
         <h1>What's Available?</h1>
         <h3>There are thousands of free and open source Linux operating systems to try. Here are some of the most popular.</h3>
         <div id="distro-list">
@@ -198,6 +198,7 @@
             list.appendChild(list.children[Math.random() * i | 0]);
         }
         </script>
+        <!-- <h3>Curious what the some of the other thousands are? Here are some <a href="/more">more</a>.</h3> -->
     </section>
 </div>
 

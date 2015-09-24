@@ -1,0 +1,48 @@
+
+/*----- More Section -----*/
+
+#more {
+    background-color: #F5F0E7;
+}
+
+.ubuntu {
+	color: #dd4814;
+}
+
+/* Ubuntu */
+
+#ubuntu-based {
+    background-color: #F8F8F8;
+}
+
+.ubuntu {
+	color: #dd4814;
+}
+
+#ubuntu-based > section {
+    color: rgba(0,0,0,0.6);
+    text-shadow:0px 1px rgba(255,255,255,0.1);
+}
+
+/* Servers */
+#servers {
+    background-color: #50709D;
+}
+
+#servers > section {
+    color: rgba(0,0,0,0.6);
+    text-shadow:0px 1px rgba(255,255,255,0.1);
+}
+
+.server {
+    color: #008BDB;
+}
+
+/* BSD */
+#bsd {
+    background-color: #EFEFEF;
+}
+
+.bsd {
+	color: #C93817;
+}

@@ -14,9 +14,9 @@
    height="200"
    id="svg7854"
    sodipodi:version="0.32"
-   inkscape:version="0.91+devel+osxmenu r12863"
+   inkscape:version="0.91+devel+osxmenu r12898"
    version="1.0"
-   sodipodi:docname="logo-opensuse.svg"
+   sodipodi:docname="distro-opensuse.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <defs
      id="defs7856">
@@ -1003,7 +1003,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="-70.084189"
+     inkscape:cx="-245.08419"
      inkscape:cy="-54.131076"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -1032,7 +1032,7 @@
         <dc:source>http://jimmac.musichall.cz</dc:source>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/2.5/" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/by-sa/2.5/">
