@@ -15,59 +15,54 @@
 </header>
 
 <!-- Title -->
-<div id='title'>
+<div class="row first" id='title'>
     <section>
-    	<div class="content">
-            <h1 class="title">Compute <span class="freely">Freely</span></h1>
-            <h2 class="subtitle">Free your computer. <b>Use Linux</b>.</h2>
-        </div>
+        <h1 class="title">Compute <span class="freely">Freely</span></h1>
+        <h2 class="subtitle">Free your computer. <b>Use Linux</b>.</h2>
     </section>
 </div>
-<span id="top"></span>
+
 <!-- Benefits Section -->
-<div id='benefits'>
+<div class="row" id='benefits'>
     <section>
-        <div class="content">
-            <h1>Why use a free &amp; open source operating system?</h1>
-        </div>
+        <h1>Why use a free &amp; open source operating system?</h1>
         <br>
-        <div class="column">
+        <div class="col third">
             <h2>Completely Free</h2>
             <p>Most open source operating systems are completely <b>free</b> both in price &amp; in licensing. There are typically no fees, lengthy legal agreements, or restrictive copyright protections. You are even free to modify them and make copies to distribute to your friends.</p>
         </div>
-        <!-- <div class="column">
+        <!-- <div class="col third">
             <h2>Privacy &amp; Accountability</h2>
             <p>Free and open source operating systems are developed in the open.</p>
         </div> -->
-        <div class="column">
+        <div class="col third">
             <h2>Safe &amp; Secure</h2>
             <p>The robust GNU/Linux system is at the heart of most free &amp; open source platforms, running everything from world governments to the International Space Station. It powers much of the World Wide Web and billions of smart devices worldwide.</p>
         </div>
-        <div class="column">
+        <div class="col third">
             <h2>Accessibility</h2>
             <p>Free and open source operating systems are as diverse as the people who use and build them. Which means they come loaded with software meant to aid those with hearing, sight or motor impairment.</p>
         </div>
-        <div class="column">
+        <div class="col third">
             <h2>Community &amp; Support</h2>
             <p>The Linux &amp; open source ecosystem has a vibrant community surrounding it, and with that you get a world of support – from written documentation and forums, to mailing lists and live chat, to name just a few.</p>
         </div>
-        <div class="column">
+        <div class="col third">
             <h2>Versatility</h2>
             <p>Thanks to the Linux kernel most open source operating systems have unparalleled hardware support. You can install them on virtually any number of computers or other devices that you want.</p>
         </div>
-        <div class="column">
+        <div class="col third">
             <h2>Applications</h2>
             <p>There are thousands of free &amp; open source applications available to freely download and install without the need to browse the web. All this software undergoes scrutinous review before it reaches you, so you can find and use what you like with confidence.</p>
         </div>
     </section>
 </div>
-<!-- Benefits Section -->
-<div id='make-the-switch'>
+
+<!-- Switching Section -->
+<div class="row" id='make-the-switch'>
     <section>
-        <div class="content">
-            <h1>Making The Switch</h1>
-        </div>
-        <div class="content switch">
+        <h1>Making The Switch</h1>
+        <div class="switch">
             <div class="alternatives">
                 <div class="pair">
                     <img class="alternative" src="/img/logos/logo-microsoft-office.png" alt="" title="Microsoft Office">
@@ -78,7 +73,7 @@
             <h2>If you work with Microsoft Office</h2>
             <p>Many free and open source operating systems have the LibreOffice suite available which lets you create documents, spreadsheets, and presentations as you would with Microsoft Office. With LibreOffice, you can also open and edit any Word, Powerpoint, or Excel files you may already have.</p>
         </div>
-        <div class="content switch">
+        <div class="switch">
             <div class="browsers">
                 <img class="browser" src="/img/browsers/chrome_128x128.png" alt="" title="Google Chrome">
                 <img class="browser" src="/img/browsers/firefox_128x128.png" alt="" title="Mozilla Firefox">
@@ -90,7 +85,7 @@
             <h2>Browsing the Web</h2>
             <p>You still have the best of the web available to you on Linux; popular browsers like Google Chrome, Mozilla Firefox and Opera support Linux. Plus the many other Linux-only browsers.</p>
         </div>
-        <div class="content switch">
+        <div class="switch">
             <div class="alternatives">
                 <a href="http://gimp.org/" target="_blank"><img class="alternative" src="/img/logos/logo-gimp.png" alt="" title="GIMP"></a>
                 <a href="http://inkscape.org/" target="_blank"><img class="alternative" src="/img/logos/logo-inkscape.png" alt="" title="Inkscape"></a>
@@ -101,7 +96,7 @@
             <h2>Open your Creativity</h2>
             <p>On other platforms, the creative field is dominated by some big names, such as Adobe, but there are capable open source alternatives: from the GIMP, Inkscape &amp; Krita for graphics editing, to Blender for animation and Ardour for digital audio.</p>
         </div>
-        <div class="content switch">
+        <div class="switch">
             <div class="alternatives">
                 <img class="alternative hide" src="/img/logos/logo-itunes.png" alt="" title="iTunes">
                 <img class="alternative hide" src="/img/logos/logo-wmp.png" alt="" title="Windows Media Player">
@@ -114,7 +109,7 @@
             <h2>Keep on Listening</h2>
             <p>Out of the box, many free and open source operating systems can manage your existing music library and keep you listening.</p>
         </div>
-        <div class="content switch">
+        <div class="switch">
             <div class="alternatives">
                 <img class="alternative" src="/img/logos/logo-steam.png" alt="" title="Steam">
                 <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="" title="Ubuntu Software Center">
@@ -124,13 +119,12 @@
         </div>
     </section>
 </div>
+
 <!-- Distros Section -->
-<div id='distros'>
+<div class="row" id='distros'>
     <section>
-        <div class="content">
-            <h1>What's Available?</h1>
-            <h3>There are thousands of free and open source Linux operating systems to try. Here are some of the most popular.</h3>
-        </div>
+        <h1>What's Available?</h1>
+        <h3>There are thousands of free and open source Linux operating systems to try. Here are some of the most popular.</h3>
         <div id="distro-list">
             <a href="https://archlinux.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-arch-linux.svg" alt="" title="Arch Linux">
@@ -158,7 +152,7 @@
                 <h1 class="name">Fedora</h1>
                 <p class="difficulty medium">Intermediate</p>
                 <p class="distro-text">Fedora has reputation for being cutting-edge and taking an innovative role with open source technologies.</p>
-                <p class="distro-text">However, being bleeding edge means each Fedora release is not supported for very long</p>
+                <p class="distro-text">However, being bleeding edge means each Fedora release is not supported for very long.</p>
             </a>
             <a href="http://www.linuxmint.com/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-linux-mint.svg" alt="" title="Linux Mint">
@@ -192,23 +186,20 @@
         </script>
     </section>
 </div>
-<div id='quote'>
+
+<!-- Social Section -->
+<div class="row last" id='quote'>
     <section>
-        <div class="content">
-            <blockquote>I used your website to introduce my friend to Linux. I will be helping to load either Linux Mint or elementary OS tomorrow. Thanks for this great website, you made Linux a lot cooler!﻿</blockquote>
-            <hr class="short">
-            <a class="share tweet" href="http://www.twitter.com/home?status=Compute%20Freely%20is%20a%20friendly%20place%20to%20start%20if%20you're%20curious%20about%20switching%20to%20Linux.%20http://computefreely.org/" target="_blank"><span><i class="fa fa-twitter"></i>Tweet this Page</span></a>
-            <a class="share facebook" href="http://www.facebook.com/share.php?u=http://computefreely.org/" target="_blank">
-                <span><i class="fa fa-facebook-square"></i>Share on Facebook</span>
-            </a>
-            <a class="share googleplus" href="https://plus.google.com/share?url=http://computefreely.org/" target="_blank">
-                <span><i class="fa fa-google-plus"></i>Share on Google+</span>
-                </a>
-        </div>
+        <blockquote>I used your website to introduce my friend to Linux. I will be helping to load either Linux Mint or elementary OS tomorrow. Thanks for this great website, you made Linux a lot cooler!﻿</blockquote>
+        <hr class="short">
+        <a class="share tweet" href="http://www.twitter.com/home?status=Compute%20Freely%20is%20a%20friendly%20place%20to%20start%20if%20you're%20curious%20about%20switching%20to%20Linux.%20http://computefreely.org/" target="_blank"><span><i class="fa fa-twitter"></i>Tweet this Page</span></a>
+        <a class="share facebook" href="http://www.facebook.com/share.php?u=http://computefreely.org/" target="_blank">
+            <span><i class="fa fa-facebook-square"></i>Share on Facebook</span>
+        </a>
+        <a class="share googleplus" href="https://plus.google.com/share?url=http://computefreely.org/" target="_blank">
+            <span><i class="fa fa-google-plus"></i>Share on Google+</span>
+        </a>
     </section>
-<hr>
-<!-- Top -->
-<a class="jump-link" id="top-link" title="Go Top"><div class="top-arrow"></div></a>
 </div>
 
 <?php

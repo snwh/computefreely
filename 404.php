@@ -13,8 +13,8 @@
 </header>
 
 <!-- Main -->
-<div id='main'>
-    <section >
+<div class="row first" id='main'>
+    <section>
         <h1>404 - Page Not Found</h1>
         <h3>This is not the page you're looking for.</h3>
     </section>
