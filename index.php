@@ -96,14 +96,14 @@
         </div>
         <div class="switch">
             <div class="alternatives">
-                <a href="http://gimp.org/" target="_blank"><img class="alternative" src="/img/logos/logo-gimp.png" alt="" title="GIMP"></a>
-                <a href="http://inkscape.org/" target="_blank"><img class="alternative" src="/img/logos/logo-inkscape.png" alt="" title="Inkscape"></a>
-                <a href="http://krita.org/" target="_blank"><img class="alternative" src="/img/logos/logo-krita.png" alt="" title="Krita"></a>
-                <a href="http://blender.org/" target="_blank"><img class="alternative" src="/img/logos/logo-blender.png" alt="" title="Blender"></a>
-                <a href="http://ardour.org/" target="_blank"><img class="alternative" src="/img/logos/logo-ardour.png" alt="" title="Ardour"></a>
+                <img class="alternative" src="/img/logos/logo-gimp.png" alt="" title="GIMP">
+                <img class="alternative" src="/img/logos/logo-inkscape.png" alt="" title="Inkscape">
+                <img class="alternative" src="/img/logos/logo-krita.png" alt="" title="Krita">
+                <img class="alternative" src="/img/logos/logo-blender.png" alt="" title="Blender">
+                <img class="alternative" src="/img/logos/logo-ardour.png" alt="" title="Ardour">
             </div>
             <h2>Open your Creativity</h2>
-            <p>On other platforms, the creative field is dominated by some big names, such as Adobe, but there are capable open source alternatives: from the GIMP, Inkscape &amp; Krita for graphics editing, to Blender for animation and Ardour for digital audio.</p>
+            <p>On other platforms, the creative field is dominated by proprietary programs, but there are several capable open source alternatives. Together <a href="http://gimp.org/" target="_blank">the GIMP</a>, <a href="http://inkscape.org/" target="_blank">Inkscape</a> &amp; <a href="http://krita.org/" target="_blank">Krita</a> make a great set graphics editing tools. <a href="http://blender.org/" target="_blank">Blender</a> is available for 3D animation and rendering. For digital audio, there's <a href="http://ardour.org/" target="_blank">Ardour</a>.</p>
         </div>
         <div class="switch">
             <div class="alternatives">
@@ -121,10 +121,11 @@
         <div class="switch">
             <div class="alternatives">
                 <img class="alternative" src="/img/logos/logo-steam.png" alt="" title="Steam">
+                <img class="alternative" src="/img/logos/logo-gog.png" alt="" title="GOG">
                 <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="" title="Ubuntu Software Center">
             </div>
             <h2>Game On</h2>
-            <p>Gaming on Linux has never been more possible. There are over 1500 (and growing) games available on Steam for Linux, and many indie games support Linux as a platform through Ubuntu's Software Center.</p>
+            <p>Gaming on Linux has never been more possible. The number of Linux games available are rapidly growing on platforms like <a href="http://store.steampowered.com/search/?term=&os=linux" target="_blank">Steam</a> and <a href="http://www.gog.com/games/linux" target="_blank">GOG</a>. Plus many indie games support Linux through Ubuntu's Software Center.</p>
         </div>
     </section>
 </div>
