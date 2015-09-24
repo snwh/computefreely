@@ -199,7 +199,7 @@ blockquote:after {
 section {
     padding-top: 2em;
     padding-bottom: 2em;
-    margin:0 12%;
+    margin:0 13%;
     color:#555;
 }
 
@@ -359,7 +359,7 @@ footer {
     background-color: #444;
     font-size:0.9em;
     min-height:14em;
-    padding: 2em 15%;
+    padding: 2em 13%;
     text-shadow:0px 1px rgba(0,0,0,0.2);
 }
 
