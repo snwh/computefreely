@@ -115,6 +115,7 @@
                 <img class="alternative" src="/img/logos/logo-gnome-music.png" alt="" title="GNOME Music">
                 <img class="alternative" src="/img/logos/logo-amarok.png" alt="" title="Amarok">
                 <img class="alternative" src="/img/logos/logo-noise.png" alt="" title="Noise">
+                <img class="alternative" src="/img/logos/logo-tomahawk.png" alt="" title="Tomahawk">
             </div>
             <h2>Keep on Listening</h2>
             <p>Out of the box, many free and open source operating systems can manage your existing music library and keep you listening.</p>
