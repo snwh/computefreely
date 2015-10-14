@@ -33,6 +33,7 @@ section.distro-section {
     vertical-align: middle;
 }
 
+.distro:focus,
 .distro:hover {
     color: #555;
     background-color: rgba(255,255,255,1.0);
@@ -60,6 +61,13 @@ section.distro-section {
     margin-right:1.25em;
     text-align: left;
     text-shadow:0px 1px rgba(255,255,255,0.4);
+}
+
+.logo {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 8em;
 }
 
 
@@ -165,11 +173,4 @@ section.distro-section {
 
 .hard {
     color: #c51e1d;
-}
-
-.logo {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width: 8em;
 }

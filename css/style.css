@@ -328,6 +328,7 @@ header.absolute {
     -webkit-transition:ease 200ms;
 }
 
+.header-link:focus,
 .header-link:hover {
     opacity: 1;
     color:#008BDB;

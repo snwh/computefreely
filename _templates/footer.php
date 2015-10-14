@@ -21,7 +21,7 @@
 <!-- Footer -->
 <footer>
     <p><a href="/" style="border:none;font-weight:bold;">Compute Freely</a> – a friendly place to start for the Free &amp; Open Source Software and Linux curious.</p>
-    <p>Brought to you and created by <a href="http://www.snwh.org/" target="_blank">Sam Hewitt</a>, thank him with a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=M5X9J2ED2PF66" target="_blank">coffee</a>. &#x1F60A;</p>
+    <p>Brought to you and created by <a href="http://samuelhewitt.com/" target="_blank">Sam Hewitt</a>, thank him with a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=M5X9J2ED2PF66" target="_blank">coffee</a>. &#x1F60A;</p>
     <p>This site has been in no way endorsed by any of the featured projects.</p>  
     <div class="footer-list">
         <span><a href="/terms">Terms</a></span>

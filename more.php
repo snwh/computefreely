@@ -19,15 +19,14 @@
 <!-- More Section -->
 <div class="row first" id='more'>
     <section class="distro-section">
-        <h1>More options!</h1>
-        <h3>Stuff</h3>
+        <h1>More distros!</h1>
+        <h3>The possibilities and options are virtually endless in the free and open source operating ecosystem, these are a few more.</h3>
         <div id="more-list">
             <a href="http://mageia.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-mageia.svg" alt="" title="Mageia">
                 <h1 class="name">Mageia</h1>
                 <p class="difficulty easy">Beginner</p>
-                <p class="distro-text">Kubuntu is a spin of Ubuntu that uses the Plasma desktop environment as default.</p>
-                <p class="distro-text">Plasma Desktop offers a beautiful looking desktop that takes complete advantage of modern computing technology.</p>
+                <p class="distro-text">The Mageia project aims to deliver a secure, stable and sustainable operating system. It's goal is to set up a stable and trustable governance to direct collaborative projects.</p>
             </a>
             <a href="https://manjaro.github.io/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-manjaro.svg" alt="" title="Manjaro">
@@ -47,6 +46,14 @@
                 <p class="difficulty medium">Intermediate</p>
                 <p class="distro-text">CentOS is a free of cost, enterprise-class Linux distribution. Created as an alternative to Red Hat Enterprise Linux</p>
             </a>
+            <a href="https://freebsd.org" target="_blank" class="distro" title="Visit project homepage for more information">
+                <img class="logo" src="/img/logos/freebsd.png" alt="" title="FreeBSD">
+                <h1 class="name">FreeBSD</h1>
+                <p class="difficulty bsd">BSD-Based</p>
+                <p class="distro-text">FreeBSD is an advanced computer operating system used to power modern servers, desktops and embedded platforms. </p>
+                <p class="distro-text">While it's not a Linux-based operating system it nevertheless deserves an honorable mention.</p>
+            </a>
+        </div>
         </div>
         <!-- Randomize list -->
         <script type="text/javascript">
@@ -88,14 +95,15 @@
                 <img class="logo" src="/img/logos/distro-ubuntu-mate.svg" alt="" title="Ubuntu MATE">
                 <h1 class="name">Ubuntu MATE</h1>
                 <p class="difficulty ubuntu">Ubuntu-Based</p>
-                <p class="distro-text">Ubuntu has a very large userbase and community, as such it has a wealth of contributed support resources.</p>
-                <p class="distro-text">Ubuntu also receives the most attention from third-party app developers and companies.</p>
+                <p class="distro-text">Ubuntu MATE is a spin of Ubuntu that features the MATE desktop environment.</p>
+                <p class="distro-text">MATE provides an intuitive and attractive desktop environment while using traditional desktop metaphors.</p>
             </a>
             <a href="https://ubuntugnome.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-ubuntu-gnome.svg" alt="" title="Ubuntu GNOME">
                 <h1 class="name">Ubuntu GNOME</h1>
                 <p class="difficulty ubuntu">Ubuntu-Based</p>
                 <p class="distro-text">Ubuntu GNOME is a flavour of Ubuntu that features the GNOME desktop environment.</p>
+                <p class="distro-text">The easy and elegant GNOME desktop is designed to put you in control and bring freedom to everybody.</p>
             </a>
         </div>
         <!-- Randomize list -->
@@ -113,62 +121,44 @@
 <div class="row" id='servers'>
     <section class="distro-section">
         <h1>Server Operating Systems</h1>
-        <h3>Linux is the most used server operating system, and if you're into building a server these are a few good ones.</h3>
+        <h3>Linux is the most used server operating system, and if you building a server these are a few worth mentioning.</h3>
         <div id="server-list">
             <a href="https://debian.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-debian.svg" alt="" title="Debian">
                 <h1 class="name">Debian</h1>
                 <p class="difficulty server">Server</p>
-                <p class="distro-text">Debian's rock-stable nature and long development cycle make it perfect for server use.</p>
+                <p class="distro-text">Debian's rock-stable and lower-powered nature make it perfect for server use.</p>
                 <p class="distro-text"></p>
             </a>
             <a href="https://ubuntu.com/server" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-ubuntu.svg" alt="" title="Ubuntu">
                 <h1 class="name">Ubuntu Server</h1>
                 <p class="difficulty server">Server</p>
-                <p class="distro-text">Ubuntu Server</p>
+                <p class="distro-text">It's Ubuntu but for servers. Ubuntu's long-term support releases are oriented for server-use.</p>
             </a>
             <a href="https://getfedora.org/server" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-fedora.svg" alt="" title="Fedora">
                 <h1 class="name">Fedora Server</h1>
                 <p class="difficulty server">Server</p>
-                <p class="distro-text">Fedora Server is a server operating system that enables seasoned system administrators experienced with any OS to make use of the very latest server-based technologies available in the open source community.</p>
+                <p class="distro-text">Fedora Server enables seasoned system administrators to make use of the very latest open source server-based technologies available.</p>
             </a>
-            <a href="https://www.centos.org/" target="_blank" class="distro" title="Visit project homepage for more information">
-                <img class="logo" src="/img/logos/distro-centos.svg" alt="" title="CentOS">
-                <h1 class="name">Cent OS</h1>
+            <a href="http://www.freenas.org/" target="_blank" class="distro" title="Visit project homepage for more information">
+                <img class="logo" src="/img/logos/distro-freenas.png" alt="" title="FreeNAS">
+                <h1 class="name">FreeNAS</h1>
                 <p class="difficulty server">Server</p>
-                <p class="distro-text">Cent OS is a free of cost, enterprise-class Linux distribution. Created as an alternative to Red Hat Enterprise Linux</p>
+                <p class="distro-text">FreeNAS is an operating system for can be used to turn any computer into a centralized and easily-accessible home for your data.</p>
+            </a>
+            <a href="http://www.openmediavault.org/" target="_blank" class="distro" title="Visit project homepage for more information">
+                <img class="logo" src="/img/logos/distro-openmediavault.svg" alt="" title="OpenMediaVault">
+                <h1 class="name">OpenMediaVault</h1>
+                <p class="difficulty server">Server</p>
+                <p class="distro-text">OpenMediaVault is a simple out-of-the-box solution for a home server or Network Attached Storage device that allows for ease management without deeper knowledge.</p>
             </a>
         </div>
         <!-- Randomize list -->
         <script type="text/javascript">
         // For those who may scream "This is biased! Why is [X] first?!"
         var list = document.getElementById('server-list');
-        for (var i = list.children.length; i >= 0; i--) {
-            list.appendChild(list.children[Math.random() * i | 0]);
-        }
-        </script>
-    </section>
-</div>
-
-<!-- bsd Section -->
-<div class="row last" id='bsd'>
-    <section class="distro-section">
-        <h1>The BSD Operating Systems</h1>
-        <h3>Free and open source BSD (Berkeley Software Distribution) operating systems are not Linux but they deserve an honorable mention.</h3>
-        <div id="bsd-list">
-            <a href="https://freebsd.org" target="_blank" class="distro" title="Visit project homepage for more information">
-                <img class="logo" src="/img/logos/freebsd.png" alt="" title="FreeBSD">
-                <h1 class="name">FreeBSD</h1>
-                <p class="difficulty bsd">BSD</p>
-                <p class="distro-text">FreeBSD is an advanced computer operating system used to power modern servers, desktops and embedded platforms. </p>
-            </a>
-        </div>
-        <!-- Randomize list -->
-        <script type="text/javascript">
-        // For those who may scream "This is biased! Why is [X] first?!"
-        var list = document.getElementById('bsd-list');
         for (var i = list.children.length; i >= 0; i--) {
             list.appendChild(list.children[Math.random() * i | 0]);
         }

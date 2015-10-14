@@ -198,7 +198,7 @@
             list.appendChild(list.children[Math.random() * i | 0]);
         }
         </script>
-        <!-- <h3>Curious what the some of the other thousands are? Here are some <a href="/more">more</a>.</h3> -->
+        <h3>Still curious? Check out <a href="/more">more</a> of the many distributions available.</h3>
     </section>
 </div>
 

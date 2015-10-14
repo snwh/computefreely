@@ -7,7 +7,7 @@
 <!-- Header -->
 <header>
     <div class="header-items">
-        <a href="/" class="header-item header-link left" title="Home">Home</a>
+        <a href="/" class="header-item header-link left" title="back"><i class="fa fa-angle-left"></i>Back</a>
     </div>
 </header>
 
