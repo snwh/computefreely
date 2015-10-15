@@ -146,6 +146,7 @@
                 <p class="difficulty hard">Advanced</p>
                 <p class="distro-text">Arch Linux is lightweight &amp; very customizable, however its installation process is definitely for an experienced user.</p>
                 <p class="distro-text">Arch's continuous update model can be taxing without the knowledge to fix any possible problems.</p>
+                <p class="distro-text">Arch Linux is also available for server use.</p>
             </a>
             <a href="https://debian.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-debian.svg" alt="" title="Debian">
