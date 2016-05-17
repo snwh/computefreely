@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
-    $page['name'] = 'More';
-    $page['title'] = 'More – Compute Freely';
+    $page['name'] = 'More Options';
+    $page['title'] = 'More Options – Compute Freely';
     include $template['header'];
 ?>
 
@@ -19,9 +19,15 @@
 <!-- More Section -->
 <div class="row first" id='more'>
     <section class="distro-section">
-        <h1>More distros!</h1>
-        <h3>The possibilities and options are virtually endless in the free and open source operating ecosystem, these are a few more.</h3>
+        <h1>More options!</h1>
+        <h3>The possibilities are virtually endless in the free and open source operating ecosystem, these are a few more.</h3>
         <div id="more-list">
+           <a href="https://www.gentoo.org/" target="_blank" class="distro" title="Visit project homepage for more information">
+               <img class="logo" src="/img/logos/distro-gentoo.svg" alt="" title="Gentoo">
+               <h1 class="name">Gentoo</h1>
+               <p class="difficulty hard">Advanced</p>
+               <p class="distro-text">Gentoo is a free operating system based on either Linux or FreeBSD that has extreme configurability, performance and a top-notch user and developer community.</p>
+           </a>
             <a href="http://mageia.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-mageia.svg" alt="" title="Mageia">
                 <h1 class="name">Mageia</h1>

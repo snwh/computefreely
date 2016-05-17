@@ -104,7 +104,7 @@
                 <img class="alternative" src="/img/logos/logo-ardour.png" alt="" title="Ardour">
             </div>
             <h2>Open your Creativity</h2>
-            <p>On other platforms, the creative field is dominated by proprietary programs, but there are several capable open source alternatives. Together <a href="http://gimp.org/" target="_blank">the GIMP</a>, <a href="http://inkscape.org/" target="_blank">Inkscape</a> &amp; <a href="http://krita.org/" target="_blank">Krita</a> make a great set graphics editing tools. <a href="http://blender.org/" target="_blank">Blender</a> is available for 3D animation and rendering. For digital audio, there's <a href="http://ardour.org/" target="_blank">Ardour</a>.</p>
+            <p>On other platforms, the creative field is dominated by proprietary programs, but there are several capable open source alternatives. Together <a href="http://gimp.org/" target="_blank">the GIMP</a>, <a href="http://inkscape.org/" target="_blank">Inkscape</a> &amp; <a href="http://krita.org/" target="_blank">Krita</a> make a great set of graphics editing tools. <a href="http://blender.org/" target="_blank">Blender</a> is available for 3D animation and rendering. For digital audio, there's <a href="http://ardour.org/" target="_blank">Ardour</a>.</p>
         </div>
         <div class="switch">
             <div class="alternatives">
@@ -198,7 +198,7 @@
             list.appendChild(list.children[Math.random() * i | 0]);
         }
         </script>
-        <h3>Still curious? Check out <a href="/more">more</a> of the many distributions available.</h3>
+        <h3>Still curious? Check out <a href="/more">more</a> of the many options available.</h3>
     </section>
 </div>
 
