@@ -72,6 +72,8 @@
                 <h4>Epiphany</h4>
             </a>
         </div>
+        <h2>Encryption</h2>
+        <p>This site is secured with certificates from <a href="https://letsencrypt.org/">Let's Encrypt</a> so all communication with this site is fully encrypted.</p>
     </section>
 </div>
 

@@ -67,11 +67,11 @@ if (!isset($page['name'])) {
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CSlabo+27px:400%7COswald' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CSlabo+27px:400%7COswald%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     
     <!-- Scripts -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/js/popover.js"></script>
     <script type="text/javascript" src="/js/smooth-scrolling.js"></script>
 

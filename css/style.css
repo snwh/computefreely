@@ -1,26 +1,11 @@
 /*
 DESCRIPTION:Custom stylesheet for computefreely.org.
 AUTHOR:Sam Hewitt
-AUTHOR URI:http://snwh.org/
+AUTHOR URI:http://samuelhewitt.comZ/
 */
 
 /*--------BEGINNING OF STYLESHEET--------*/
 
-/*----- Imports -----*/
-
-/*----- Local Fonts -----*/
-
-@font-face {
-    font-family:"Ostrich Sans";
-    src:local("Ostrich Sans"), local("Ostrich Sans Regular"), local(OstrichSansRegular), url(/fonts/OstrichSansRegular.ttf);
-    font-weight:300;
-}
-
-@font-face {
-    font-family:"Ostrich Sans Bold";
-    src:local("Ostrich Sans Bold") local(OstrichSansBold), url(/fonts/OstrichSansBold.ttf);
-    font-weight:600;
-}
 
 /*----- Font Awesome additions -----*/
 
