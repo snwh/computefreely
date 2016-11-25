@@ -28,7 +28,7 @@
                <p class="difficulty hard">Advanced</p>
                <p class="distro-text">Gentoo is a free operating system based on either Linux or FreeBSD that has extreme configurability, performance and a top-notch user and developer community.</p>
            </a>
-            <a href="http://mageia.org/" target="_blank" class="distro" title="Visit project homepage for more information">
+            <a href="https://www.mageia.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-mageia.svg" alt="" title="Mageia">
                 <h1 class="name">Mageia</h1>
                 <p class="difficulty easy">Beginner</p>
@@ -85,7 +85,7 @@
                 <p class="distro-text">Kubuntu is a spin of Ubuntu that uses the Plasma desktop environment as default.</p>
                 <p class="distro-text">Plasma Desktop offers a beautiful looking desktop that takes complete advantage of modern computing technology.</p>
             </a>
-            <a href="http://xubuntu.org/" target="_blank" class="distro" title="Visit project homepage for more information">
+            <a href="https://xubuntu.org/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-xubuntu.svg" alt="" title="Xubuntu">
                 <h1 class="name">Xubuntu</h1>
                 <p class="difficulty ubuntu">Ubuntu-Based</p>
