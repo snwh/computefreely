@@ -17,7 +17,7 @@ Compute Freely is a website that's meant to be a friendly place to start for the
 
 For a simple local development environment, you will need:
 
-* [A supported version of PHP](http://php.net/supported-versions.php)
+* [A supported version of PHP](https://secure.php.net/supported-versions.php)
 
 Then inside the project directory, run `php -S localhost:8000 router.php` then, open http://localhost:8000/ to view the site.
 
@@ -26,7 +26,7 @@ Then inside the project directory, run `php -S localhost:8000 router.php` then, 
 
 This website is copyright © 2016 Sam Hewitt, with some rights reserved.
 
-Site content is licensed under the [Creative Commons Attribution-ShareAlike 4.0](http://creativecommons.org/licenses/by-sa/4.0/), unless otherwise noted. Any unique source code is free software, licensed under the terms of the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0), unless otherwise noted.
+Site content is licensed under the [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/), unless otherwise noted. Any unique source code is free software, licensed under the terms of the [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0), unless otherwise noted.
 
 Non-unique elements are licensed under the terms of their accompanying licenses, or stated within their source code.
 
