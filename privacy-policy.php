@@ -37,7 +37,7 @@
         <h1>Privacy Policy</h1>
         <p>This site (computefreely.org) makes use of cookies and services that use cookies.</p>
         <h2>Google Analytics</h2>
-        <p>This site uses <a href="http://www.google.com/analytics/">Google Analytics</a>; analytic cookies are used to collect information (in an anonymous form) about how visitors use this website, including the number of visitors to the site, where visitors have come to the site from and the pages they visited, which is used to help improve it.</p>
+        <p>This site uses <a href="https://www.google.com/analytics/">Google Analytics</a>; analytic cookies are used to collect information (in an anonymous form) about how visitors use this website, including the number of visitors to the site, where visitors have come to the site from and the pages they visited, which is used to help improve it.</p>
         <h2>Do Not Track</h2>
         <p>This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present.</p>
         <h2>Cookies</h2>
@@ -51,15 +51,15 @@
                 <img src="img/browsers/firefox_128x128.png" alt="Firefox" />
                 <h4>Firefox</h4>
             </a>
-            <a target="_blank" href="http://windows.microsoft.com/en-gb/internet-explorer/delete-manage-cookies" class="browsers">
+            <a target="_blank" href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies" class="browsers">
                 <img src="img/browsers/internet-explorer_128x128.png" alt="Internet Explorer" />
                 <h4>IE</h4>
             </a>
-            <a target="_blank" href="http://help.opera.com/Windows/12.10/en/cookies.html" class="browsers">
+            <a target="_blank" href="https://www.opera.com/blogs/news/2015/08/how-to-manage-cookies-in-opera/" class="browsers">
                 <img src="img/browsers/opera_128x128.png" alt="Opera" />
                 <h4>Opera</h4>
             </a>
-            <a target="_blank" href="http://support.apple.com/kb/PH17191" class="browsers">
+            <a target="_blank" href="https://support.apple.com/kb/PH17191" class="browsers">
                 <img src="img/browsers/safari_128x128.png" alt="Safari" />
                 <h4>Safari</h4>
             </a>

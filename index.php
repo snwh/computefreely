@@ -104,7 +104,7 @@
                 <img class="alternative" src="/img/logos/logo-ardour.png" alt="" title="Ardour">
             </div>
             <h2>Open your Creativity</h2>
-            <p>On other platforms, the creative field is dominated by proprietary programs, but there are several capable open source alternatives. Together <a href="http://gimp.org/" target="_blank">the GIMP</a>, <a href="http://inkscape.org/" target="_blank">Inkscape</a> &amp; <a href="http://krita.org/" target="_blank">Krita</a> make a great set of graphics editing tools. <a href="http://blender.org/" target="_blank">Blender</a> is available for 3D animation and rendering. For digital audio, there's <a href="http://ardour.org/" target="_blank">Ardour</a>.</p>
+            <p>On other platforms, the creative field is dominated by proprietary programs, but there are several capable open source alternatives. Together <a href="https://www.gimp.org/" target="_blank">the GIMP</a>, <a href="https://inkscape.org/" target="_blank">Inkscape</a> &amp; <a href="https://krita.org/" target="_blank">Krita</a> make a great set of graphics editing tools. <a href="https://www.blender.org/" target="_blank">Blender</a> is available for 3D animation and rendering. For digital audio, there's <a href="https://ardour.org/" target="_blank">Ardour</a>.</p>
         </div>
         <div class="switch">
             <div class="alternatives">
@@ -126,7 +126,7 @@
                 <img class="alternative" src="/img/logos/logo-ubuntu-software-center.png" alt="" title="Ubuntu Software Center">
             </div>
             <h2>Game On</h2>
-            <p>Gaming on Linux has never been more possible. The number of Linux games available are rapidly growing on platforms like <a href="http://store.steampowered.com/search/?term=&os=linux" target="_blank">Steam</a> and <a href="http://www.gog.com/games/linux" target="_blank">GOG</a>. Plus many indie games support Linux through Ubuntu's Software Center.</p>
+            <p>Gaming on Linux has never been more possible. The number of Linux games available are rapidly growing on platforms like <a href="https://store.steampowered.com/search/?term=&os=linux" target="_blank">Steam</a> and <a href="https://www.gog.com/games/linux" target="_blank">GOG</a>. Plus many indie games support Linux through Ubuntu's Software Center.</p>
         </div>
     </section>
 </div>
@@ -168,7 +168,7 @@
                 <p class="distro-text">Fedora has reputation for being cutting-edge and taking an innovative role with open source technologies.</p>
                 <p class="distro-text">However, being bleeding edge means each Fedora release is not supported for very long.</p>
             </a>
-            <a href="http://www.linuxmint.com/" target="_blank" class="distro" title="Visit project homepage for more information">
+            <a href="https://www.linuxmint.com/" target="_blank" class="distro" title="Visit project homepage for more information">
                 <img class="logo" src="/img/logos/distro-linux-mint.svg" alt="" title="Linux Mint">
                 <h1 class="name">Linux Mint</h1>
                 <p class="difficulty easy">Beginner</p>
@@ -210,11 +210,11 @@
     <section>
         <blockquote>I used your website to introduce my friend to Linux. I will be helping to load either Linux Mint or elementary OS tomorrow. Thanks for this great website, you made Linux a lot cooler!﻿</blockquote>
         <hr class="short">
-        <a class="share tweet" href="http://www.twitter.com/home?status=Compute%20Freely%20is%20a%20friendly%20place%20to%20start%20if%20you're%20curious%20about%20switching%20to%20Linux.%20http://computefreely.org/" target="_blank"><span><i class="fa fa-twitter"></i>Tweet this Page</span></a>
-        <a class="share facebook" href="http://www.facebook.com/share.php?u=http://computefreely.org/" target="_blank">
+        <a class="share tweet" href="https://www.twitter.com/home?status=Compute%20Freely%20is%20a%20friendly%20place%20to%20start%20if%20you're%20curious%20about%20switching%20to%20Linux.%20https://computefreely.org/" target="_blank"><span><i class="fa fa-twitter"></i>Tweet this Page</span></a>
+        <a class="share facebook" href="https://www.facebook.com/share.php?u=https://computefreely.org/" target="_blank">
             <span><i class="fa fa-facebook-square"></i>Share on Facebook</span>
         </a>
-        <a class="share googleplus" href="https://plus.google.com/share?url=http://computefreely.org/" target="_blank">
+        <a class="share googleplus" href="https://plus.google.com/share?url=https://computefreely.org/" target="_blank">
             <span><i class="fa fa-google-plus"></i>Share on Google+</span>
         </a>
     </section>
