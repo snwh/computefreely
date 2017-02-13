@@ -44,5 +44,14 @@
 }
 
 .bsd {
-	color: #C93817;
+    color: #C93817;
+}
+
+/* Security */
+#security {
+    background-color: #f2ecee;
+}
+
+.security {
+	color: #10b5aa;
 }

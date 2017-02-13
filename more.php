@@ -59,6 +59,13 @@
                 <p class="distro-text">FreeBSD is an advanced computer operating system used to power modern servers, desktops and embedded platforms. </p>
                 <p class="distro-text">While it's not a Linux-based operating system it nevertheless deserves an honorable mention.</p>
             </a>
+            <a href="https://solus-project.com/" target="_blank" class="distro" title="Visit project homepage for more information">
+                <img class="logo" src="/img/logos/distro-solus.svg" alt="" title="Solus">
+                <h1 class="name">Solus</h1>
+                <p class="difficulty medium">Intermediate</p>
+                <p class="distro-text">Solus an modern operating system designed and obsessively optimized to give a cohesive experiment.</p>
+                <p class="distro-text">It comes with its own in-house developed desktop environment.</p>
+            </a>
         </div>
         </div>
         <!-- Randomize list -->
@@ -160,11 +167,49 @@
                 <p class="difficulty server">Server</p>
                 <p class="distro-text">OpenMediaVault is a simple out-of-the-box solution for a home server or Network Attached Storage device that allows for ease management without deeper knowledge.</p>
             </a>
+            <a href="https://www.centos.org/" target="_blank" class="distro" title="Visit project homepage for more information">
+                <img class="logo" src="/img/logos/distro-centos.svg" alt="" title="CentOS">
+                <h1 class="name">CentOS</h1>
+                <p class="difficulty server">Server</p>
+                <p class="distro-text">CentOS is a free of cost, enterprise-class Linux distribution. Created as an alternative to Red Hat Enterprise Linux</p>
+            </a>
         </div>
         <!-- Randomize list -->
         <script type="text/javascript">
         // For those who may scream "This is biased! Why is [X] first?!"
         var list = document.getElementById('server-list');
+        for (var i = list.children.length; i >= 0; i--) {
+            list.appendChild(list.children[Math.random() * i | 0]);
+        }
+        </script>
+    </section>
+</div>
+
+<!-- Servers Section -->
+<div class="row" id='security'>
+    <section class="distro-section">
+        <h1>Secure &amp; Private</h1>
+        <h3>If you're looking for a secure and private operating systems, you can't go wrong either of these.</h3>
+        <div id="security-list">
+            <a href="https://tails.boum.org/" target="_blank" class="distro" title="Visit project homepage for more information">
+                <img class="logo" src="/img/logos/distro-tails.svg" alt="" title="Tails">
+                <h1 class="name">Tails</h1>
+                <p class="difficulty security">Secure</p>
+                <p class="distro-text">Tails is an operating system that forgets you.</p>
+                <p class="distro-text">It uses state-of-the-art cryptography to secure yout and leaves no trace of the computer it's installed on when you use the Internet.</p>
+            </a>
+            <a href="https://www.qubes-os.org/" target="_blank" class="distro" title="Visit project homepage for more information">
+                <img class="logo" src="/img/logos/distro-qubes.svg" alt="" title="Qubes">
+                <h1 class="name">Qubes</h1>
+                <p class="difficulty security">Secure</p>
+                <p class="distro-text">Qubes uses compartmentalization to keep you safe and secure.</p>
+                <p class="distro-text">All the things you do on a Qubes computer are kept separate from each other to defend your digital life from attacks.</p>
+            </a>
+        </div>
+        <!-- Randomize list -->
+        <script type="text/javascript">
+        // For those who may scream "This is biased! Why is [X] first?!"
+        var list = document.getElementById('security-list');
         for (var i = list.children.length; i >= 0; i--) {
             list.appendChild(list.children[Math.random() * i | 0]);
         }

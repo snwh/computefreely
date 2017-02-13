@@ -192,7 +192,7 @@
         </div>
         <!-- Randomize list -->
         <script type="text/javascript">
-        // For those who may scream "This is biased! Why is [X] first?!"
+        // For those who may scream "This is biased!"
         var list = document.getElementById('distro-list');
         for (var i = list.children.length; i >= 0; i--) {
             list.appendChild(list.children[Math.random() * i | 0]);
