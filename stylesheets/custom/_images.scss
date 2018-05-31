@@ -1,9 +1,18 @@
 // Custom image classes
 
-// icons on the homepage
-span.icon > i {
-	font-size:48px;
-	color:$brand_color;
+// icons on pages
+span.icon {
+	display:block;
+	width:100%;
+	text-align:center;
+	margin: 48px auto;
+	> i {
+		font-size:48px;
+		color:$brand_color;
+	}
+	&.large {
+		>i{font-size: 96px;}
+	}
 }
 
 
