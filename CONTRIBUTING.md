@@ -34,22 +34,22 @@ notes:
 
 The first half of the frontmatter contains publishing and categorization infomation.
 
- - `layout:` is the page layout for Jekyll. **Do not change this**
- - `title:` in this case will refer to the distribution name
- - `date:` is the date of publication (addition)
- - `logo:` is the file name of the logo that you provide (minus the extension)
- - `image:` is the filename of the screenshot you provide
- - `caption:` is an optional description of the screenshot
- - `tags:` are an array of tags for the post, these should be limited to things like the desktop environments it uses, it's primary purpose (e.g. server, desktop, enterprise), a one-word estimation of it's difficulty
+ - `layout` is the page layout for Jekyll. **Do not change this**
+ - `title` in this case will refer to the distribution name
+ - `date` is the date of publication (addition)
+ - `logo` is the file name of the logo that you provide (minus the extension)
+ - `image` is the filename of the screenshot you provide
+ - `caption` is an optional description of the screenshot
+ - `tags` are an array of tags for the post, these should be limited to things like the desktop environments it uses, it's primary purpose (e.g. server, desktop, enterprise), a one-word estimation of it's difficulty
 
 The `notes` section contains pertinent info about a distribution that show's up in the 'Notes' section on each post.
 
- - `homepage:` is the complete url of a distribution's homepage
- - `version:` is the current version at the time of publication
- - `based-on:` if the distribution is based on another you include that here
- - `desktops:` is a list of all default desktops arranged in an array, i.e. if a distribution provides multiple spins that are of different desktop environments you list those here
- - `install:` whether the installation is "graphical" or "command line" or "Live USB" **those are the only three**
- - `developers:` name the primary developer or developers of the distribution and optionally provide a url
+ - `homepage` is the complete url of a distribution's homepage
+ - `version` is the current version at the time of publication
+ - `based-on` if the distribution is based on another you include that here
+ - `desktops` is a list of all default desktops arranged in an array, i.e. if a distribution provides multiple spins that are of different desktop environments you list those here
+ - `install` whether the installation is "Graphical" or "Command Line" or "Live" **keep it to these**
+ - `developers` name the primary developer or developers of the distribution and optionally provide a url
 
 
 ### Including image assets
