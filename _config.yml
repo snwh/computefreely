@@ -29,6 +29,12 @@ icon: "/images/icon.png"
 favicon: "/images/favicon.png"
 color: "#0099ee"
 
+# Page
+sources:
+  url: https://github.com/snwh/computefreely/
+  issues_url: https://github.com/snwh/computefreely/issues
+  page_dir: https://github.com/snwh/computefreely/edit/master/_posts/
+
 # Author
 author:
   name: "Sam Hewitt"

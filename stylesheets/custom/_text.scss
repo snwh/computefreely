@@ -4,12 +4,15 @@
 .footnote {
 	color:lighten($fg_color, 30%);
 	display:block;
-	float:right;
 	font-family:$monospace;
 	font-size:$font_size * 0.8;
-	margin:8px auto;
-	text-align:right;
+	margin:24px auto;
 	width:100%;
+	* {
+		color: inherit;
+		font: inherit;
+	}
+	a {color:$link_color;}
 }
 
 // article title

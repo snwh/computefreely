@@ -247,11 +247,14 @@ pre {
 // small
 small {
 	font-size:$font_size - 2px;
+
+	* {font: inherit;}
 }
 
 // big
 big {
 	font-size:$font_size + 8px;
+	* {font: inherit;}
 }
 
 // blockquote

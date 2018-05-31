@@ -26,7 +26,7 @@ layout: minimal
 		{% if page.image %}
 			<!-- Screenshot -->
 			<img class="screenshot" src="/images/screenshots/{{ page.image }}" onclick="openModal();">
-			{% if page.caption%}<p class="footnote right">{{ page.caption }}</p>{% else %}{% endif %}
+			{% if page.caption%}<p class="footnote text-right">{{ page.caption }}</p>{% else %}{% endif %}
 			<div id="screenshotDialog" class="modal" onclick="closeModal()">
 				<span class="modal-close" onclick="closeModal()">&times;</span>
 				<div class="modal-content">
@@ -88,6 +88,8 @@ layout: minimal
 		{% else %}{% endif %}
 		<!-- Content -->
 		{{ content }}
+		<!-- Page Edit -->
+		<div class="footnote text-left"><i class="fas fa-exclamation-triangle"></i> Something incorrect or out of date? <a href="{{ site.sources.page_dir }}{{ page.date | date: '%Y-%m-%d' }}-{{ page.url | replace: '/',''}}.md">Edit this page</a>.</div>
 	</article>
 </div>
 
