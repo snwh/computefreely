@@ -1,0 +1,19 @@
+// print stylings
+@media print {
+
+	article {
+		font-size: 1em;
+		margin:0 auto;
+		padding: 1em;
+		background-color: transparent;
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+	}
+	
+	article img,
+	#tags,
+	#recent {
+		display: none;
+	}
+}

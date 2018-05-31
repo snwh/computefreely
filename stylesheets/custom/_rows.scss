@@ -1,0 +1,23 @@
+// Rows
+.row {
+	display:table;
+	position:relative;
+	margin:0 auto;
+	width:$row_width;
+	&.narrow {
+		width:$row_width - 128px;
+	}
+	&.wide {
+		width:$row_width + 200px;
+	}
+}
+
+@media only screen and (max-width:$row_width + 24px) {
+	.row {
+		width:90%;margin:0 5%;
+		&.wide,
+		&.narrow {
+			width:inherit;
+		}
+	}
+}

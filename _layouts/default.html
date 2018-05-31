@@ -1,0 +1,13 @@
+{% include header.html %}
+
+<!-- Header -->
+<header>
+	<div class="row">
+		<span class="title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</span>
+		{% if page.subtitle %}<span class="subtitle">{{ page.subtitle }}</span>{% else %}{% endif %}
+	</div>
+</header>
+
+{{ content }}
+
+{% include footer.html %}

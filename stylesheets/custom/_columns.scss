@@ -1,0 +1,49 @@
+// Columns 
+
+$column_margin: 12px;
+
+.col {
+	vertical-align:top;
+	display: inline-block;
+	margin: $column_margin;
+
+	// Half
+	&.half {
+		width: calc(50% - #{$column_margin}*2);
+	}
+
+	// Third
+	&.third {
+		width: calc(33% - #{$column_margin}*2);
+	}
+
+	// Third
+	&.two-thirds {
+		width: calc(66% - #{$column_margin}*2);
+	}
+
+	// Quarted
+	&.quarter {
+		float: left;
+		width: calc(25% - #{$column_margin}*2);
+	}
+}
+
+@media only screen and (max-width:1200px) {
+}	
+
+@media only screen and (max-width:720px) {
+	.col {
+		&.third,
+		&.half,
+		&.quarter,
+		&.two-thirds,
+		&.third {
+			display: block;
+			width: 100%;
+			float: none;
+			margin: 12px 0;
+			&.left,&.right {float:none;}
+		}
+	}
+}

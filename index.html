@@ -1,0 +1,75 @@
+---
+layout: minimal
+title: "Free your computer. Use Linux."
+---
+
+<!-- Header -->
+<header>
+	<div class="row">
+		<span class="title">{{ site.title }}</span>
+		<span class="subtitle">Free your computer. Use Linux.</span>
+	</div>
+</header>
+
+<!-- Nav -->
+<nav>
+	<div class="row">
+		<a href="/why-use-linux">Why Use Linux?</a>
+		<a href="/switching">Making the Switch</a>
+		<span class="search right"><i class="fas fa-search"></i><input type="search" id="search-input" placeholder="Find by desktop, type, or name"></span>
+	</div>
+</nav>
+
+<!-- Row -->
+<div class="row">
+	<!-- results section -->
+	<section id="results-container" class="cards text-center">
+		<!-- search results appear here -->
+	</section>
+</div>
+
+<!-- Row -->
+<div class="row narrow">
+	<section class="text-center">
+		<h3>Freedom of Choice</h3>
+		<p>There is a virtually endless number of Linux operating systems to try, each often with it's own unique purpose and vision. The following list is a curated selection of some of the most popular.</p>
+	</section>
+</div>
+
+<!-- Row -->
+<div class="row">
+	<section class="cards">
+		<!-- distro list -->
+		<div id="distro-list">
+		{% for post in site.posts %}
+			<a href="{{ post.url }}" class="card">
+				<img src="/images/logos/{{ post.logo }}.svg">
+				<span>{{ post.title }}</span>
+				<small>Read more »</small>
+			</a>
+		{% endfor %}
+		</div>
+		<p class="footnote right">This list is randomly ordered upon each viewing.</p>
+		<!-- Randomize list -->
+		<script type="text/javascript">
+		// For those who may say "This is biased!"
+		var list = document.getElementById('distro-list');
+		for (var i = list.children.length; i >= 0; i--) {list.appendChild(list.children[Math.random() * i | 0]);}
+		</script>
+	</section>
+</div>
+
+<!-- Javascript -->
+<script type="text/javascript">
+	// search function
+	window.simpleJekyllSearch = new SimpleJekyllSearch({
+		searchInput: document.getElementById('search-input'),
+		resultsContainer: document.getElementById('results-container'),
+		json: '/search.json',
+		searchResultTemplate: '<a class="card small" href="{url}"><img src="images/logos/{logo}.svg"><span>{title}</span><small>Read more »</small></a>',
+		noResultsText: '<div class="infobar">Sorry, no results for that search.</div>',
+		limit: 10,
+		fuzzy: false,
+		exclude: ['Welcome']
+	})
+</script>

@@ -1,0 +1,576 @@
+﻿/*
+DESCRIPTION:Stylesheet for snwh.org.
+AUTHOR:Sam Hewitt
+AUTHOR URI:http://samuelhewitt.com/
+*/
+
+// imports
+@import 'common';
+@import 'mixins';
+
+// reset
+%reset {
+	background-color:transparent;
+	border:none;
+	border-radius: 0;
+	box-shadow: none;
+	padding:0;
+	margin:0;
+	outline: none;
+	width: initial;
+	height: initial;
+}
+
+// text
+%text {
+	color:$fg_color;
+	font-family:$font_family;
+	font-kerning:initial;
+	font-size: $font_size;
+	font-weight: $font_weight;
+	text-rendering:optimizelegibility;
+}
+
+%placeholder-text {
+	color: transparentize($fg_color, 0.5);
+	vertical-align:baseline;
+}
+
+// images
+%images {
+	image-rendering: optimizequality;
+}
+
+// text boxes
+%text-boxes {
+	@extend %text;
+	background-color:$base_color;
+	border-radius: 4px;
+	border:1px solid $border_color;
+	box-shadow: none;
+	line-height:$font_size + 4px;
+	outline: none;
+	padding: 4px 6px;
+	box-shadow:inset 0 0.5px 1px 0 rgba(0,0,0,0.05);
+
+	&:focus {
+		color:$fg_color;
+		border:1px solid darken($border_color, 5%);
+		box-shadow:inset 0 1px 2px 0 rgba(0,0,0,0.2);
+	}
+
+	// browser overrides
+	&::-webkit-input-placeholder {@extend %placeholder-text;} /* Webkit */
+	&:-moz-placeholder {@extend %placeholder-text;} /* Firefox <= 18 */
+	&::-moz-placeholder {@extend %placeholder-text;} /* Firefox >= 19 */
+	&:-ms-input-placeholder {@extend %placeholder-text;} /* Internet Explorer */
+}
+
+// html 
+html {
+	height: 100%;
+	margin:0;
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	@if $legacy_browser_support {
+		*font-size: 100%;
+	}
+}
+
+// body
+body {
+	@extend %text;
+	margin:0;
+	background-color:$bg_color;
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+// paragraph
+p {
+	@extend %text;
+	display:block;
+	line-height:$font_size + 10px;
+}
+
+// div
+div {
+	@extend %text;
+	line-height:$font_size + 6px;
+}
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+	@extend %text;
+	font-family: $monospace;
+	color: lighten($fg_color, 20%);
+	> a {
+		font: inherit;
+	}
+}
+
+h1 {
+	font-size:$font_size * 3;
+	line-height:$font_size * 3 + 12px;
+	font-weight:200;
+}
+
+h2 {
+	font-size:$font_size * 2.5;
+	line-height:$font_size * 2.5 + 12px;
+	font-weight:300;
+}
+
+h3 {
+	font-size:$font_size * 2;
+	line-height:$font_size * 2 + 12px;
+	font-weight:300;
+}
+
+h4 {
+	font-size:$font_size + 8px;
+	line-height:$font_size + 20px;
+	font-weight:400;
+}
+
+h5 {
+	font-size:$font_size + 4px;
+	line-height:$font_size + 16px;
+	font-weight:500;
+}
+
+h6 {
+	font-size:$font_size + 2px;
+	line-height:$font_size + 8px;
+	font-weight:500;
+}
+
+// bold
+b {
+	@extend %text;
+	font-size: $font_size;
+	font-weight: 700;
+}
+
+// strong
+strong {
+	@extend %text;
+	font-style: italic;
+	font-weight: 700;
+}
+
+// highlight
+mark {
+	@extend %text;
+	color: $base_color;
+	background-color: transparentize($link_color, 0.5);
+}
+
+// italic
+i {
+	@extend %text;
+	font-style: italic;
+}
+
+// abbreviation
+abbr[title] {
+	border-bottom: 0 dotted;
+}
+
+// sub- and superscript
+sub,sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -8px;
+	> sup {top: -4px;}
+}
+sub {bottom: -4px;}
+
+// cite
+cite {font-style: italic;}
+
+// definition
+dfn {font-style: italic;}
+
+// monospace text
+%monospace{
+	@extend %text;
+	font-family: $monospace;
+	font-size: $font_size - 1px;
+	line-height: $font_size - 1px;
+	font-weight: 400;
+}
+
+// code
+code {
+	@extend %monospace;
+	background-color: $base_color;
+	padding: 0 2px;
+	border: 1px solid $border_color;
+	border-radius: 4px;
+}
+
+// preformatted text
+pre {
+	@extend %text-boxes;
+	font-family: $monospace;
+	padding: 8px;
+	margin: 8px 0;
+	overflow: auto;
+	overflow-x: hidden;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	word-break: break-all;
+
+	// hide webkit scrollbar 
+	&::-webkit-scrollbar {display:none;width: 0 !important}
+	> code {
+		padding: 0;
+		border: none;
+	}
+}
+
+
+// small
+small {
+	font-size:$font_size - 2px;
+}
+
+// big
+big {
+	font-size:$font_size + 8px;
+}
+
+// blockquote
+blockquote {
+	width: 90%;
+	margin: 0 5%;
+
+	> p {
+		font-style: italic;
+		color: lighten($fg_color, 20%);
+		font-size: $font_size + 3px;
+		line-height: $font_size + 8px;
+
+		&:before {
+			content: '“';
+			opacity: 0.4;
+			padding-right:4px;
+		}
+		&:after {
+			content: '”';
+			opacity: 0.4;
+			padding-left:4px;
+		}
+	}
+}
+
+// links
+a {
+	@extend %text;
+	background-color: transparent;
+	cursor:pointer;
+	color:$link_color;
+	outline:none;
+	text-decoration:underline;
+
+	&:active, &:hover, &:focus {
+		outline: none;
+	};
+
+	&:focus {
+		color:$link_focus_color;
+	}
+
+	&:hover,
+	&:active {
+		text-decoration:none;
+	}
+
+	&:visited {
+		opacity:0.8;
+	}
+}
+
+// caption
+caption {
+	margin: 4px 0;
+}
+
+// lists
+dl, ul, ol {
+	padding:0;
+	color:inherit;
+	margin:12px 24px;
+
+	> li {
+		padding: 4px 0;
+		padding-left:4px;
+	}
+}
+
+// unnumbered list
+ul {
+	// replace default bullet point
+	> li {
+	}
+}
+
+// numbered list
+ol {
+	list-style: none;
+
+	// replace default numbers
+	> li {
+		counter-increment: li;
+
+		&::before {
+			color: lighten($fg_color, 20%);
+			content: counter(li)".";
+			display: inline-block;
+			font-size: $font_size;
+			line-height: 0;
+			margin-left: -16px;
+			position: relative;
+			text-align: left;
+			vertical-align: baseline;
+			width: 16px;
+		}
+	}
+}
+
+// definition list
+dl {
+	// term
+	dt {
+		font-weight: 500;
+	}
+	// definition
+	dd {
+		font-style: italic;
+		margin: 2px 0;
+		margin-left: 32px;
+
+		counter-increment: li;
+
+		&::before {
+			color: lighten($fg_color, 20%);
+			content: counter(li)".";
+			display: inline-block;
+			font-size: $font_size;
+			line-height: 0;
+			margin-left: -14px;
+			position: relative;
+			text-align: left;
+			vertical-align: baseline;
+			width: 14px;
+		}
+	}
+}
+
+// horizontal rule (line)
+hr {
+	box-sizing: content-box;
+	display:block;
+	border:none;
+	width:100%;
+	height:1px;
+	margin:0 auto;
+	margin-top:-1px;
+	border-bottom:1px solid $border_color;
+}
+
+// images
+img {
+	@extend %images;
+	vertical-align:top;
+	border:none;
+	display:block;
+	max-width:100%;
+}
+
+// svg
+svg:not(:root) {overflow: hidden;}
+
+// video
+video {
+	width:100%;
+	max-width:800px;
+	margin:16px 12px;
+	vertical-align:middle;
+}
+
+// forms
+form {
+	background-color:$base_color;
+	border:1px solid $border_color;
+	display: block;
+	font-size:$font_size;
+	margin: 0;
+	outline: none;
+	padding: 12px;
+	width: calc(100% - 24px); // minus the horizontal padding
+}
+
+// label
+label {
+	@extend %text;
+	vertical-align: baseline;
+	display: block;
+	margin: 4px 0;
+}
+
+// textarea
+textarea {
+	@extend %text-boxes;
+	padding: 2px 4px;
+	margin: 8px 0;
+	resize:vertical;
+	display:block;
+	width: calc(100% - 8px); // minus the horizontal padding
+	max-width: 480px;
+	min-height: 96px;
+}
+
+// fieldset
+fieldset {
+	@extend %text-boxes;
+	background-color: transparent;
+	margin: 1em auto;
+}
+
+// legend
+legend {
+	margin: 0 2px;
+	font-weight: 700;
+	color:lighten($fg_color, 10%);
+	font-size:$font_size - 2px;
+	text-transform: uppercase;
+}
+
+// input
+input {
+	font: inherit;
+	line-height: normal;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+	// display: block;
+}
+
+// text input
+input[type=text] {
+	@extend %text-boxes;
+	margin: 8px 0;
+}
+
+// numeric input
+input[type=number] {
+	@extend %text-boxes;
+	padding-left:5px;
+
+	// webkit
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
+		height: auto;
+	}
+}
+
+// search input
+input[type="search"] {
+	@extend %text-boxes;
+	box-sizing: content-box;
+
+	// webkit overrides
+	-webkit-appearance: textfield;
+}
+
+// checkbox & radio input
+input[type=checkbox],
+input[type=radio] {
+	// display: block;
+	margin: 4px;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+// select
+select {
+	display: inline-block;
+	box-shadow: none;
+	border:1px solid $border_color;
+	background-color:$base_color;
+	font-size:$font_size;
+	outline: none;
+	margin: 12px 0;
+
+	option {
+		padding: 4px 6px;
+	}
+}
+
+// section
+section {
+	margin:48px 0;
+}
+
+// article
+article {
+	margin:48px 0;
+}
+
+// elements
+@import 'standard/buttons';
+@import 'standard/footer';
+@import 'standard/header';
+@import 'standard/nav';
+@import 'standard/tables';
+
+// custom elements
+@import 'custom/alignments';
+@import 'custom/cards';
+@import 'custom/columns';
+@import 'custom/hidden';
+@import 'custom/images';
+@import 'custom/infobars';
+@import 'custom/modal';
+@import 'custom/notes';
+@import 'custom/print';
+@import 'custom/rows';
+@import 'custom/selections';
+@import 'custom/separator';
+@import 'custom/tags';
+@import 'custom/text';
+
+
+// media queries
+@media only screen and (max-width:848px) {
+
+	//article
+	article{>img{width:100%;}}
+}
+
+// small
+@media only screen and (max-width:480px) {
+	// textarea
+	input,
+	input[type=text],
+	textarea {width: calc(100% - 12px);}
+
+	form {
+		padding: 12px;
+		width: calc(100% - 24px); // minus the horizontal padding
+	}
+}
+
+// end of stylesheet

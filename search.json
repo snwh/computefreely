@@ -1,0 +1,14 @@
+---
+layout: null
+---
+[
+	{% for post in site.posts reversed %}
+	{
+		"title" : "{{ post.title | escape }}",
+		"tags" : "{{ post.tags | join: ', ' }}",
+		"url" : "{{ post.url }}",
+		"logo" : "{{ post.logo }}",
+		"based-on" : "{{ post.notes.based-on }}",
+		"install" : "{{ post.notes.install }}"
+	}{% unless forloop.last %},{% endunless %}{% endfor %}
+]

@@ -1,0 +1,16 @@
+
+// selections
+::selection { 
+	background-color:$selection_bg_color;
+	color:$selection_fg_color;
+}
+
+::-moz-selection { 
+	background-color:$selection_bg_color;
+	color:$selection_fg_color;
+}
+
+::-webkit-selection { 
+	background-color:$selection_bg_color;
+	color:$selection_fg_color;
+}

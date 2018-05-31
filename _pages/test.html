@@ -1,0 +1,364 @@
+---
+layout: default
+title: "Stylesheet Testing"
+permalink: "/test/"
+---
+
+<!-- Nav -->
+<nav>
+	<div class="row {{ page.row }}">
+		<a href="/">Home</a>
+		<span class="chevron">&rsaquo;</span>
+		<span class="title">{{ page.title }}</span>
+	</div>
+</nav>
+
+<!-- Row -->
+<div class="row">
+<!-- welcome -->
+<section>
+	<h3>Welcome</h3>
+	<p>This page was written for testing custom style sheets. It can also be used for things like just checking how your browser displays various HTML tags by default and for testing conversions from HTML format to other formats, since some tags can go wrong.</p>
+</section>
+
+<!-- basic text -->
+<section>
+	<h3>Basic block elements</h3>
+	<!-- paragraph -->
+	<p>This is a normal paragraph (<code>&lt;p&gt;</code> tag).</p>
+	<!-- div -->
+	<div>This line is a plain <code>&lt;div&gt;</code> tag which may be used instead of a <code>&lt;p&gt;</code> tag for various reasons.</div> 
+	<!-- headings -->
+	<p>The following are all headings</p>
+	<h1>This is a 1st level heading</h1>
+	<h2>This is a 2nd level heading</h2>
+	<h3>This is a 3rd level heading</h3>
+	<h4>This is a 4th level heading</h4>
+	<h5>This is a 5th level heading</h5>
+	<h6>This is a 6th level heading</h6>
+	<!-- blockquote -->
+	<p>The following is a block quotation containing a single paragraph (<code>&lt;p&gt;</code>) in a <code>&lt;blockquote&gt;</code>.</p>
+	<blockquote><p>Well, not quite, since this is not <em>really</em> quoted text, but I hope you understand the point. After all, this page does not use HTML tag very normally anyway.</p></blockquote>
+	<!-- preformatted text -->
+	<p>The following is preformatted text in a <code>&lt;pre&gt;</code> tag. Often used for displaying blocks of code.</p>
+	<pre>class Parrot:
+  def fly(self):
+    print("Parrot flying")
+
+class Airplane:
+  def fly(self):
+    print("Airplane flying")
+
+class Whale:
+  def swim(self):
+    print("Whale swimming")</pre>
+</section>
+
+<!-- lists -->
+<section>
+	<!-- text -->
+	<h3>Text-related tags</h3>
+	<p>These are examples of text wrapped int commonly used tags supported by HTML</p>
+	<ul>
+		<!-- plain text -->
+		<li>Some plain text just for comparison.</li>
+		<!-- bold text -->
+		<li>Some <b>bolded text</b> using the <code>&lt;b&gt;</code> tag.</li>
+		<!-- italics -->
+		<li>Some <i>italicized text</i> using the <code>&lt;i&gt;</code> tag.</li>
+		<!-- underlined -->
+		<li>Some <u>underlined text</u> using the <code>&lt;u&gt;</code> tag.</li>
+		<!-- inserted -->
+		<li>Some <ins>inserted text</ins> using the <code>&lt;ins&gt;</code> tag.</li>
+		<!-- strikethrough -->
+		<li>Some <strike>struckthrough text</strike> using the <code>&lt;strike&gt;</code> tag (<code>&lt;s&gt;</code> is a valid  but nonstandard equivalent tag).</li>
+		<!-- deleted/strikethrough -->
+		<li>Some <del>deleted</del> text using the <code>&lt;del&gt;</code>, which is similar to strikethrough tag.</li>
+		<!-- quotation -->
+		<li>Some <q>quoted text</q> using the <code>&lt;q&gt;</code> tag.</li>
+		<li>Some <q>quoted <q>quoted text</q></q> using nested <code>&lt;q&gt;</code> tags.</li>
+		<!-- emphasis -->
+		<li>Some <em>emphasized text</em> using the <code>&lt;em&gt;</code> tag.</li>
+		<!-- strong -->
+		<li>Some <strong>heavily emphasized text</strong> using the <code>&lt;strong&gt;</code> tag.</li>
+		<!-- highlighted -->
+		<li>Some <mark>highlighted text</mark> using the <code>&lt;mark&gt;</code> tag.</li>
+		<!-- monospace -->
+		<li>Some <code>fixed-width text</code> using the <code>&lt;code&gt;</code> tag.</li>
+		<!-- small -->
+		<li>Some <small>small text</small> using the <code>&lt;small&gt;</code> tag.</li>
+		<!-- big text -->
+		<li>Some <big>big text</big> using the <code>&lt;big&gt;</code> tag.</li>
+	</ul>
+
+	<p>These are examples of text adjusted using the <code>&lt;font&gt;</code> tag.</p>
+	<ul>
+		<!-- font -->
+		<li>Some <font size="5">large text</font> using <code>&lt;font size=5&gt;</code>.</li>
+		<li>Some <font face="Georgia">in Georgia</font> using <code>&lt;font face=Georgia&gt;</code>.</li>
+		<li>Some <font color="blue">blue text</font> using <code>&lt;font color=blue&gt;</code>.</li>
+	</ul>
+
+	<p>These are examples of some other less commonly used text tags</p>
+	<ul>
+		<!-- abbreviation -->
+		<li><abbr title="Cascading Style Sheets">CSS</abbr> is wrapped in the <code>&lt;abbr&gt;</code> tag.</li>
+		<!-- cite text -->
+		<li><cite>Title of Work</cite> is a cited work using the <code>&lt;cite&gt;</code> tag.</li>
+	</ul>
+
+	<!-- sub & superscript -->
+	<p>The following are examples of the subscript <code>&lt;sub&gt;</code> and superscript <code>&lt;sup&gt;</code> tags. Which you'll quite often find in mathematical notation:</p>
+	<ul>
+		<li>x<sub>1</sub></li>
+		<li>e<sup>x</sup></li>
+		<li>sin<sup>2</sup><i>x</i></li>
+		<li>e<sup>x<sup>2</sup></sup></li>
+		<li>f(x)<sup>g(x)<sup>a+b+c</sup></sup></li>
+	</ul>
+
+	<h3>Links</h3>
+	<p>This is a list of link tags</p>
+	<ul>
+		<li><a href="http://example.com/">example.com</a></li>
+		<li><a href="http://www.unicode.org/versions/Unicode4.0.0/ch06.pdf" title="Writing Systems and Punctuation" type="application/pdf" target="_blank">Unicode Standard, Chapter&nbsp;6</a></li>
+	</ul>
+
+	<p>This is a text paragraph that contains an inline link. Generally, inline links are problematic from a <a href="https://www.nngroup.com/articles/guidelines-for-visualizing-links/" target="_blank">usability</a> perspective, but they have use as less relevant links.</p>
+
+</section>
+
+<!-- lists -->
+<section>
+	<h3>Lists</h3>
+
+	<!-- unnumbered list -->
+	<p>The following is an un-numbered list, i.e. the <code>&lt;ul&gt;</code> tag.</p>
+
+	<ul>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+		<li>Four. You get it.</li>
+	</ul>
+
+	<!-- numbered list -->
+	<p>The following is a numbered list, i.e. the <code>&lt;ol&gt;</code> tag.</p>
+
+	<ol>
+		<li>One.</li>
+		<li>Two.</li>
+		<li>Three.</li>
+		<li>Four. Etc.</li>
+	</ol>
+
+	<!-- definition list -->
+	<p>The following is a definition list, i.e. the <code>&lt;dl&gt;</code> tag.</p>
+
+	<dl>
+		<dt>term</dt>
+		<dd>a word or phrase used to describe a thing or to express a concept, especially in a particular kind of language or branch of study.</dd>
+		<dd>a fixed or limited period for which something, e.g., office, imprisonment, or investment, lasts or is intended to last.</dd>
+	</dl>
+	<dl>
+		<dt>word</dt>
+		<dd>a single distinct meaningful tag of speech or writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed.</dd>
+	</dl>
+
+	<p>While intended for definitions, the <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> tags could be used for some interesting layout purposes.</p>
+</section>
+
+<!-- forms -->
+<section id="forms">
+	<h3>Forms</h3>
+	<form action="">
+		<input name="hidden field" value="42" type="hidden">This entire section is a form containing various fields (with some initial values set, so that you can see how input text looks like without actually typing it):
+
+		<!-- buttons -->
+		<label for="plainButton">Button:<button id="plainButton">A button</button></label>
+		<label for="resetButton">Reset button:<input id="resetButton" name="reset" value="Reset" type="reset"></label>
+
+		<!-- text input -->
+		<label for="textInput">Text input field: <input id="textInput" name="text" type="text" placeholder="Placeholder text."></label>
+
+		<!-- textarea -->
+		<label for="textArea">The following is a multiline text input field using the <code>&lt;textarea&gt;</code> tag.</label>
+		<textarea id="textArea" name="textarea" placeholder="Placeholder text."></textarea>
+
+		<!-- number input -->
+		<label for="counterInput">Numberic field input: <input id="counterInput" name="text" type="number" value="10" name="counter"></label>
+
+		<!-- radio buttons -->
+		<p>The following <code>&lt;input&gt;</code> tags are <code>type="radio"</code>.</p>
+		<fieldset>
+			<legend>Radio Buttons</legend>
+			<label for="radioButton1"><input id="radioButton1" name="radio" type="radio">Radio button</label>
+			<label for="radioButton2"><input id="radioButton2" name="radio" type="radio" checked="">Checked radio button</label>
+		</fieldset>
+
+		<!-- check boxes -->
+		<p>The following <code>&lt;input&gt;</code> tags are <code>type="checkbox"</code>.</p>
+		<fieldset>
+			<legend>Checkboxes</legend>
+			<label for="checkBox1"><input id="checkBox1" name="checkBox1" type="checkbox">Checkbox</label>
+			<label for="checkBox2"><input id="checkBox2" name="checkBox2" type="checkbox" checked>Checked checkbox</label>
+		</fieldset>
+
+		<!-- dropdown -->
+		<label for="dropdownBox">A <code>&lt;select&gt;</code> tag with multiple <code>&lt;option&gt;</code> tags and <code>size="1"</code> results in a dropdown menu like the following.</label>
+		<select id="dropdownBox" name="dropdownBox" size="1">
+			<option>one</option>
+			<option selected="selected">two (default)</option>
+			<option>three</option>
+		</select>
+
+		<!-- list box -->
+		<label for="dropdownBox">A <code>&lt;select&gt;</code> tag with multiple <code>&lt;option&gt;</code> tags and a<code>size=""</code> field of the same amount results in a list box like the following.</label>
+		<select id="listBox" name="listBox" size="3">
+			<option>one</option>
+			<option selected="selected">two (default)</option>
+			<option>three</option>
+		</select>
+
+		<!-- submit button -->
+		<label for="submitButton">Submit button:<input id="submitButton" name="submit" value="Submit Button" type="submit"></label>
+	</form>
+</section>
+
+<!-- tables -->
+<section>
+	<h3>Tables</h3>
+	<p>The following table has a caption. The first row and the first column contain table header cells (<code>&lt;th&gt;</code> tags) only; other cells are data cells (<code>&lt;td&gt;</code> tags), with <code>&lt;align="right"&gt;</code> attributes:</p>
+
+	<table summary="Each row names a Nordic country and specifies its total area and land area, in square kilometers">
+		<caption>Sample table: Areas of the Nordic countries, in sq km</caption>
+		<tbody>
+			<tr><th scope="col">Country</th><th scope="col">Total area</th><th scope="col">Land area</th></tr>
+			<tr><th scope="row">Denmark</th><td align="right"> 43,070</td><td align="right"> 42,370</td></tr>
+			<tr><th scope="row">Finland</th><td align="right">337,030</td><td align="right">305,470</td></tr>
+			<tr><th scope="row">Iceland</th><td align="right">103,000</td><td align="right">100,250</td></tr>
+			<tr><th scope="row">Norway</th><td align="right">324,220</td><td align="right">307,860</td></tr>
+			<tr><th scope="row">Sweden</th><td align="right">449,964</td><td align="right">410,928</td></tr>
+		</tbody>
+	</table>
+
+	<h4>Character Encoding</h4>
+	<p>The following table has some sample characters with annotations. If the browser's font does not contain all of them, they may be displayed using a fallback font.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Character</th>
+				<th>Description</th>
+				<th>Notes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>ê</td>
+				<td>e with circumflex</td>
+				<td>Latin 1 character</td>
+			</tr>
+			<tr>
+				<td>—</td>
+				<td>em dash</td>
+				<td>Windows Latin 1 character</td>
+			</tr>
+			<tr>
+				<td>&#256;</td>
+				<td>A with macron (line above)</td>
+				<td>Latin Extended-A character, not present in all fonts</td>
+			</tr>
+			<tr>
+				<td>&#937;</td>
+				<td>capital omega</td>
+				<td>A Greek letter</td>
+			</tr>
+			<tr>
+				<td>&#8722;</td>
+				<td>minus sign</td>
+				<td>Unicode</td>
+			</tr>
+			<tr>
+				<td>&#8960;</td>
+				<td>diameter sign</td>
+				<td>relatively rare symbol</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<!-- other -->
+<section>
+	<h3>Miscellaneous elements</h3>
+	<!-- horizontal rule -->
+	<p>The following is a horizontal rule, i.e. the <code>&lt;hr&gt;</code> tag.</p>
+	<hr>
+</section>
+</div>
+
+<!-- Row -->
+<div class="row">
+	<!-- Infobars -->
+	<section id="infobars">
+		<h3>Infobars</h3>
+		<!-- Infobar -->
+		<div class="infobar"><span>This is an infobar with some text and a <a href="#infobars">link</a> in it.</span></div>
+		<div class="infobar coloured info"><span>This is an "info" infobar with some text and a <a href="#infobars">link</a> in it.</span></div>
+		<div class="infobar coloured error"><span>This is an "error" infobar with some text and a <a href="#infobars">link</a> in it.</span></div>
+		<div class="infobar coloured warning"><span>This is a "warning" infobar with some text and a <a href="#infobars">link</a> in it.</span></div>
+	</section>
+</div>
+
+<div class="row infobar"><span>This is an infobar <b>row</b> with some text and a <a href="#infobars">link</a> in it.</span></div>
+
+<!-- Row -->
+<div class="row">
+	<!-- Columns -->
+	<section id="columns">
+		<style type="text/css">.col {background-color:#fae;text-align:center;min-height: 64px;}.col>span{line-height:64px;}</style>
+		<h3>Columns</h3>
+		<p>The following <code>div</code> are columns of varied width.</p>
+		<!-- halves -->
+		<div class="col half right"><span>1/2</span></div>
+		<div class="col half left"><span>1/2</span></div>
+		<!-- thirds -->
+		<div class="col third"><span>1/3</span></div>
+		<div class="col third"><span>1/3</span></div>
+		<div class="col third"><span>1/3</span></div>
+		<!-- third and two-thirds -->
+		<div class="col third"><span>1/3</span></div>
+		<div class="col two-thirds"><span>2/3</span></div>
+		<!-- thirds -->
+		<div class="col quarter"><span>1/4</span></div>
+		<div class="col quarter"><span>1/4</span></div>
+		<div class="col quarter"><span>1/4</span></div>
+		<div class="col quarter"><span>1/4</span></div>
+		<!-- halves -->
+		<div class="col half right"><span>1/2</span></div>
+		<div class="col quarter"><span>1/4</span></div>
+		<div class="col quarter"><span>1/4</span></div>
+	</section>
+</div>
+<!-- Row -->
+<div class="row">
+	<!-- Cards -->
+	<section id="cards">
+		<h3>Cards</h3>
+		<p>Sort of overly fancy buttons in a "card" style.</p>
+		<div class="cards">
+			<a class="card" href="{{ page.permalink }}/#cards">
+				<span>Card 1</span>
+			</a>
+			<a class="card" href="{{ page.permalink }}/#cards">
+				<span>Card 2</span>
+			</a>
+			<a class="card" href="{{ page.permalink }}/#cards">
+				<span>Card 3</span>
+			</a>
+			<a class="card" href="{{ page.permalink }}/#cards">
+				<span>Card 4</span>
+			</a>
+		</div>
+	</section>
+</div>

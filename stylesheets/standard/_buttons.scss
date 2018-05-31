@@ -1,0 +1,217 @@
+// Buttons
+
+$button_height: 32px;
+$button_width: 224px;
+$button_font_size: 14px;
+$button_fg_color: $base_color;
+$button_bg_color: $link_color;
+
+// Hover
+$button_hover_bg_color: lighten($button_bg_color, 5%);
+
+// Active
+$button_active_bg_color: mix($button_bg_color, #000, 90%);
+$button_active_fg_color: $button_fg_color;
+
+// Focus
+$button_focus_bg_color: $button_hover_bg_color;
+$button_focus_bg: linear-gradient(to bottom, white, darken($bg_color, 5%));
+
+// suggested button
+$suggested_button_fg_color: $base_color;
+$suggested_button_bg_color: $pink_color;
+
+$suggested_button_hover_bg_color: lighten($suggested_button_bg_color, 5%);
+$suggested_button_focus_bg_color: $suggested_button_hover_bg_color;
+$suggested_button_active_bg_color: mix($suggested_button_bg_color, #000, 90%);
+
+// submit button
+$submit_button_fg_color: $base_color;
+$submit_button_bg_color: $blue_color;
+
+$submit_button_hover_bg_color: lighten($submit_button_bg_color, 5%);
+$submit_button_focus_bg_color: $submit_button_hover_bg_color;
+$submit_button_active_bg_color: mix($submit_button_bg_color, #000, 90%);
+
+// reset button
+$reset_button_fg_color: $base_color;
+$reset_button_bg_color: $red_color;
+
+$reset_button_hover_bg_color: lighten($reset_button_bg_color, 5%);
+$reset_button_focus_bg_color: $reset_button_hover_bg_color;
+$reset_button_active_bg_color: mix($reset_button_bg_color, #000, 90%);
+
+// text
+%button_text {
+	color: $button_fg_color;
+	font-family: $monospace;
+	font-size: $button_font_size;
+	font-weight: bold;
+	line-height: $button_height + 3px;
+	text-align: center;
+	text-decoration:none;
+	text-shadow: none;
+}
+
+
+// button class links
+%button,
+.button {
+
+	@extend %button_text;
+
+	@include border-radius($button_height / 2);
+
+	background: $button_bg_color;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	height: $button_height;
+	margin: 12px 6px;
+	min-width: $button_width;
+	outline: none;
+	overflow: visible;
+	// padding: 0 calc(#{$button_width} / 4);
+
+	svg {
+		display: inline-block;
+		float: left;
+		margin-top: 8px;
+		margin-right: 12px;
+		margin-left: 12px;
+
+		> g,
+		> path {
+			fill:$button_fg_color; 
+		}
+	}
+
+	&:hover {
+		background: $button_hover_bg_color;
+	}
+
+	&:focus {
+		background: $button_focus_bg_color;
+		color: $button_active_fg_color;
+	}
+
+	&:active,
+	&:active:hover {
+		background: $button_active_bg_color;
+		color: $button_active_fg_color;
+	}
+
+	&.center {
+		width: $button_width;
+		margin: 24px auto;
+	}
+}
+
+// button element
+button {
+	@extend %button;
+	display: block;
+}
+
+// coloured button
+%coloured-button {
+	@extend %button;
+	&:active,
+	&:active:hover{
+	}
+
+	&:focus {
+	}
+}
+
+// suggested button
+.suggested {
+	@extend %coloured-button;
+	background: $suggested_button_bg_color;
+	color: $suggested_button_fg_color;
+
+	&:active,
+	&:active:hover {
+		background: $suggested_button_active_bg_color;
+		color: $suggested_button_fg_color;
+	}
+
+	&:focus {
+		background: $suggested_button_focus_bg_color;
+		color: $suggested_button_fg_color;
+	}
+
+	&:hover {
+		background: $suggested_button_hover_bg_color;
+		color: $suggested_button_fg_color;
+	}
+}
+// submit button
+input[type=submit]{
+	@extend %coloured-button;
+	background: $submit_button_bg_color;
+	color: $submit_button_fg_color;
+	display: block;
+
+	&:active,
+	&:active:hover {
+		background: $submit_button_active_bg_color;
+		color: $submit_button_fg_color;
+	}
+
+	&:focus {
+		background: $submit_button_focus_bg_color;
+		color: $submit_button_fg_color;
+	}
+
+	&:hover {
+		background: $submit_button_hover_bg_color;
+		color: $submit_button_fg_color;
+	}
+}
+
+// reset button
+input[type=reset] {
+	@extend %coloured-button;
+	background: $reset_button_bg_color;
+	color: $reset_button_fg_color;
+	display: block;
+
+	&:active,
+	&:active:hover {
+		background: $reset_button_active_bg_color;
+		color: $reset_button_fg_color;
+	}
+
+	&:focus {
+		background: $reset_button_focus_bg_color;
+		color: $reset_button_fg_color;
+	}
+
+	&:hover {
+		background: $reset_button_hover_bg_color;
+		color: $reset_button_fg_color;
+	}
+}
+
+// media queries
+
+@media only screen and (max-width:480px) {
+	.button,
+	button {
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: 60%;
+		margin: 16px auto;
+	}
+}
+@media only screen and (max-width:400px) {
+	.button,
+	button {
+		display: block;
+		padding: 0;
+		width: 96%;
+		margin: 16px 2%;
+	}
+}

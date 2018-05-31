@@ -1,0 +1,62 @@
+// Header
+$header_bg_color: $brand_color;
+$header_fg_color: $base_color;
+$header_height: 80px;
+$header_title_font_size: 40px;
+$header_subtitle_font_size: 16px;
+
+
+// Header
+header {
+	background-color: $header_bg_color;
+	padding:32px 0;
+
+	a, span {
+		display: inline-block;
+		color: $header_fg_color;
+		vertical-align:middle;
+		white-space: wrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-shadow: 0 -1px rgba(0,0,0,0.4);;
+	}
+
+	span {
+		> span {opacity:0.5;}
+		&.title {
+			font-size: $header_title_font_size;
+			line-height: $header_height;
+		}
+
+		&.subtitle {
+			font-size: $header_subtitle_font_size;
+			width: 100%;
+			margin: 4px;
+			display: inline-block;
+			> a {
+				font-size: inherit;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:480px) {
+	header {
+		span {
+			&.title {
+				font-size: $header_title_font_size * 0.75;
+				line-height: $header_height * 0.75 - 12px;
+			}
+
+			&.subtitle {
+				font-size: $header_subtitle_font_size;
+				width: 100%;
+				display: inline-block;
+				margin-top: 16px;
+				> a {
+					font-size: inherit;
+				}
+			}
+		}
+	}
+}

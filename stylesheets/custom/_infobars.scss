@@ -1,0 +1,78 @@
+// Infobars
+
+$infobar_bg_color:$base_color;
+$infobar_border_radius: 5px;
+$infobar_font_size: 14px;
+$infobar_height: 56px;
+
+$info_color:#6655ff;
+$warning_color:#ffbb55;
+$error_color:#ff6655;
+
+%infobar,
+.infobar {
+	background-color: $infobar_bg_color;
+	border-radius: $infobar_border_radius;
+	color:$fg_color;
+	display: inline-block;
+	font-family:$monospace;
+	font-size:$infobar_font_size;
+	margin: 12px auto;
+	padding: 6px 2%;
+	text-align: center;
+	width: 96%;
+	z-index: 10;
+	box-shadow:inset 0 0 0 1px $border_color;
+
+	* {
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+	}
+
+	span {
+		display: block;
+		width: 94%;
+		margin: 0 3%;
+	}
+
+	&.row {
+		width: 100%;
+		margin: 12px 0;
+		border-radius: 0;
+		padding: 12px 0;
+		box-shadow:none;
+		border-top:1px solid $border_color;
+		border-bottom:1px solid $border_color;
+	}
+
+	a {
+		font-family:inherit;
+		font-size:inherit;
+		font-weight:inherit;
+		color:$link_color;
+	}
+
+	&.error {color: $error_color;}
+	&.info {color: $info_color;}
+	&.warning{color: $warning_color;}
+
+	&.coloured {
+		color:$base_color;
+		box-shadow:none;
+		border:none;
+		font-weight: bold;
+		span a {color:inherit;}
+		&.error { background-color: $error_color;}
+		&.info { background-color: $info_color;}
+		&.warning{ background-color: $warning_color;}
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	.infobar.sticky {
+		position:relative;
+		top:0;
+	}
+}

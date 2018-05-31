@@ -1,0 +1,13 @@
+// Page Separator
+
+.separator {
+	border:none;
+	display:block;
+	width: 100%;
+	text-align: center;
+	font-size:125%;
+	color:darken($bg_color, 10%);
+	line-height: 32px;
+	height: 32px;
+	&:after{content:"◆";}
+}

@@ -1,0 +1,49 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# Site Config
+markdown: kramdown
+
+# Site Info
+title: "Compute Freely"
+description: "A friendly place to start for the Free &amp; Open Source Software and Linux curious."
+keywords: "Linux, distribution, choose distro, which linux distro, Windows alternative, Mac alternative, free software, open source, best linux distro"
+
+# Metadata
+background: "none"
+image: "/images/promo.png"
+icon: "/images/icon.png"
+favicon: "/images/favicon.png"
+color: "#0099ee"
+
+# Author
+author:
+  name: "Sam Hewitt"
+  url: "https://samuelhewitt.com/"
+
+# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
+url: http://computefreely.org
+
+# SASS
+sass:
+  style: minified
+
+# permalink
+permalink: /:title
+
+# Include list
+include: ["_pages"]
+exclude: ['*.git*','README*','LICENSE*','*.scss']

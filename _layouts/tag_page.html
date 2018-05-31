@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<!-- tagged posts -->
+<section>
+	<div class="cards">
+	{% for post in site.posts %}{% for tag in post.tags %}{% if tag == page.tag %}
+		<a href="{{ post.url }}" class="card small">
+			<img src="/images/logos/{{ post.logo }}.svg">
+			<span>{{ post.title }}</span>
+			<small>Read more »</small>
+		</a>
+	{% endif %}{% endfor %}{% endfor %}
+	</div>
+	<p><a class="button center" href="/tags/">view all tags</a></p>
+</section>
