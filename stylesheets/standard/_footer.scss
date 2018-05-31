@@ -29,7 +29,8 @@ footer {
 	}
 
 	span {
-		line-height: 32px;
+		line-height:$font_size + 8px;
+		margin: 12px 0;
 		color:$footer_fg_color;
 		display: block;
 		b {
@@ -60,5 +61,7 @@ footer {
 @media only screen and (max-width:848px) {
 
 	footer {
+		span {
+		}
 	}
 }
