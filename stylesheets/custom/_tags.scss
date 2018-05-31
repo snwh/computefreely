@@ -5,62 +5,61 @@ $tag_bg_color: $link_color;
 $tag_fg_color: $base_color;
 
 ul.tags {
-	margin: 1.25em auto;
+	margin: 24px auto;
 	list-style:none;
 
 	li {
-		background-color: $tag_bg_color;
-		border-radius:3px;
-		box-shadow:none;
-		color: $tag_fg_color;
 		display:inline-block;
-		font-size: 12px;
-		font-weight: 600;
-		height: $tag_height;
-		line-height:$tag_height + 1px;
-		margin:2px;
-		opacity: 1.0;
-		outline: none;
-		padding:4px 6px;
-		position:relative;
-		text-decoration:none;
-		text-shadow:none;
-		text-transform: uppercase;
-		@include transition(0ms);
+		padding:0;
+		margin: 4px 0;
 
 		a,span {font:inherit;}
 
-		span {
-			margin-left:4px;
-			color:inherit;
-		}
-
 		> a {
-			text-decoration:none;
+			background-color: $tag_bg_color;
+			border-radius:3px;
+			box-shadow:none;
 			color: $tag_fg_color;
+			display:block;
+			font-size: 12px;
+			font-weight: 600;
+			height: $tag_height;
+			line-height:$tag_height + 1px;
+			margin: 2px;
+			opacity: 1.0;
+			outline: none;
+			padding:4px 6px;
+			position:relative;
+			text-decoration:none;
+			text-shadow:none;
+			text-transform: uppercase;
+			@include transition(0ms);
+
 			> span {
 				color: darken($tag_bg_color, 20%);
 				margin-left:6px;
 			}
+
+			&:focus,
+			&:hover {
+				box-shadow: inset 0 -2px 0 0 darken($tag_bg_color, 7%);
+				color: $tag_fg_color;
+				height: $tag_height + 2px;
+				margin-bottom: 0px;
+				top: -2px;
+				@include transition(0ms);
+			}
+
+			&:active {
+				box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+				color: $tag_fg_color;
+				height: $tag_height;
+				margin-bottom: 1px;
+				top:0;
+				@include transition(0ms);
+			}
 		}
 
-		&:focus,
-		&:hover {
-			box-shadow: inset 0 -2px 0 0 darken($tag_bg_color, 7%);
-			color: $tag_fg_color;
-			height: $tag_height + 2px;
-			margin-bottom: 0px;
-			top: -2px;
-			@include transition(0ms);
-		}
-
-		&:active {
-			box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
-			color: $tag_fg_color;
-			height: $tag_height;
-			margin-bottom: 1px;
-			top:0;
-			@include transition(0ms);
-		}
+		
 	}
 }
