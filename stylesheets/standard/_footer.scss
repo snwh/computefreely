@@ -1,26 +1,28 @@
 // Footer
-$footer_height: 128px;
+$footer_height: 144px;
 $footer_fg_color: lighten($fg_color, 10%);
 $footer_bg_color: darken($base_color, 5%);
+
+$footer_padding: 24px;
 
 // wrapper
 .wrapper {
 	min-height: 100%;
-	margin-bottom: $footer_height * -1 - 64px + 4px;
+	margin-bottom: calc((#{$footer_height} + #{$footer_padding} + 56px) * -1);
 }
 
 .push {
-	height: $footer_height + 48px;
+	height: calc(#{$footer_height} + #{$footer_padding});
 }
 
 // footer
 footer {
-	min-height: $footer_height;
+	min-height: $footer_height + $footer_padding;
 	background-color:$footer_bg_color;
 	border-top: 1px solid $border_color;
 	display:inline-block;
 	font-size: $font_size - 2px;
-	padding: 32px 0;
+	padding-top: $footer_padding;
 	width:100%;
 
 	* {
@@ -29,8 +31,7 @@ footer {
 	}
 
 	span {
-		line-height:$font_size + 8px;
-		margin: 12px 0;
+		line-height:$font_size + 24px;
 		color:$footer_fg_color;
 		display: block;
 		b {
@@ -62,6 +63,7 @@ footer {
 
 	footer {
 		span {
+			margin: 12px 0;
 		}
 	}
 }
