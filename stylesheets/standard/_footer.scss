@@ -12,7 +12,7 @@ $footer_padding: 24px;
 }
 
 .push {
-	height: calc(#{$footer_height} + #{$footer_padding});
+	height: calc(#{$footer_height} + #{$footer_padding} + 56px);
 }
 
 // footer
@@ -63,6 +63,7 @@ footer {
 
 	footer {
 		span {
+			line-height:$font_size + 12px;
 			margin: 12px 0;
 		}
 	}
