@@ -1,14 +1,12 @@
 # Contributing to Compute Freely
 
-## Adding Distributions
+## Submitting Distributions
 
-Adding a new distribution pages is simply a matter of writing a new post and adding it to the `_posts` folder. But each new post requires a certain amount of frontmatter metadata.
-
-When writing about the distribution you would like to submit, you are free to editorialize, but if you gather information from the project's website do paraphrase as best you can.
+Submitting a new distribution pages is simply a matter of writing a new post and adding it to the `_posts` folder. When writing a post for a distribution you would like to submit, you are free to editorialize, but if you gather information from the project's website to fill out the post paraphrase as best you can. 
 
 ### Metadata
 
-Each post has "frontmatter" that contains metadata for the post and about the distribution in general that shows up on the individual pages for each. Here's an example from the post for Ubuntu
+Each post has "frontmatter" that contains metadata for the post and about the distribution in general that shows up on the individual pages for each. Here's an example from the post for Ubuntu.
 
 ```yaml
 layout: post
@@ -32,6 +30,8 @@ notes:
       url: https://community.ubuntu.com/
 ```
 
+#### Publishing
+
 The first half of the frontmatter contains publishing and categorization infomation.
 
  - `layout` is the page layout for Jekyll. **Do not change this**
@@ -41,6 +41,8 @@ The first half of the frontmatter contains publishing and categorization infomat
  - `image` is the filename of the screenshot you provide
  - `caption` is an optional description of the screenshot
  - `tags` are an array of tags for the post, these should be limited to things like the desktop environments it uses, it's primary purpose (e.g. server, desktop, enterprise), a one-word estimation of it's difficulty
+
+#### Notes
 
 The `notes` section contains pertinent info about a distribution that show's up in the 'Notes' section on each post.
 
@@ -54,17 +56,20 @@ The `notes` section contains pertinent info about a distribution that show's up 
 
 ### Including image assets
 
-For a post to be acceptable you must include a project's logo and a screenshot.
+For a submission to be included you must also include a project's logo and a screenshot.
 
 An acceptable screenshot must:
- - be of a fresh installation no user-modifications,
- - not have any open windows, menus, etc.
+ - be of a fresh installation, no user-modifications or changes
+ - be of the desktop, do not have any windows, menus, etc. open
  - be of at least 720p resolution
  - follow the name convention of the other included screenshots that is `desktop-<name>-<version>`
 
-The Project logo must:
+An acceptable version of the project logo must:
  - be of the distibution icon, not the wordmark 
  - be in SVG format, a PNG or other file format will not display
  - follow the name convention of the other included logos that is `distro-<name>`
  - be 200x200 pixels and the logo is at most 160x160 within that
 
+## Other contributions
+
+Overall improvements to the site are gladly accepted as well and can be made via a general pull request.
