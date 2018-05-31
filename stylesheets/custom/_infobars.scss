@@ -38,12 +38,17 @@ $error_color:#ff6655;
 
 	&.row {
 		width: 100%;
-		margin: 12px 0;
+		margin: 0;
 		border-radius: 0;
 		padding: 12px 0;
 		box-shadow:none;
 		border-top:1px solid $border_color;
 		border-bottom:1px solid $border_color;
+
+		* {
+			padding:0;
+			margin:0;
+		}
 	}
 
 	a {

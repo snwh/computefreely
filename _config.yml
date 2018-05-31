@@ -48,7 +48,7 @@ sass:
   style: minified
 
 # permalink
-permalink: /:title
+permalink: /distro/:title
 
 # Include list
 include: ["_pages"]
