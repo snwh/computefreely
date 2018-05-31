@@ -42,7 +42,7 @@ layout: minimal
 		<!-- Title -->
 		<img class="logo" src="/images/logos/{{ page.logo }}.svg"><h2 class="title">{{ page.title }}</h2>
 		<!-- Published -->
-		<small class="published">Last updated <span class="date">{{ page.date | date_to_string }}</span></small>
+		<small class="published">Last updated <span class="date">{{ page.date | date_to_string }}</span> by <span class="author">{{ page.author }}</span></small>
 		<!-- Tags -->
 		<ul class="tags">
 		{% for tag in page.tags %}

@@ -2,27 +2,69 @@
 
 ## Adding Distributions
 
-Adding a new distribution pages is simply a matter of writing a new post. But each new post requires a certain amount of frontmatter metadata
-
-```yaml
----
-layout: post
-author: Your Name
-title: "Distro Name"
-date: "YYYY-MM-DD HH:MM"
-logo: ""
-image: ""
-caption: ""
-tags: []
-notes:
-  homepage: 
-  version: ""
-  based-on: 
-  desktops: []
-  developers:
-    - name: 
-      url: 
----
-```
+Adding a new distribution pages is simply a matter of writing a new post and adding it to the `_posts` folder. But each new post requires a certain amount of frontmatter metadata.
 
 When writing about the distribution you would like to submit, you are free to editorialize, but if you gather information from the project's website do paraphrase as best you can.
+
+### Metadata
+
+Each post has "frontmatter" that contains metadata for the post and about the distribution in general that shows up on the individual pages for each. Here's an example from the post for Ubuntu
+
+```yaml
+layout: post
+author: Sam Hewitt
+title: "Ubuntu"
+date: "2017-03-02 11:00 am"
+logo: "distro-ubuntu"
+image: "desktop-ubuntu-16.10.png"
+caption: "ubuntu 16.10 desktop"
+tags: [desktop, server, beginner, gnome]
+notes:
+  homepage: https://ubuntu.com/
+  version: "16.10"
+  based-on: debian
+  desktops: [GNOME, Unity]
+  install: graphical
+  developers:
+    - name: Canonical
+      url: https://canonical.com/
+    - name: Ubuntu Community
+      url: https://community.ubuntu.com/
+```
+
+The first half of the frontmatter contains publishing and categorization infomation.
+
+ - `layout:` is the page layout for Jekyll. **Do not change this**
+ - `title:` in this case will refer to the distribution name
+ - `date:` is the date of publication (addition)
+ - `logo:` is the file name of the logo that you provide (minus the extension)
+ - `image:` is the filename of the screenshot you provide
+ - `caption:` is an optional description of the screenshot
+ - `tags:` are an array of tags for the post, these should be limited to things like the desktop environments it uses, it's primary purpose (e.g. server, desktop, enterprise), a one-word estimation of it's difficulty
+
+The `notes` section contains pertinent info about a distribution that show's up in the 'Notes' section on each post.
+
+ - `homepage:` is the complete url of a distribution's homepage
+ - `version:` is the current version at the time of publication
+ - `based-on:` if the distribution is based on another you include that here
+ - `desktops:` is a list of all default desktops arranged in an array, i.e. if a distribution provides multiple spins that are of different desktop environments you list those here
+ - `install:` whether the installation is "graphical" or "command line" or "Live USB" **those are the only three**
+ - `developers:` name the primary developer or developers of the distribution and optionally provide a url
+
+
+### Including image assets
+
+For a post to be acceptable you must include a project's logo and a screenshot.
+
+An acceptable screenshot must:
+ - be of a fresh installation no user-modifications,
+ - not have any open windows, menus, etc.
+ - be of at least 720p resolution
+ - follow the name convention of the other included screenshots that is `desktop-<name>-<version>`
+
+The Project logo must:
+ - be of the distibution icon, not the wordmark 
+ - be in SVG format, a PNG or other file format will not display
+ - follow the name convention of the other included logos that is `distro-<name>`
+ - be 200x200 pixels and the logo is at most 160x160 within that
+
