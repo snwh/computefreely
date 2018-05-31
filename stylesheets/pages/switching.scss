@@ -1,0 +1,46 @@
+section {
+	text-align:center;
+	width:100%;
+	display:inline-block;
+	margin: 32px 0;
+}
+
+.logos {
+	margin: 2em auto;
+	vertical-align: middle;
+
+	img {
+		display:inline-block;
+		height: 64px;
+		width: 64px;
+		margin: 12px;
+		&.arrow {
+			vertical-align: middle;
+			margin: 12px 0;
+			height:48px;
+			width:48px;
+		}
+	}
+
+	a {
+	display: inline-block;
+	border:none;
+	padding: 0;
+
+		&:hover {
+			border:none;
+			border-radius: 50%;
+			background: rgba(0,139,219,0.3);
+			transition:all 200ms;
+			-webkit-transition:all 200ms;
+		}
+
+		&:active {
+			border:none;
+			border-radius: 50%;
+			background: rgba(0,0,0,0.3);
+			transition:all 200ms;
+			-webkit-transition:all 200ms;
+		}
+	}
+}

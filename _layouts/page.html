@@ -1,0 +1,25 @@
+{% include header.html %}
+
+<!-- Header -->
+<header>
+	<div class="row {{ page.row }}">
+		<span class="title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</span>
+		{% if page.subtitle %}<span class="subtitle">{{ page.subtitle }}</span>{% else %}{% endif %}
+	</div>
+</header>
+
+<!-- Nav -->
+<nav>
+	<div class="row {{ page.row }}">
+		<a href="/">Home</a>
+		<span class="chevron">&rsaquo;</span>
+		<span class="title">{{ page.title }}</span>
+	</div>
+</nav>
+
+<!-- row -->
+<div class="row {{ page.row }}">
+{{ content }}
+</div>
+
+{% include footer.html %}

@@ -1,0 +1,42 @@
+// Common values
+$legacy_browser_support: false !default;
+
+// Font Family
+$font_family: "Rubik", sans-serif;
+$monospace: "Overpass Mono", monospace;
+
+// Text
+$font_size: 15px;
+$font_weight: 400;
+
+// Main colors
+$bg_color: #fdfbf9;
+$fg_color: #333;
+$base_color: #fff;
+$brand_color: #0099ee;
+
+// primary colors
+$green_color: #00ff99;
+$pink_color: #ee0066;
+$blue_color:#6655ff;
+$yellow_color:#ffbb55;
+$red_color:#ff2233;
+
+// Link colors
+$link_color: $brand_color;
+$link_focus_color: invert($link_color);
+
+// Selection
+$selection_bg_color: $link_color;
+$selection_fg_color: $base_color;
+
+// Borders
+$border_color: rgba(0,0,0,0.1);
+$border_radius: 5px;
+
+// Row
+$row_width: 1024px;
+
+// Shadows
+$text_shadow: 0 1px rgba(255,255,255,0.8);
+$text_shadow_dark: 0 -1px rgba(0,0,0,0.3);

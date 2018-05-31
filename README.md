@@ -2,33 +2,24 @@
 
 Compute Freely is a website that's meant to be a friendly place to start for the Free & Open Source Software and Linux curious.
 
-## Simple Templating
+## Copying & Reuse
 
-* PHP-based
-* Pages go in root as .php files
-* Include `_templates/sitewide.php`, set any variables, then `include $template['header'];` (see [404.php](https://github.com/snwh/computefreely/blob/master/404.php) for an example) at top of page.
-* `include $template['footer'];` at bottom of page.
-* Page variables:
-  * `$page['title']`
-  * `$page['description']`
-  * `$page['author']`
+All original copy (written text) and images on this site are licensed under the Creative Commons Attribution-ShareAlike 4.0, unless otherwise noted.
+
+Any unique source code is free software, licensed under the terms of the Apache License v2.0, unless otherwise noted. Any non-unique elements (such as bundled JavaScript resources) are licensed under the terms of their accompanying licenses, or stated within their source code.
 
 ## Local Development
 
-For a simple local development environment, you will need:
+This site is built using the static site generator [Jekyll](https://jekyllrb.com/) (visit their site for info on how to set that up), but you will need to have it installed to hack on this site. Once you do so you can load the site with:
 
-* [A supported version of PHP](https://secure.php.net/supported-versions.php)
+	bundle exec jekyll serve
 
-Then inside the project directory, run `php -S localhost:8000 router.php` then, open http://localhost:8000/ to view the site.
+The stylesheets are written in SASS, to modify them run the following from the site's base directory.
 
+	sass --watch -C --style compressed stylesheets/
 
-## Terms & Licensing
+## Contributing
 
-This website is copyright © 2016 Sam Hewitt, with some rights reserved.
+Contributions are obviously welcome! If you would like to contribute to this project, please have [read this](/CONTRIBUTING.md) regarding contributions.
 
-Site content is licensed under the [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/), unless otherwise noted. Any unique source code is free software, licensed under the terms of the [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0), unless otherwise noted.
-
-Non-unique elements are licensed under the terms of their accompanying licenses, or stated within their source code.
-
-All logos used are trademarks of their respective projects and this site has been in no way endorsed by any of the featured projects.
-
+Alternatively, if you would like to support development by making a donation you can do so [here](https://snwh.org/donate).

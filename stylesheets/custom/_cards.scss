@@ -1,0 +1,152 @@
+// Cards
+
+$card_bg_color:$base_color;
+$card_fg_color:$fg_color;
+$card_corner_radius: 5px;
+$card_font_size:24px;
+$card_image_size:150px;
+$card_height:64px;
+$card_width:23%;
+
+// Card container
+.cards {
+	display: inline-block;
+	margin: 12px auto;
+	width: 100%;
+	text-align:center;
+
+	// Card
+	a.card {
+		background-color: $card_bg_color;
+		border-radius: $card_corner_radius;
+		color: $card_fg_color;
+		display: inline-block;
+		margin: 6px 0.5%;
+		padding: calc(#{$card_height} / 2) 0;
+		text-align: center;
+		text-decoration:none;
+		text-shadow:none;
+		width:$card_width;
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+
+		span {
+			margin: 12px 0;
+			display:block;
+			text-align: center;
+			font-size: $card_font_size;
+		}
+
+		small {
+			margin: 12px 0;
+			color:$link_color;
+		}
+
+		img {
+			margin: 0 auto;
+			max-width:$card_image_size;
+		}
+
+		> svg {
+			display: block;
+			margin: 0 auto;
+			margin-top: 12px;
+		}
+
+		&:active,
+		&:active:hover{
+			box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.2),
+						inset 0 0 0 1px rgba(0,0,0,0.15);
+		}
+
+		&:focus {
+			box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2),
+						inset 0 0 0 1px $link_color;
+		}
+
+		&:hover {
+			box-shadow: 0 1px 2px 0 $link_color,
+						0 0 0 1px $link_color;
+		}
+		&.small{
+			text-align: left;
+			display: inline-block;
+			padding: 16px;
+			width: calc(33% - 56px);
+			float: none;
+			margin: 12px;
+
+			>span {
+				margin:0;
+				vertical-align: middle;
+				height:$card_image_size * 0.25;
+				line-height:$card_image_size * 0.25;
+				display:inline-block;
+				padding:0 12px;
+			}
+			> img {
+				display: inline-block;
+				max-width:$card_image_size * 0.25;
+			}
+			> small {
+				margin: 12px;
+				margin-bottom: 0;
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:900px) {
+	.cards {
+		a.card,
+		a.card.small {
+			width: calc(33% - 18px);
+			margin: 6px;
+		}
+	}
+}
+
+@media only screen and (max-width:720px) {
+	.cards {
+		a.card,
+		a.card.small {
+			width: calc(50% - 24px);
+			margin: 6px;
+		}
+	}
+}
+
+
+@media only screen and (max-width:480px) {
+	.cards {
+		a.card,
+		a.card.small {
+			text-align: left;
+			display: block;
+			padding: 16px;
+			width: calc(100% - 56px);
+			float: none;
+			margin: 12px;
+
+			>span {
+				margin:0;
+				vertical-align: middle;
+				height:$card_image_size * 0.25;
+				line-height:$card_image_size * 0.25;
+				display:inline-block;
+				padding:0 12px;
+			}
+			> img {
+				display: inline-block;
+				max-width:$card_image_size * 0.25;
+			}
+			> small {
+				margin: 12px;
+				margin-bottom: 0;
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}

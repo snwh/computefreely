@@ -1,0 +1,11 @@
+
+// hidden
+.hidden,.invisible {
+	display:none;
+}
+
+// media queries
+@media only screen and (max-width:848px) {
+	// hide extraneous elements
+	.extraneous {display:none;}
+}

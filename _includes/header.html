@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Hello there, it's true that all the best web developers look at the source code of other webpages. ;) -->
+
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="author" content="{{ site.author.name }}">
+	<meta name="keywords" content="{{ site.keywords }}">
+	<meta name="theme-color" content="{% if page.color %}{{ page.color }}{% else %}{{ site.color }}{% endif %}">
+
+	<!-- Root -->
+	<base href="/">
+
+	<!-- Title -->
+	<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="apple-mobile-web-app-title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href='{{ site.favicon }}' type="image/x-icon" sizes="16x16">
+	<link rel="icon" type="image/png" href="{{ site.icon }}">
+	<link rel="image_src" href="{{ site.icon }}">
+	<link rel="apple-touch-icon" type="image/png" href="{{ site.icon }}">
+
+	<!-- Twitter Optimization  -->
+	<meta name="twitter:card" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="twitter:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+	<meta name="twitter:card" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+
+	<!-- Facebook Optimization -->
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+
+	<!-- Google Optimization -->
+	<meta itemprop="name" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta itemprop="image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	{% if page.stylesheet %}<link rel="stylesheet" type="text/css" href="/stylesheets/pages/{{ page.stylesheet }}">{% else %}{% endif %}
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Overpass+Mono:400,700" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- JavaScripts -->
+	<script type="text/javascript" src="/js/simple-jekyll-search.min.js"></script>
+
+{% include google-analytics.html %}
+
+</head>
+<!-- End Head -->
+
+<noscript>
+	<div class="infobar error no-js">I've noticed you've disabled JavaScript. 😞 Please consider re-enabling it for this site to experience it fully.</div>
+</noscript>
+
+<!-- Body -->
+<body>
+<div class="wrapper">
