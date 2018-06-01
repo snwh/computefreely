@@ -44,9 +44,11 @@ title: "Free your computer. Use Linux."
 		{% for post in site.posts %}
 			<a href="{{ post.url }}" class="card">
 				<img src="/images/logos/{{ post.logo }}.svg">
-				<span>{{ post.title }}</span>
-				<small class="difficulty {{ post.category }}">{{ post.category }}</small>
-				<small class="read-more">Read more »</small>
+				<div class="card-text">
+					<span>{{ post.title }}</span>
+					<small class="difficulty {{ post.category }}">{{ post.category }}</small>
+					<small class="read-more">Read more »</small>
+				</div>
 			</a>
 		{% endfor %}
 		</div>
