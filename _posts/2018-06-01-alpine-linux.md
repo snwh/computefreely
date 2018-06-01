@@ -4,7 +4,7 @@ author: Sam Hewitt
 title: "Alpine Linux"
 date: "2018-06-01 4:00 pm"
 logo: "alpine"
-tags: [security, minimal, cli]
+tags: [desktop, minimal, cli]
 category: [advanced]
 notes:
   homepage: http://alpinelinux.org/

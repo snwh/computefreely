@@ -30,8 +30,7 @@ layout: minimal
 	<small class="published">Page last updated <span class="date">{{ page.date | date_to_string }}</span> by <span class="author">{{ page.author }}</span></small>
 	<!-- Tags -->
 	<ul class="tags">
-		{% for category in page.category %}<li><a href="/tag/{{ category }}">{{ category | downcase }}</a></li>{% endfor %}
-		{% for tag in page.tags %}<li><a href="/tag/{{ tag }}">{{ tag | downcase }}</a></li>{% endfor %}
+		{% for category in page.category %}<li><a href="/tag/{{ category }}">{{ category | downcase }}</a></li>{% endfor %}{% for tag in page.tags %}<li><a href="/tag/{{ tag }}">{{ tag | downcase }}</a></li>{% endfor %}
 	</ul>
 	{% if page.notes %}<!-- Notes -->
 	<table class="notes">
