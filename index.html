@@ -43,7 +43,7 @@ title: "Free your computer. Use Linux."
 		<div id="distro-list">
 		{% for post in site.posts %}
 			<a href="{{ post.url }}" class="card">
-				<img src="/images/distros/{{ post.logo }}.svg">
+				<img src="{{ site.logos_dir }}/{{ post.logo }}.svg">
 				<div class="card-text">
 					<span>{{ post.title }}</span>
 					<small class="difficulty {{ post.category }}">{{ post.category }}</small>

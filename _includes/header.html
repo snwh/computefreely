@@ -28,20 +28,20 @@
 	<meta name="twitter:card" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-	<meta name="twitter:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
-	<meta name="twitter:card" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+	<meta name="twitter:image" content="{{ site.url }}{% if page.image %}{{ site.screenshots_dir }}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+	<meta name="twitter:card" content="{{ site.url }}{% if page.image %}{{ site.screenshots_dir }}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 
 	<!-- Facebook Optimization -->
 	<meta property="og:site_name" content="{{ site.title }}">
 	<meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-	<meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+	<meta property="og:image" content="{{ site.url }}{% if page.image %}{{ site.screenshots_dir }}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
 
 	<!-- Google Optimization -->
 	<meta itemprop="name" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 	<meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-	<meta itemprop="image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+	<meta itemprop="image" content="{{ site.url }}{% if page.image %}{{ site.screenshots_dir }}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">

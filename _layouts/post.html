@@ -21,66 +21,51 @@ layout: minimal
 
 <!-- Row -->
 <div class="row">
-	<!-- Distro -->
-	{% if page.image %}
-		<!-- Screenshot -->
-		<img class="screenshot" src="/images/screenshots/{{ page.image }}" onclick="openModal();">
-		{% if page.caption%}<p class="footnote text-right">{{ page.caption }}</p>{% else %}{% endif %}
-	{% else %}{% endif %}
+	{% if page.image %}<!-- Screenshot -->
+	<img class="screenshot" src="{{ site.screenshots_dir }}/{{ page.image }}" onclick="openModal();">
+	{% if page.caption%}<p class="footnote text-right">{{ page.caption }}</p>{% else %}{% endif %}{% else %}{% endif %}
 	<!-- Title -->
-	<img class="logo" src="/images/distros/{{ page.logo }}.svg"><h2 class="title">{{ page.title }}</h2>
+	<img class="logo" src="{{ site.logos_dir }}/{{ page.logo }}.svg"><h2 class="title">{{ page.title }}</h2>
 	<!-- Published -->
 	<small class="published">Page last updated <span class="date">{{ page.date | date_to_string }}</span> by <span class="author">{{ page.author }}</span></small>
 	<!-- Tags -->
 	<ul class="tags">
-	{% for category in page.category %}
-		<li><a href="/tag/{{ category }}">{{ category | downcase }}</a></li>
-	{% endfor %}
-	{% for tag in page.tags %}
-		<li><a href="/tag/{{ tag }}">{{ tag | downcase }}</a></li>
-	{% endfor %}
+		{% for category in page.category %}<li><a href="/tag/{{ category }}">{{ category | downcase }}</a></li>{% endfor %}
+		{% for tag in page.tags %}<li><a href="/tag/{{ tag }}">{{ tag | downcase }}</a></li>{% endfor %}
 	</ul>
-	{% if page.notes %}
-	<!-- Notes -->
+	{% if page.notes %}<!-- Notes -->
 	<table class="notes">
 		<tbody>
-			<!-- Homepage -->
-			{% if page.notes.homepage %}<tr>
+			{% if page.notes.homepage %}<!-- Homepage --><tr>
 				<td>Homepage</td>
 				<td><a href="{{ page.notes.homepage }}" target="_blank">{{ page.notes.homepage | remove: "http:" | remove: "https:" | remove: "/"}}</a></td>
 			</tr>{% else %}{% endif %}
-			<!-- Version -->
-			{% if page.notes.version %}<tr>
+			{% if page.notes.version %}<!-- Version --><tr>
 				<td>Latest Version</td>
 				<td>{{ page.notes.version }}</td>
 			</tr>{% else %}{% endif %}
-			<!-- Desktop -->
-			{% if page.notes.desktops %}<tr>
+			{% if page.notes.desktops %}<!-- Desktop --><tr>
 				<td>Desktop Environment(s)</td>
 				<td>{% for desktop in page.notes.desktops %}<a href="/tag/{{ desktop | downcase }}">{{ desktop }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
 			</tr>{% else %}{% endif %}
-			<!-- Installation Type -->
-			{% if page.notes.install %}<tr>
+			{% if page.notes.install %}<!-- Installation Type --><tr>
 				<td>Installation type</td>
 				<td>{{ page.notes.install | capitalize }}</td>
 			</tr>{% else %}{% endif %}
-			<!-- Based On -->
-			{% if page.notes.based-on %}<tr>
+			{% if page.notes.based-on %}<!-- Based On --><tr>
 				<td>Based On</td>
 				<td>{% for distro in page.notes.based-on %}<a href="/distro/{{ distro | downcase | replace: " ","-" }}">{{ distro | capitalize}}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
 			</tr>{% else %}{% endif %}
-			<!-- Developer -->
-			{% if page.notes.developers %}<tr>
+			{% if page.notes.developers %}<!-- Developer --><tr>
 				<td>Developer(s)</td>
 				<td>{% for developer in page.notes.developers %}{% if developer.url %}<a href="{{ developer.url }}" target="_blank">{{ developer.name }}</a>{% if forloop.last %}{% else %}, {% endif %}{% else %}{{ developer.name }}{% if forloop.last %}{% else %}, {% endif %}{% endif %}{% endfor %}</td>
 			</tr>{% else %}{% endif %}
 		</tbody>
-	</table>
-	{% else %}{% endif %}
+	</table>{% else %}{% endif %}
+	<!-- Article -->
 	<article>
 		<!-- Content -->
-		{{ content }}
-	</article>
+		{{ content }}</article>
 	<br>
 	<!-- Page Edit -->
 	<div class="footnote text-right"><i class="fas fa-exclamation-triangle"></i> Something missing, incorrect or out of date? <a href="{{ site.sources.page_dir }}{{ page.date | date: '%Y-%m-%d' }}-{{ page.url | replace: '/distro/',''}}.md" target="_blank">Edit this page</a> or <a href="{{ site.sources.issues_url }}/new/?title=[Page%20Issue]%20{{ page.title }}" target="_blank">file an issue</a>.</div>
@@ -90,7 +75,7 @@ layout: minimal
 <div id="screenshotDialog" class="modal" onclick="closeModal()">
 	<span class="modal-close" onclick="closeModal()">&times;</span>
 	<div class="modal-content">
-		<img src="/images/screenshots/{{ page.image }}">
+		<img src="{{ site.screenshots_dir }}/{{ page.image }}">
 	</div>
 </div>
 <script type="text/javascript">

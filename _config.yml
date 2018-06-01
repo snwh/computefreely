@@ -29,7 +29,11 @@ icon: "/images/icon.png"
 favicon: "/images/favicon.png"
 color: "#0099ee"
 
-# Page
+# Images
+logos_dir: "/images/distros"
+screenshots_dir: "/images/screenshots"
+
+# Sources
 sources:
   url: https://github.com/snwh/computefreely/
   issues_url: https://github.com/snwh/computefreely/issues

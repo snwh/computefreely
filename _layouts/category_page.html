@@ -7,7 +7,7 @@ layout: page
 	<div class="cards">
 	{% for post in site.posts %}{% for category in post.categories %}{% if category == page.category %}
 		<a href="{{ post.url }}" class="card small">
-			<img src="/images/distros/{{ post.logo }}.svg">
+			<img src="{{ site.logos_dir }}/{{ post.logo }}.svg">
 			<span>{{ post.title }}</span>
 			<small class="read-more">Read more »</small>
 		</a>
