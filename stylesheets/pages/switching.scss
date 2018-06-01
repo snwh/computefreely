@@ -1,3 +1,7 @@
+// imports
+@import 'common';
+@import 'mixins';
+
 section {
 	text-align:center;
 	width:100%;
@@ -23,24 +27,19 @@ section {
 	}
 
 	a {
-	display: inline-block;
-	border:none;
-	padding: 0;
+		display: inline-block;
+		border:none;
+		border-radius: 4px;
+		padding: 0;
 
 		&:hover {
-			border:none;
-			border-radius: 50%;
-			background: rgba(0,139,219,0.3);
-			transition:all 200ms;
-			-webkit-transition:all 200ms;
+			background-color: transparentize($fg_color, 0.9);
+			transition:all 100ms;
+			-webkit-transition:all 100ms;
 		}
 
 		&:active {
-			border:none;
-			border-radius: 50%;
-			background: rgba(0,0,0,0.3);
-			transition:all 200ms;
-			-webkit-transition:all 200ms;
+			background-color: transparentize($link_color, 0.6);
 		}
 	}
 }
