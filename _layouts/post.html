@@ -22,7 +22,7 @@ layout: minimal
 <!-- Row -->
 <div class="row">
 	{% if page.image %}<!-- Screenshot -->
-	<img class="screenshot" src="{{ site.screenshots_dir }}/{{ page.image }}" onclick="openModal();">
+	<img class="screenshot" src="{{ site.screenshots_dir }}/{{ page.image }}" alt="{{ page.caption }}" title="{{ page.title }}" onclick="openModal();">
 	{% if page.caption%}<p class="footnote text-right">{{ page.caption }}</p>{% else %}{% endif %}{% else %}{% endif %}
 	<!-- Title -->
 	<img class="logo" src="{{ site.logos_dir }}/{{ page.logo }}.svg"><h2 class="title">{{ page.title }}</h2>

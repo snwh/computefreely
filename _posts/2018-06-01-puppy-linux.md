@@ -9,7 +9,7 @@ caption: "Puppy Linux 7.5"
 tags: [desktop, minimal, live]
 category: [intermediate]
 notes:
-  homepage: http://puppylinux.org/
+  homepage: http://puppylinux.com/
   version: "7.5"
   install: graphical
   install: live
