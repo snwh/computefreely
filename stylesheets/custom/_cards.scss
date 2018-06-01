@@ -19,21 +19,32 @@ $card_width:23%;
 	a.card {
 		background-color: $card_bg_color;
 		border-radius: $card_corner_radius;
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 		color: $card_fg_color;
 		display: inline-block;
-		margin: 6px 0.5%;
+		margin: 6px 0.5%; // 0.5 to sum with the width of 4 cards
 		padding: calc(#{$card_height} / 2) 0;
 		text-align: center;
 		text-decoration:none;
 		text-shadow:none;
 		width:$card_width;
-		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 
-		span {
-			margin: 16px 0;
-			display:block;
-			text-align: center;
-			font-size: $card_font_size;
+		.card-text {
+			vertical-align:middle;
+			word-break: break-all;
+			white-space: wrap;
+			overflow: hidden;
+
+			span {
+				margin: 16px 0;
+				display:block;
+				text-align: center;
+				font-size: $card_font_size;
+			}
+
+			small {
+				&.read-more {color:$link_color;}
+			}
 		}
 
 		img {
@@ -54,73 +65,80 @@ $card_width:23%;
 			box-shadow: 0 1px 2px 0 $link_color,0 0 0 1px $link_color;
 		}
 
-		%small-card,
 		&.small{
 			text-align: left;
 			display: inline-block;
-			padding: 24px;
-			width: calc(33% - 72px);
+			padding: 6px;
+			width: calc(33% - 64px);
 			float: none;
 			margin: 6px;
 
-			> span {
-				font-size:$card_font_size - 4px;
-				margin:0 6px;
-				margin-bottom: 12px;
-				vertical-align: middle;
-				text-align: left;
-				height:$card_image_size * 0.25;
-				line-height:$card_image_size * 0.25;
-				display:inline-block;
-				padding:0;
-				width:calc(80% - 12px);
-			}
-
-			> img {
-				width:calc(20% - 0);
-				margin-bottom: 12px;
+			img {
+				margin: 8px;
 				display: inline-block;
-				max-width:$card_image_size * 0.25;
+				width:$card_image_size * 0.75;
+				height:$card_image_size * 0.75;
 			}
 
-			> small {
-				margin:4px 8px;
-				display: block;
-				width: calc(100% - 16px);
+			.card-text {
+				// 100% - (image width + its padding)
+				width: calc(100% - (($card_image_size * 0.5) + 16px) - 12px);
+				margin: 8px 6px;
+				text-align:left;
+				display:inline-block;
+
+				span {
+					text-align:left;
+					font-size:$card_font_size - 6px;
+					margin:4px 0;
+					vertical-align: middle;
+				}
+
+				small {
+					display: block;
+				}
 			}
 		}
 	}
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1024px) {
 	.cards {
-		a.card,
-		a.card.small {
+		a.card {
 			width: calc(33% - 18px);
 			margin: 6px;
 		}
+
+		a.card.small {
+			width: calc(33% - 32px);
+			margin: 6px;
+			.card-text > span {
+				font-size:$card_font_size - 6px;
+			}
+		}
 	}
 }
 
-@media only screen and (max-width:720px) {
+
+@media only screen and (max-width:900px) {
 	.cards {
-		a.card,
-		a.card.small {
+		a.card {
 			display: inline-block;
 			padding: 24px;
 			width: calc(50% - 72px);
 			margin: 6px;
-			> img {
-				height:$card_image_size * 0.5;
-			}
+		}
+
+		a.card.small {
+			padding: 0;
+			width: calc(50% - 24px);
 		}
 	}
 }
 
 @media only screen and (max-width:600px) {
 	.cards {
-		a.card,
-		a.card.small {
+		a.card {
 			display: block;
 			float: none;
 			margin: 12px;
@@ -137,10 +155,11 @@ $card_width:23%;
 			.card-text {
 				margin: 12px 0;
 				padding: 12px 0;
+				height:$card_image_size - 24px;
 				overflow: hidden;
 				text-align:left;
 				display:inline-block;
-				> span {
+				span {
 					font-size:$card_font_size - 4px;
 					margin:0;
 					margin-bottom:4px;
@@ -152,31 +171,46 @@ $card_width:23%;
 					padding:0;
 				}
 			}
+			
+
+			&.small {
+				width: calc(100% - 24px);
+				>.card-text {
+					padding: 0;
+					margin: 4px 0;
+					height:$card_image_size - 24px;
+					> span {font-size:$card_font_size - 6px;}
+				}
+			}
 		}
 	}
 }
 
-
-@media only screen and (max-width:340px) {
-
+@media only screen and (max-width:400px) {
 	.cards {
-		a.card,
-		a.card.small {
-			display: inline-block;
-			padding: 6px;
+		a.card {
+			display: block;
+			float: none;
+			margin: 12px;
+			padding: 0;
+			text-align:left;
 			width: calc(100% - 24px);
-			margin: 6px;
-			> img {
-				display:block;
-				margin: 0 auto;
-				margin-top: 12px;
-				height:$card_image_size * 0.5;
+
+			img {
+				margin: 16px;
+				height: $card_image_size - 24px;
+				display: inline-block;
 			}
-			.card-text {
+
+			>.card-text {
+				padding: 0;
 				margin: 12px 0;
-				padding: 12px 0;
-				width: 100%;
-				text-align:center;
+				height:$card_image_size - 24px;
+				> span {font-size:$card_font_size - 6px;}
+			}
+
+			&.small {
+				width: calc(100% - 24px);
 			}
 		}
 	}

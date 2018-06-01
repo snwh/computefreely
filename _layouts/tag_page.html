@@ -8,9 +8,11 @@ layout: page
 	{% for post in site.posts %}{% for tag in post.tags %}{% if tag == page.tag %}
 		<a href="{{ post.url }}" class="card small">
 			<img src="{{ site.logos_dir }}/{{ post.logo }}.svg">
-			<span>{{ post.title }}</span>
-			<small class="difficulty {{ post.category }}">{{ post.category }}</small>
-			<small class="read-more">Read more »</small>
+			<div class="card-text">
+				<span>{{ post.title }}</span>
+				<small class="difficulty {{ post.category }}">{{ post.category }}</small>
+				<small class="read-more">Read more »</small>
+			</div>
 		</a>
 	{% endif %}{% endfor %}{% endfor %}
 	</div>
