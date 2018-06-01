@@ -6,7 +6,7 @@ date: "2017-03-02 11:00 am"
 logo: "distro-slackware"
 tags: [advanced, desktop]
 notes:
-  homepage: https://slackware.com/
+  homepage: http://www.slackware.com/
   version: "14.2"
   install: graphical
   developers:

@@ -5,12 +5,12 @@ span.icon {
 	display:block;
 	width:100%;
 	text-align:center;
-	margin: 48px auto;
 	> i {
 		font-size:48px;
 		color:$brand_color;
 	}
 	&.large {
+		margin: 48px auto;
 		>i{font-size: 96px;}
 	}
 }
