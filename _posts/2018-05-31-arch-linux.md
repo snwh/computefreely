@@ -3,7 +3,7 @@ layout: post
 author: Sam Hewitt
 title: "Arch Linux"
 date: "2018-05-31 9:00 pm"
-logo: "distro-arch-linux"
+logo: "arch-linux"
 tags: [desktop, server, cli]
 category: [advanced]
 notes:

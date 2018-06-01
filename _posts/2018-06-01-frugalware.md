@@ -3,7 +3,7 @@ layout: post
 author: Sam Hewitt
 title: "Frugalware"
 date: "2018-06-01 12:00 am"
-logo: "distro-frugalware"
+logo: "frugalware"
 tags: [cli]
 category: [intermediate]
 notes:

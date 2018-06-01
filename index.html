@@ -43,7 +43,7 @@ title: "Free your computer. Use Linux."
 		<div id="distro-list">
 		{% for post in site.posts %}
 			<a href="{{ post.url }}" class="card">
-				<img src="/images/logos/{{ post.logo }}.svg">
+				<img src="/images/distros/{{ post.logo }}.svg">
 				<div class="card-text">
 					<span>{{ post.title }}</span>
 					<small class="difficulty {{ post.category }}">{{ post.category }}</small>
@@ -71,7 +71,7 @@ title: "Free your computer. Use Linux."
 		searchInput: document.getElementById('search-input'),
 		resultsContainer: document.getElementById('results-container'),
 		json: '/search.json',
-		searchResultTemplate: '<a class="card small" href="{url}"><img src="images/logos/{logo}.svg"><span>{title}</span><small>Read more »</small></a>',
+		searchResultTemplate: '<a class="card small" href="{url}"><img src="images/distros/{logo}.svg"><span>{title}</span><small>Read more »</small></a>',
 		noResultsText: '<div class="infobar">Sorry, no results for that search.</div>',
 		limit: 10,
 		fuzzy: false,

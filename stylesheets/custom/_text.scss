@@ -16,11 +16,9 @@
 }
 
 // article title
-article {
-	.title {
-		display: inline-block;
-		width: auto;
-	}
+.title {
+	display: inline-block;
+	width: auto;
 }
 
 // Card text
@@ -45,8 +43,8 @@ small.difficulty {
 .published {
 	color:lighten($fg_color, 30%);
 	display:block;
+	font-size:$font_size - 4px;
 	font-family:$monospace;
-	margin:16px auto;
 	opacity:0.8;
 	text-transform:uppercase;
 	width:100%;

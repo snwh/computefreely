@@ -3,8 +3,8 @@ layout: post
 author: Sam Hewitt
 title: "elementary OS"
 date: "2017-03-02 11:00 am"
-logo: "distro-elementary"
-image: "desktop-elementary-os-0.4.png"
+logo: "elementary"
+image: "elementary-os-0.4.png"
 caption: 'elementary OS 0.4 desktop'
 tags: [desktop, pantheon]
 category: [beginner]

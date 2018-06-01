@@ -3,8 +3,8 @@ layout: post
 author: Sam Hewitt
 title: "Linux Mint"
 date: "2017-03-02 11:00 am"
-logo: "distro-linux-mint"
-image: "desktop-linux-mint-18.1.png"
+logo: "linux-mint"
+image: "linux-mint-18.1.png"
 caption: "Linux Mint 18.1 with Cinnamon desktop"
 tags: [desktop, cinnamon, mate, xfce, kde]
 category: [beginner]
