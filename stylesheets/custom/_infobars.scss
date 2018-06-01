@@ -1,28 +1,29 @@
 // Infobars
 
 $infobar_bg_color:$base_color;
+$infobar_fg_color:mix($infobar_bg_color, black, 30%);
 $infobar_border_radius: 5px;
 $infobar_font_size: 14px;
 $infobar_height: 56px;
 
-$info_color:#6655ff;
-$warning_color:#ffbb55;
-$error_color:#ff6655;
+$info_color: $blue_color;
+$warning_color: $yellow_color;
+$error_color: lighten($red_color, 10%);
 
 %infobar,
 .infobar {
 	background-color: $infobar_bg_color;
 	border-radius: $infobar_border_radius;
-	color:$fg_color;
+	color:$infobar_fg_color;
 	display: inline-block;
 	font-family:$monospace;
 	font-size:$infobar_font_size;
-	margin: 12px auto;
-	padding: 6px 2%;
+	margin: 12px 10%;
+	padding: 6px 12px;
 	text-align: center;
-	width: 96%;
+	width: 80%;
 	z-index: 10;
-	box-shadow:inset 0 0 0 1px $border_color;
+	border:1px solid $border_color;
 
 	* {
 		font-family: inherit;
@@ -32,8 +33,7 @@ $error_color:#ff6655;
 
 	span {
 		display: block;
-		width: 94%;
-		margin: 0 3%;
+		width: calc(100% - 24px);
 	}
 
 	&.row {
@@ -58,26 +58,32 @@ $error_color:#ff6655;
 		color:$link_color;
 	}
 
-	&.error {color: $error_color;}
-	&.info {color: $info_color;}
-	&.warning{color: $warning_color;}
-
 	&.coloured {
-		color:$base_color;
-		box-shadow:none;
-		border:none;
+		background-color:inherit;
 		font-weight: bold;
 		span a {color:inherit;}
-		&.error { background-color: $error_color;}
-		&.info { background-color: $info_color;}
-		&.warning{ background-color: $warning_color;}
+		&.error {
+			border-color: mix($error_color, black, 80%);
+			color: mix($error_color, black, 80%);
+			background-color: lighten($error_color, 25%);
+		}
+		&.info {
+			border-color: mix($info_color, black, 80%);
+			color: mix($info_color, black, 80%);
+			background-color: lighten($info_color, 25%);
+		}
+		&.warning{
+			border-color: mix($warning_color, black, 80%);
+			color: mix($warning_color, black, 80%);
+			background-color: lighten($warning_color, 25%);
+		}
 	}
 
 }
 
 @media only screen and (max-width:600px) {
-	.infobar.sticky {
-		position:relative;
-		top:0;
+	.infobar {
+		margin: 12px 0;
+		width:calc(100% - 24px);
 	}
 }
