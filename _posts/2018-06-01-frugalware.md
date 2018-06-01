@@ -2,15 +2,16 @@
 layout: post
 author: Sam Hewitt
 title: "Frugalware"
-date: "2017-03-02 11:00 am"
+date: "2018-06-01 12:00 am"
 logo: "distro-frugalware"
-tags: [advanced, desktop]
+tags: [intermediate, cli]
 notes:
   homepage: https://frugalware.org/
-  version: "14.2"
-  desktops: [GNOME]
+  version: "2.1"
   install: graphical
   developers:
     - name: Frugalware Authors
       url: https://www.frugalware.org/authors
 ---
+
+Frugalware Linux is a general-purpose Linux distribution designed for intermediate users who are familiar with command-line operations.
