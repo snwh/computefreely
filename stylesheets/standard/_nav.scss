@@ -7,7 +7,7 @@ $nav_icon_size: 16px;
 
 //search
 $search_input_width: 244px;
-$search_icon_width: 24px;
+$search_input_padding: 12px;
 
 nav {
 	padding:0;
@@ -56,36 +56,30 @@ nav {
 
 	// Search
 	span.search {
+		padding:0;
+		margin:0;
 		width: 100%;
-		// search width + margin + icon
-		max-width: $search_input_width + 48px + $search_icon_width;
-
-		// search icon
-		i.fas {
-			color: lighten($nav_fg_color, 40%);
-			margin-right: ($search_icon_width + 6px) * -1;
-			display:inline-block;
-		}
+		// search width + padding
+		width: $search_input_width + $search_input_padding * 2;
 
 		// search box stylings
 		input[type=search]{
 			@extend %reset;
-			border-radius: ($nav_height - 14px) * 0.5 + 1px;
-			border: 1px solid rgba(0,0,0,0.2);
+			border-radius: ($nav_height - 14px) * 0.5;
+			box-shadow:inset 0 0 0 1px rgba(0,0,0,0.2);
 			color:$nav_fg_color;
 			display: inline-block;
 			font-weight: 300;
 			height: $nav_height - 14px;
-			margin: 6px 0;
+			margin: 7px 0;
+			padding: 0 $search_input_padding;
 			overflow: hidden;
-			padding-right: $search_icon_width + 12px;
-			padding-left: $search_icon_width + 12px;
 			text-overflow: ellipsis;
 			vertical-align: baseline;
 			white-space: nowrap;
-			width: $search_input_width - 24px;
+			width: $search_input_width;
 			&:focus{
-				border: 1px solid $link_color;
+				box-shadow: inset 0 0 0 1px $link_color, inset 0 1px 2px 1px rgba(0,0,0,0.2);
 			}
 		}
 	}
@@ -95,6 +89,7 @@ nav {
 	nav {
 		margin:0;
 		padding:0;
+		margin-bottom:16px;
 		>.row {
 			width:100%;
 			margin:0;
@@ -119,26 +114,7 @@ nav {
 			max-width: 100%;
 			display:block;
 			input[type=search]{
-				padding-right: $search_icon_width + 12px;
 				margin: 6px 0;
-			}
-		}
-	}
-}
-
-@media only screen and (max-width:480px) {
-	nav {
-		margin-bottom:16px;
-		// Search
-		span.search {
-			padding: 0 12px;
-			width: calc(100% - 24px);
-			max-width: 100%;
-			display:block;
-			input[type=search]{
-				padding-right: $search_icon_width + 12px;
-				margin: 6px 0;
-				width: calc(100% - 96px);
 			}
 		}
 	}
