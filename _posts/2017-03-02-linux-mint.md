@@ -6,7 +6,8 @@ date: "2017-03-02 11:00 am"
 logo: "distro-linux-mint"
 image: "desktop-linux-mint-18.1.png"
 caption: "Linux Mint 18.1 with Cinnamon desktop"
-tags: [desktop, beginner, cinnamon, mate, xfce, kde]
+tags: [desktop, cinnamon, mate, xfce, kde]
+category: [beginner]
 notes:
   homepage: https://www.linuxmint.com/
   version: "18.1"

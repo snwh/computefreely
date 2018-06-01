@@ -4,7 +4,8 @@ author: Sam Hewitt
 title: "Arch Linux"
 date: "2018-05-31 9:00 pm"
 logo: "distro-arch-linux"
-tags: [desktop, server, advanced, cli]
+tags: [desktop, server, cli]
+category: [advanced]
 notes:
   homepage: http://www.archlinux.org/
   install: command line

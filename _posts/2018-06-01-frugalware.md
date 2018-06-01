@@ -4,7 +4,8 @@ author: Sam Hewitt
 title: "Frugalware"
 date: "2018-06-01 12:00 am"
 logo: "distro-frugalware"
-tags: [intermediate, cli]
+tags: [cli]
+category: [intermediate]
 notes:
   homepage: https://frugalware.org/
   version: "2.1"

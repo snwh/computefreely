@@ -1,0 +1,16 @@
+---
+layout: page
+---
+
+<!-- categories -->
+<section>
+	<div class="cards">
+	{% for post in site.posts %}{% for category in post.categories %}{% if category == page.category %}
+		<a href="{{ post.url }}" class="card small">
+			<img src="/images/logos/{{ post.logo }}.svg">
+			<span>{{ post.title }}</span>
+			<small class="read-more">Read more »</small>
+		</a>
+	</a>{% endif %}{% endfor %}{% endfor %}
+	</div>
+</section>

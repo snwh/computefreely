@@ -23,6 +23,24 @@ article {
 	}
 }
 
+// Card text
+.read-more {
+	margin: 6px 0;
+	color:$link_color;
+}
+
+small.difficulty {
+	margin: 6px 0;
+	text-transform:uppercase;
+	font-family:$monospace;
+	color:inherit;
+	display:block;
+	width: 100%;
+	&.beginner { color:$green_color;}
+	&.intermediate { color:$orange_color}
+	&.advanced { color:$red_color}
+}
+
 // Published
 .published {
 	color:lighten($fg_color, 30%);

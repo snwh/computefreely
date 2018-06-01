@@ -9,7 +9,8 @@ layout: page
 		<a href="{{ post.url }}" class="card small">
 			<img src="/images/logos/{{ post.logo }}.svg">
 			<span>{{ post.title }}</span>
-			<small>Read more »</small>
+			<small class="difficulty {{ post.category }}">{{ post.category }}</small>
+			<small class="read-more">Read more »</small>
 		</a>
 	{% endif %}{% endfor %}{% endfor %}
 	</div>

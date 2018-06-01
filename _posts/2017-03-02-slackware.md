@@ -4,7 +4,8 @@ author: Sam Hewitt
 title: "Slackware"
 date: "2017-03-02 11:00 am"
 logo: "distro-slackware"
-tags: [advanced, desktop]
+tags: [desktop]
+category: [advanced]
 notes:
   homepage: http://www.slackware.com/
   version: "14.2"

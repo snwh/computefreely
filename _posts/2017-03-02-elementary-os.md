@@ -6,7 +6,8 @@ date: "2017-03-02 11:00 am"
 logo: "distro-elementary"
 image: "desktop-elementary-os-0.4.png"
 caption: 'elementary OS 0.4 desktop'
-tags: [desktop, beginner, pantheon]
+tags: [desktop, pantheon]
+category: [beginner]
 notes:
   homepage: https://elementary.io/
   version: "0.4"
