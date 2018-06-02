@@ -1,0 +1,26 @@
+---
+layout: page
+permalink: /categories/
+title: Categories
+---
+
+{% for category in site.categories %}
+<section class="text-center">
+	{% capture category_name %}{{ category | first }}{% endcapture %}
+	<div id="#{{ category_name | slugize }}"></div>
+	<h3>{{ category_name | capitalize }} Distros</h3>
+	<a name="{{ category_name | slugize }}"></a>
+	<div class="cards">
+	{% for post in site.categories[category_name] %}
+		<a href="{{ post.url }}" class="card small">
+			<img src="{{ site.dirs.logos }}{{ post.logo }}.svg">
+			<div class="card-text">
+				<span>{{ post.title }}</span>
+				<small class="category {{ post.category }}">{{ post.category }}</small>
+				<small class="read-more">Read more »</small>
+			</div>
+		</a>
+	{% endfor %}
+	</div>
+</section>
+{% endfor %}

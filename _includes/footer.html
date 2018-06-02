@@ -2,7 +2,7 @@
 <div class="push"></div></div>
 <!-- Footer -->
 <footer>
-	<div class="row">
+	<div class="row {{ page.row }}">
 		<span><b>Compute Freely</b> – a friendly place to start for the Free &amp; Open Source Software and Linux curious.</span>
 		<span>&copy; 2018 <a href="{{ site.author.url }}">{{ site.author.name }}</a>. All logos and trademarks are property of their respective owners. </span>
 		<span>This site has been in no way endorsed by any of the featured projects.</span>
@@ -10,8 +10,8 @@
 			<li><a href="/about">About</a></li>
 			<li><a href="/privacy">Privacy</a></li>
 			<li><a href="/terms">Terms</a></li>
-			<li><a href="{{ site.sources.url }}" target="_blank">Source Code</a></li>
-			<li><a href="{{ site.sources.issues_url }}" target="_blank">Site Issues</a></li>
+			<li><a href="{{ site.github.repo }}" target="_blank">Source Code</a></li>
+			<li><a href="{{ site.github.issues }}" target="_blank">Site Issues</a></li>
 		</ul>
 	</div>
 </footer>

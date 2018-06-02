@@ -1,8 +1,8 @@
 ---
 layout: post
-author: Sam Hewitt
+author: "Sam Hewitt"
 title: "Arch Linux"
-date: "2018-05-31 9:00 pm"
+date: "2018-05-31"
 logo: "arch-linux"
 tags: [desktop, minimal, cli]
 category: [advanced]

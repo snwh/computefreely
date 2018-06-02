@@ -1,17 +1,30 @@
 ---
-layout: page
+layout: default
 ---
 
+<!-- Nav -->
+<nav>
+	<div class="row {{ page.row }}">
+		<a href="/">Home</a>
+		<span class="chevron">&rsaquo;</span>
+		<a href="{{ site.dirs.categories }}">Categories</a>
+		<span class="chevron">&rsaquo;</span>
+		<span>{{ page.title }}</span>
+	</div>
+</nav>
+
+<div class="row">
 <!-- categories -->
-<div class="cards">
+<section class="cards">
 {% for post in site.posts %}{% for category in post.categories %}{% if category == page.category %}
 	<a href="{{ post.url }}" class="card small">
-		<img src="{{ site.logos_dir }}/{{ post.logo }}.svg">
+		<img src="{{ site.dirs.logos }}{{ post.logo }}.svg">
 		<div class="card-text">
 			<span>{{ post.title }}</span>
-			<small class="difficulty {{ post.category }}">{{ post.category }}</small>
+			<small class="category {{ post.category }}">{{ post.category }}</small>
 			<small class="read-more">Read more »</small>
 		</div>
 	</a>
 </a>{% endif %}{% endfor %}{% endfor %}
+</section>
 </div>

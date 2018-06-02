@@ -1,17 +1,17 @@
 ---
 layout: post
-author: Sam Hewitt
+author: "Sam Hewitt"
 title: "Endless OS"
-date: "2018-06-01 12:00 pm"
+date: "2018-06-01"
 logo: "endlessos"
 image: "endlessos-3.4.png"
 caption: "Endless OS 3.4 with its custom GNOME desktop"
-tags: [desktop, gnome]
+tags: [desktop]
 category: [beginner]
 notes:
   homepage: https://endlessos.com/
   version: "3.4"
-  based-on: debian
+  based-on: ["Debian"]
   desktops: [GNOME]
   install: graphical
   developers:

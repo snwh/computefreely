@@ -2,35 +2,35 @@
 
 $notes_bg_color: #fff;
 $notes_accent_color: $brand_color;
-$notes_title: "About This Distro";
 $notes_width: 600px;
 
 // Overall table style
 table.notes {
-	background-color: $notes_bg_color;
-	border-radius: 0 5px 5px 0;
-	border:1px solid rgba(0,0,0,0.08);
-	border-left-width: 0;
-	box-shadow: -5px 0 0 0 $notes_accent_color, inset 0 1px 0 0 rgba(255,255,255,0.4),0 1px 2px 0 rgba(0,0,0,0.05);
-	display: inline-block;
-	font-family: $monospace;
-	font-size: $font-size - 2px;
-	margin: 16px 0;
-	max-width: $notes_width;
-	padding: 0;
-	padding-bottom: 2px;
-
-	// notes title
-	&:before {
-		color: lighten($fg_color, 10%);
-		content: $notes_title;
-		display: inline-block;
-		font-weight: bold;
-		margin: 7px 12px;
-	}
+	@extend %reset;
+	width:100%;
 
 	// text styles
 	> tbody {
+		background-color: $notes_bg_color;
+		border-radius: 0 5px 5px 0;
+		border:1px solid rgba(0,0,0,0.08);
+		border-left-width: 0;
+		box-shadow: -5px 0 0 0 $notes_accent_color, inset 0 1px 0 0 rgba(255,255,255,0.4),0 1px 2px 0 rgba(0,0,0,0.05);
+		display: inline-block;
+		font-family: $monospace;
+		font-size: $font-size - 2px;
+		margin: 16px 0;
+		max-width: $notes_width;
+		padding: 0;
+		padding-bottom: 2px;
+
+		// notes title
+		&:before {
+			color: lighten($fg_color, 10%);
+			display: inline-block;
+			font-weight: bold;
+			margin: 7px 12px;
+		}
 
 		> tr {
 			background-color: transparent;

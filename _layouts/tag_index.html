@@ -2,12 +2,11 @@
 layout: page
 title: Tags
 row: narrow
-permalink: /tags/
 ---
 
 <!-- tagged posts -->
 <section>
 	<ul class="tags">{% for tag in site.tags %} 
-		<li><a href="/tag/{{ tag[0] }}">{{ tag[0] }}<span>({{ tag[1].size }})</span></a></li>{% endfor %}
+		<li><a href="{{ site.dirs.tags }}{{ tag[0] }}">{{ tag[0] }}<span>({{ tag[1].size }})</span></a></li>{% endfor %}
 	</ul>
 </section>

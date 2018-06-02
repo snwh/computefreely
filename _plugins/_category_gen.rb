@@ -17,7 +17,7 @@ module Jekyll
     safe true
     def generate(site)
       if site.layouts.key? 'category_page'
-        dir = site.config['category_dir'] || 'tag'
+        dir = site.config['category_dir'] || 'categories'
         site.categories.keys.each do |category|
           write_category_index(site, File.join(dir, category), category)
         end

@@ -16,7 +16,7 @@ title: "Free your computer. Use Linux."
 	<div class="row">
 		<a href="/why-use-linux">Why Use Linux?</a>
 		<a href="/switching">Making the Switch</a>
-		<span class="search right"><input type="search" id="search-input" placeholder="Search for distributions..."></span>
+		<span class="search right"><input type="search" id="search-input" placeholder="Search by name, desktop,..."></span>
 	</div>
 </nav>
 
@@ -43,10 +43,10 @@ title: "Free your computer. Use Linux."
 		<div id="distro-list">
 		{% for post in site.posts %}
 			<a href="{{ post.url }}" class="card">
-				<img src="{{ site.logos_dir }}/{{ post.logo }}.svg">
+				<img src="{{ site.dirs.logos }}{{ post.logo }}.svg">
 				<div class="card-text">
 					<span>{{ post.title }}</span>
-					<small class="difficulty {{ post.category }}">{{ post.category }}</small>
+					<small class="category {{ post.category }}">{{ post.category }}</small>
 					<small class="read-more">Read more »</small>
 				</div>
 			</a>
@@ -62,7 +62,7 @@ title: "Free your computer. Use Linux."
 	</section>
 </div>
 <!-- Page Edit -->
-<div class="infobar row" style="border-bottom: none;">Not seeing your favourite distribution? Contribute to the list <a href="{{ site.sources.url }}">here</a>.</div>
+<div class="infobar row" style="border-bottom: none;">Not seeing your favourite distribution? Contribute to the list <a href="{{ site.github.repo }}">here</a>.</div>
 
 <!-- Javascript -->
 <script type="text/javascript">
@@ -71,9 +71,8 @@ title: "Free your computer. Use Linux."
 		searchInput: document.getElementById('search-input'),
 		resultsContainer: document.getElementById('results-container'),
 		json: '/search.json',
-		searchResultTemplate: '<a class="card small" href="{url}"><img src="images/distros/{logo}.svg"><div class="card-text"><span>{title}</span><small class="read-more">Read more »</small></div></a>',
+		searchResultTemplate: '<a class="card small" href="{url}"><img src="{{ site.dirs.logos }}{logo}.svg"><div class="card-text"><span>{title}</span><small class="category {category}">{category}</small><small class="read-more">Read more »</small></div></a>',
 		noResultsText: '<div class="infobar">Sorry, no results for that search.</div>',
-		limit: 10,
 		fuzzy: false,
 		exclude: ['Welcome']
 	})

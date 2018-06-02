@@ -107,7 +107,7 @@ div {
 // headings
 h1, h2, h3, h4, h5, h6 {
 	@extend %text;
-	font-family: $monospace;
+	// font-family: $monospace;
 	color: lighten($fg_color, 20%);
 	> a {
 		font: inherit;
@@ -391,9 +391,8 @@ hr {
 	border:none;
 	width:100%;
 	height:1px;
-	margin:0 auto;
-	margin-top:-1px;
-	border-bottom:1px solid $border_color;
+	margin:12px auto 11px auto;
+	border-bottom:1px solid darken($bg_color,5%);
 }
 
 // images

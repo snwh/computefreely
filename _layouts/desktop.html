@@ -1,0 +1,83 @@
+---
+layout: minimal
+---
+
+<!-- Header -->
+<header>
+	<div class="row">
+		<span class="title">{% if page.title %}Desktop Environment: {{ page.title }}{% else %}{{ site.title }}{% endif %}</span>
+	</div>
+</header>
+
+<!-- Nav -->
+<nav>
+	<div class="row {{ page.row }}">
+		<a href="/">Home</a>
+		<span class="chevron">&rsaquo;</span>
+		<a href="{{ site.dirs.desktops }}">Desktops</a>
+		<span class="chevron">&rsaquo;</span>
+		<span>{{ page.title }}</span>
+	</div>
+</nav>
+
+<!-- Row -->
+<div class="row">
+	<!-- Article -->
+	<article>
+		{% if page.image %}<!-- Screenshot -->
+		<img class="screenshot" src="{{ site.dirs.screenshots }}{{ page.image }}" alt="{{ page.caption }}" title="{{ page.title }}" onclick="openModal();">
+		{% if page.caption%}<p class="footnote text-right">{{ page.caption }}</p>{% else %}{% endif %}{% else %}{% endif %}
+		<!-- Title -->
+		<div class="page-title">
+			{% if page.logo %}<img class="logo" src="{{ site.dirs.logos }}{{ page.logo }}.svg">{% else %}{% endif %}<h2>{{ page.title }}</h2>
+		</div>
+		{% if page.notes %}<!-- Notes -->
+		<table class="notes">
+			<style type="text/css">tbody:before{content:"About {{ page.title }}</style>
+			<tbody>
+				{% if page.notes.homepage %}<!-- Homepage --><tr>
+					<td>Homepage</td>
+					<td><a href="{{ page.notes.homepage }}" target="_blank">{{ page.notes.homepage | remove: "http://" | remove: "https://" }}</a></td>
+				</tr>{% else %}{% endif %}
+				{% if page.notes.developers %}<!-- Developer --><tr>
+					<td>Developer(s)</td>
+					<td>{% for developer in page.notes.developers %}{% if developer.url %}<a href="{{ developer.url }}" target="_blank">{{ developer.name }}</a>{% if forloop.last %}{% else %}, {% endif %}{% else %}{{ developer.name }}{% if forloop.last %}{% else %}, {% endif %}{% endif %}{% endfor %}</td>
+				</tr>{% else %}{% endif %}
+			</tbody>
+		</table>{% else %}{% endif %}
+		<!-- Content -->
+		{{ content }}
+		{% if page.notes.homepage %}<a href="{{ page.notes.homepage }}" class="button center" target="_blank">Learn More »</a>{% else %}{% endif %}
+	</article>
+</div>
+<!-- Row -->
+<div class="row">
+	<section class="text-center">
+		<h4>Distributions offering {{ page.title }}</h4>
+		<!-- tagged posts -->
+		<div class="cards">
+			{% for post in site.posts %}{% for item in post.notes.desktops %}{% assign desktop = item | downcase %}{% if desktop == page.tag %}<!-- Distro -->
+			<a href="{{ post.url }}" class="card small">
+				<img src="{{ site.dirs.logos }}{{ post.logo }}.svg">
+				<div class="card-text">
+					<span>{{ post.title }}</span>
+					<small class="category {{ post.category }}">{{ post.category }}</small>
+					<small class="read-more">Read more »</small>
+				</div>
+			</a>
+			{% endif %}{% endfor %}{% endfor %}
+		</div>
+	</section>
+</div>
+
+<!-- Modal -->
+<div id="screenshotDialog" class="modal" onclick="closeModal()">
+	<span class="modal-close" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+		<img src="{{ site.dirs.screenshots }}{{ page.image }}">
+	</div>
+</div>
+<script type="text/javascript">
+	function openModal() {document.getElementById('screenshotDialog').style.display = "block";}
+	function closeModal() {document.getElementById('screenshotDialog').style.display = "none";}
+</script>

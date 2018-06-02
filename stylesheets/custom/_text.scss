@@ -19,6 +19,7 @@
 $title_size:50px;
 
 .page-title {
+	width:100%;
 	display: inline-block;
 	margin: 12px 0;
 	max-height: $title_size;
@@ -30,13 +31,13 @@ $title_size:50px;
 	}
 
 	> img {
-		max-height: $title_size;
+		max-height: $title_size - 10px;
 		margin-right:12px;
 	}
 }
 
-// difficulty
-small.difficulty {
+// category
+small.category {
 	text-transform:uppercase;
 	font-family:$monospace;
 	color:inherit;
@@ -45,6 +46,7 @@ small.difficulty {
 	&.beginner { color:$green_color;}
 	&.intermediate { color:$orange_color}
 	&.advanced { color:$red_color}
+	&.desktop { color:$blue_color}
 }
 
 // Published

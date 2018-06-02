@@ -14,46 +14,55 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# Site Config
-markdown: kramdown
-
 # Site Info
 title: "Compute Freely"
 description: "A friendly place to start for the Free &amp; Open Source Software and Linux curious."
 keywords: "Linux, distribution, choose distro, which linux distro, Windows alternative, Mac alternative, free software, open source, best linux distro"
 
-# Metadata
-background: "none"
+# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
+url: http://computefreely.org
+
+# Images
 image: "/images/promo.png"
 icon: "/images/icon.png"
 favicon: "/images/favicon.png"
 color: "#0099ee"
 
-# Images
-logos_dir: "/images/distros"
-screenshots_dir: "/images/screenshots"
+# Posts
+permalink: /distro/:title
 
-# Sources
-sources:
-  url: https://github.com/snwh/computefreely/
-  issues_url: https://github.com/snwh/computefreely/issues
-  page_dir: https://github.com/snwh/computefreely/edit/master/_posts/
+# Directories
+dirs:
+  logos: "/images/logos/"
+  screenshots: "/images/screenshots/"
+  tags: "/tags/"
+  distro: "/distro/"
+  categories: "/categories/"
+  desktops: "/desktops/"
+
+# GitHub
+github:
+  repo: https://github.com/snwh/computefreely/
+  issues: https://github.com/snwh/computefreely/issues
+  edit: https://github.com/snwh/computefreely/edit/master/_posts/
 
 # Author
 author:
   name: "Sam Hewitt"
   url: "https://samuelhewitt.com/"
 
-# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://computefreely.org
-
 # SASS
 sass:
   style: minified
 
-# permalink
-permalink: /distro/:title
+# Markdown
+markdown: kramdown
 
 # Include list
 include: ["_pages"]
-exclude: ['*.git*','README*','LICENSE*','*.scss']
+exclude: ["*.git*", "README*", "LICENSE*", "*.scss", AUTHORS, CONTRIBUT*, Gemfile, Gemfile.*]
+
+collections:
+  desktops:
+    output: true
+    permalink: /:collection/:title

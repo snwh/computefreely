@@ -1,9 +1,11 @@
 ---
 layout: post
-author: Sam Hewitt
+author: "Sam Hewitt"
 title: "Frugalware"
-date: "2018-06-01 12:00 am"
+date: "2018-06-01"
 logo: "frugalware"
+image: "frugalware-2.1.png"
+caption: "Frugalware 2.1 with the Plasma desktop"
 tags: [cli]
 category: [intermediate]
 notes:
@@ -15,4 +17,4 @@ notes:
       url: https://www.frugalware.org/authors
 ---
 
-Frugalware Linux is a general-purpose Linux distribution designed for intermediate users who are familiar with command-line operations.
+Frugalware is a general-purpose Linux distribution designed for users who are familiar with the Linux command-line but isn't made to be needlessly uncomfortable. Frugalware ships software from as close to the original source as possible to avoid the need for constant patching.

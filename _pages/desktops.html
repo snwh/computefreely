@@ -1,0 +1,37 @@
+---
+layout: default
+title: Desktop Environments
+permalink: /desktops/
+---
+
+<!-- Nav -->
+<nav>
+	<div class="row {{ page.row }}">
+		<a href="/">Home</a>
+		<span class="chevron">&rsaquo;</span>
+		<span>{{ page.title }}</span>
+	</div>
+</nav>
+
+<div class="row">
+	<!-- tagged posts -->
+	<section>
+		<h4>What is a Desktop Environment?</h4>
+		<p>A desktop environment is any bundle of applications and software running on top of a computer operating system, that share a common graphical user interface or underlying toolkit.
+
+		<p>Typically, a desktop environment's user interface is made up of application windows, a taskbar of sorts, and a desktop, each with icons, buttons, menus and toolbars that aim to have a familiar and intuitive layout for a user to interact with.</p>
+
+		<p>Some of the following are popular desktop environments used by Linux distributions showcased on this site.</p>
+		<div class="cards text-left">
+		{% for page in site.desktops %}
+			<a href="{{ page.url }}" class="card small">
+				{% if page.logo %}<img class="logo" src="{{ site.dirs.logos }}{{ page.logo }}.svg">{% else %}<img class="logo" src="{{ site.dirs.logos }}no-logo.svg">{% endif %}
+				<div class="card-text">
+					<span>{{ page.title }}</span>
+					<small class="read-more">Read more »</small>
+				</div>
+			</a>
+		{% endfor %}
+		</div>
+	</section>
+</div>

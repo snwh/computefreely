@@ -1,8 +1,8 @@
 ---
 layout: post
-author: Sam Hewitt
+author: "Sam Hewitt"
 title: "Puppy Linux"
-date: "2018-06-01 5:00 pm"
+date: "2018-06-01"
 logo: "puppylinux"
 image: "puppy-linux-7.5.png"
 caption: "Puppy Linux 7.5"

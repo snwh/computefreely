@@ -1,17 +1,17 @@
 ---
 layout: post
-author: Sam Hewitt
+author: "Sam Hewitt"
 title: "elementary OS"
-date: "2017-03-02 11:00 am"
+date: "2017-03-02"
 logo: "elementary"
 image: "elementary-os-0.4.png"
 caption: 'elementary OS 0.4 desktop'
-tags: [desktop, pantheon]
+tags: [desktop]
 category: [beginner]
 notes:
   homepage: https://elementary.io/
   version: "0.4"
-  based-on: ubuntu
+  based-on: ["Ubuntu"]
   desktops: [Pantheon]
   install: graphical
   developers:

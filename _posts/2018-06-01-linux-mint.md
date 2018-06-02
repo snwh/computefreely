@@ -1,17 +1,17 @@
 ---
 layout: post
-author: Sam Hewitt
+author: "Sam Hewitt"
 title: "Linux Mint"
-date: "2018-06-01 7:00 pm"
+date: "2018-06-01"
 logo: "linux-mint"
 image: "linux-mint-18.3.png"
 caption: "Linux Mint 18.3 with Cinnamon desktop"
-tags: [desktop, cinnamon, mate, xfce, kde]
+tags: [desktop]
 category: [beginner]
 notes:
   homepage: https://www.linuxmint.com/
   version: "18.3"
-  based-on: [ubuntu, debian]
+  based-on: ["Ubuntu", "Debian"]
   desktops: [Cinnamon, KDE, MATE, Xfce]
   install: graphical
   developers:

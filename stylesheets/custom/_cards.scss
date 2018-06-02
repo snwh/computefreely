@@ -76,8 +76,8 @@ $card_width:23%;
 			img {
 				margin: 8px;
 				display: inline-block;
-				width:$card_image_size * 0.75;
-				height:$card_image_size * 0.75;
+				width:$card_image_size - 20px;
+				height:$card_image_size - 20px;
 			}
 
 			.card-text {
@@ -139,7 +139,7 @@ $card_width:23%;
 			.card-text {
 				margin: 12px 0;
 				padding: 12px 0;
-				height:$card_image_size - 24px;
+				height:$card_image_size - 20px;
 				overflow: hidden;
 				text-align:left;
 				display:inline-block;
@@ -162,7 +162,7 @@ $card_width:23%;
 				>.card-text {
 					padding: 0;
 					margin: 4px 0;
-					height:$card_image_size - 24px;
+					height:$card_image_size - 20px;
 					> span {font-size:$card_font_size - 6px;}
 				}
 			}
@@ -183,14 +183,14 @@ $card_width:23%;
 
 			img {
 				margin: 16px;
-				height: $card_image_size - 24px;
+				height: $card_image_size - 20px;
 				display: inline-block;
 			}
 
 			>.card-text {
 				padding: 0;
 				margin: 12px 0;
-				height:$card_image_size - 24px;
+				height:$card_image_size - 20px;
 				> span {font-size:$card_font_size - 6px;}
 			}
 
