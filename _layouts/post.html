@@ -73,7 +73,7 @@ layout: minimal
 		{{ content }}</article>
 	<br>
 	<!-- Page Edit -->
-	<div class="footnote text-right"><i class="fas fa-exclamation-triangle"></i> Something missing, incorrect or out of date? <a href="{{ site.github.edit }}{{ page.date | date: '%Y-%m-%d' }}-{{ page.url | replace: '/distros/',''}}.md" target="_blank">Edit this page</a> or <a href="{{ site.github.issues }}/new/?title=[Page%20Issue]%20{{ page.title }}" target="_blank">file an issue</a>.</div>
+	<div class="footnote text-right"><i class="fas fa-exclamation-triangle"></i> Something missing, incorrect or out of date? <a href="{{ site.github.edit.posts }}{{ page.date | date: '%Y-%m-%d' }}-{{ page.url | remove: site.dirs.distro }}.md" target="_blank">Edit this page</a> or <a href="{{ site.github.issues }}/new/?title=[Page%20Issue]%20{{ page.title }}" target="_blank">file an issue</a>.</div>
 </div>
 
 <!-- Modal -->

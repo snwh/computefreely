@@ -44,7 +44,9 @@ dirs:
 github:
   repo: https://github.com/snwh/computefreely/
   issues: https://github.com/snwh/computefreely/issues
-  edit: https://github.com/snwh/computefreely/edit/master/_posts/
+  edit: 
+    desktops: https://github.com/snwh/computefreely/edit/master/_desktops/
+    posts: https://github.com/snwh/computefreely/edit/master/_posts/
 
 # Author
 author:
