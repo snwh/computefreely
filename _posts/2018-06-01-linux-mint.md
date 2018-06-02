@@ -2,15 +2,15 @@
 layout: post
 author: Sam Hewitt
 title: "Linux Mint"
-date: "2017-03-02 11:00 am"
+date: "2018-06-01 7:00 pm"
 logo: "linux-mint"
-image: "linux-mint-18.1.png"
-caption: "Linux Mint 18.1 with Cinnamon desktop"
+image: "linux-mint-18.3.png"
+caption: "Linux Mint 18.3 with Cinnamon desktop"
 tags: [desktop, cinnamon, mate, xfce, kde]
 category: [beginner]
 notes:
   homepage: https://www.linuxmint.com/
-  version: "18.1"
+  version: "18.3"
   based-on: [ubuntu, debian]
   desktops: [Cinnamon, KDE, MATE, Xfce]
   install: graphical
@@ -20,7 +20,7 @@ notes:
     - name: Linux Mint Community
 ---
 
-The Linux Mint Project has always aimed to provide a desktop experience that is both elegant and user-focused. Mint 
+The Linux Mint Project has always aimed to provide a desktop experience that is both elegant and user-focused. 
 
 The Mint team is a primary developer of the Cinnamon desktop environments, which serves as this distribution's default desktop environment. However you can download variations with the MATE, Xfce or KDE desktop environments.
 

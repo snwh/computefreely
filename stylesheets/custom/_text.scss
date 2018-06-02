@@ -6,7 +6,7 @@
 	display:block;
 	font-family:$monospace;
 	font-size:$font_size * 0.8;
-	margin:24px auto;
+	margin:12px auto;
 	width:100%;
 	* {
 		color: inherit;
@@ -15,10 +15,24 @@
 	a {color:$link_color;}
 }
 
-// article title
-.title {
+// page title
+$title_size:50px;
+
+.page-title {
 	display: inline-block;
-	width: auto;
+	margin: 12px 0;
+	max-height: $title_size;
+	> * {
+		margin:0;
+		line-height: $title_size - 4px;
+		display:inline-block;
+		vertical-align:middle;
+	}
+
+	> img {
+		max-height: $title_size;
+		margin-right:12px;
+	}
 }
 
 // difficulty
@@ -35,11 +49,11 @@ small.difficulty {
 
 // Published
 .published {
+	margin: 6px 0;
 	color:lighten($fg_color, 30%);
 	display:block;
 	font-size:$font_size - 4px;
 	font-family:$monospace;
-	opacity:0.8;
 	text-transform:uppercase;
 	width:100%;
 

@@ -21,7 +21,7 @@ ul.tags {
 			box-shadow:none;
 			color: $tag_fg_color;
 			display:block;
-			font-size: 12px;
+			font-size: $font_size - 2px;
 			font-weight: 600;
 			height: $tag_height;
 			line-height:$tag_height + 1px;

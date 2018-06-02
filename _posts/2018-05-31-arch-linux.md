@@ -4,7 +4,7 @@ author: Sam Hewitt
 title: "Arch Linux"
 date: "2018-05-31 9:00 pm"
 logo: "arch-linux"
-tags: [desktop, server, cli]
+tags: [desktop, minimal, cli]
 category: [advanced]
 notes:
   homepage: http://www.archlinux.org/

@@ -21,48 +21,50 @@ layout: minimal
 
 <!-- Row -->
 <div class="row">
-	{% if page.image %}<!-- Screenshot -->
-	<img class="screenshot" src="{{ site.screenshots_dir }}/{{ page.image }}" alt="{{ page.caption }}" title="{{ page.title }}" onclick="openModal();">
-	{% if page.caption%}<p class="footnote text-right">{{ page.caption }}</p>{% else %}{% endif %}{% else %}{% endif %}
-	<!-- Title -->
-	<img class="logo" src="{{ site.logos_dir }}/{{ page.logo }}.svg"><h2 class="title">{{ page.title }}</h2>
-	<!-- Published -->
-	<small class="published">Page last updated <span class="date">{{ page.date | date_to_string }}</span> by <span class="author">{{ page.author }}</span></small>
-	<!-- Tags -->
-	<ul class="tags">
-		{% for category in page.category %}<li><a href="/tag/{{ category }}">{{ category | downcase }}</a></li>{% endfor %}{% for tag in page.tags %}<li><a href="/tag/{{ tag }}">{{ tag | downcase }}</a></li>{% endfor %}
-	</ul>
-	{% if page.notes %}<!-- Notes -->
-	<table class="notes">
-		<tbody>
-			{% if page.notes.homepage %}<!-- Homepage --><tr>
-				<td>Homepage</td>
-				<td><a href="{{ page.notes.homepage }}" target="_blank">{{ page.notes.homepage | remove: "http:" | remove: "https:" | remove: "/"}}</a></td>
-			</tr>{% else %}{% endif %}
-			{% if page.notes.version %}<!-- Version --><tr>
-				<td>Latest Version</td>
-				<td>{{ page.notes.version }}</td>
-			</tr>{% else %}{% endif %}
-			{% if page.notes.desktops %}<!-- Desktop --><tr>
-				<td>Desktop Environment(s)</td>
-				<td>{% for desktop in page.notes.desktops %}<a href="/tag/{{ desktop | downcase }}">{{ desktop }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
-			</tr>{% else %}{% endif %}
-			{% if page.notes.install %}<!-- Installation Type --><tr>
-				<td>Installation type</td>
-				<td>{{ page.notes.install | capitalize }}</td>
-			</tr>{% else %}{% endif %}
-			{% if page.notes.based-on %}<!-- Based On --><tr>
-				<td>Based On</td>
-				<td>{% for distro in page.notes.based-on %}<a href="/distro/{{ distro | downcase | replace: " ","-" }}">{{ distro | capitalize}}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
-			</tr>{% else %}{% endif %}
-			{% if page.notes.developers %}<!-- Developer --><tr>
-				<td>Developer(s)</td>
-				<td>{% for developer in page.notes.developers %}{% if developer.url %}<a href="{{ developer.url }}" target="_blank">{{ developer.name }}</a>{% if forloop.last %}{% else %}, {% endif %}{% else %}{{ developer.name }}{% if forloop.last %}{% else %}, {% endif %}{% endif %}{% endfor %}</td>
-			</tr>{% else %}{% endif %}
-		</tbody>
-	</table>{% else %}{% endif %}
 	<!-- Article -->
 	<article>
+		{% if page.image %}<!-- Screenshot -->
+		<img class="screenshot" src="{{ site.screenshots_dir }}/{{ page.image }}" alt="{{ page.caption }}" title="{{ page.title }}" onclick="openModal();">
+		{% if page.caption%}<p class="footnote text-right">{{ page.caption }}</p>{% else %}{% endif %}{% else %}{% endif %}
+		<!-- Title -->
+		<div class="page-title">
+			<img class="logo" src="{{ site.logos_dir }}/{{ page.logo }}.svg"><h2>{{ page.title }}</h2>
+		</div>
+		<!-- Published -->
+		<small class="published">Page last updated <span class="date">{{ page.date | date_to_string }}</span> by <span class="author">{{ page.author }}</span></small>
+		<!-- Tags -->
+		<ul class="tags">
+			{% for category in page.category %}<li><a href="/tag/{{ category }}">{{ category | downcase }}</a></li>{% endfor %}{% for tag in page.tags %}<li><a href="/tag/{{ tag }}">{{ tag | downcase }}</a></li>{% endfor %}
+		</ul>
+		{% if page.notes %}<!-- Notes -->
+		<table class="notes">
+			<tbody>
+				{% if page.notes.homepage %}<!-- Homepage --><tr>
+					<td>Homepage</td>
+					<td><a href="{{ page.notes.homepage }}" target="_blank">{{ page.notes.homepage | remove: "http:" | remove: "https:" | remove: "/"}}</a></td>
+				</tr>{% else %}{% endif %}
+				{% if page.notes.version %}<!-- Version --><tr>
+					<td>Latest Version</td>
+					<td>{{ page.notes.version }}</td>
+				</tr>{% else %}{% endif %}
+				{% if page.notes.desktops %}<!-- Desktop --><tr>
+					<td>Desktop Environment(s)</td>
+					<td>{% for desktop in page.notes.desktops %}<a href="/tag/{{ desktop | downcase }}">{{ desktop }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
+				</tr>{% else %}{% endif %}
+				{% if page.notes.install %}<!-- Installation Type --><tr>
+					<td>Installation type</td>
+					<td>{{ page.notes.install | capitalize }}</td>
+				</tr>{% else %}{% endif %}
+				{% if page.notes.based-on %}<!-- Based On --><tr>
+					<td>Based On</td>
+					<td>{% for distro in page.notes.based-on %}<a href="/distro/{{ distro | downcase | replace: " ","-" }}">{{ distro | capitalize}}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
+				</tr>{% else %}{% endif %}
+				{% if page.notes.developers %}<!-- Developer --><tr>
+					<td>Developer(s)</td>
+					<td>{% for developer in page.notes.developers %}{% if developer.url %}<a href="{{ developer.url }}" target="_blank">{{ developer.name }}</a>{% if forloop.last %}{% else %}, {% endif %}{% else %}{{ developer.name }}{% if forloop.last %}{% else %}, {% endif %}{% endif %}{% endfor %}</td>
+				</tr>{% else %}{% endif %}
+			</tbody>
+		</table>{% else %}{% endif %}
 		<!-- Content -->
 		{{ content }}</article>
 	<br>

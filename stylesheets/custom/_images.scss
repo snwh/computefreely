@@ -31,21 +31,6 @@ img.screenshot {
 	}
 }
 
-// logo on the distro page
-$logo_size:50px;
-
-img.logo {
-	width: $logo_size;
-	height: $logo_size;
-	max-width: $logo_size;
-	margin: 2em 0;
-	display: inline-block;
-	margin-left: 0.125em;
-	margin-right: 1em;
-}
-
-
-
 @media only screen and (max-width:480px) {
 	img.screenshot {
 		border-radius:2px;

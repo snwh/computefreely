@@ -23,7 +23,7 @@ $card_width:23%;
 		color: $card_fg_color;
 		display: inline-block;
 		margin: 6px 0.5%; // 0.5 to sum with the width of 4 cards
-		padding: calc(#{$card_height} / 2) 0;
+		padding: 24px 0;
 		text-align: center;
 		text-decoration:none;
 		text-shadow:none;
@@ -69,7 +69,7 @@ $card_width:23%;
 			text-align: left;
 			display: inline-block;
 			padding: 6px;
-			width: calc(33% - 64px);
+			width: calc(33% - 24px);
 			float: none;
 			margin: 6px;
 
@@ -124,31 +124,15 @@ $card_width:23%;
 	.cards {
 		a.card {
 			display: inline-block;
-			padding: 24px;
-			width: calc(50% - 72px);
-			margin: 6px;
-		}
-
-		a.card.small {
-			padding: 0;
-			width: calc(50% - 24px);
-		}
-	}
-}
-
-@media only screen and (max-width:600px) {
-	.cards {
-		a.card {
-			display: block;
 			float: none;
-			margin: 12px;
+			margin: 6px;
 			padding: 0;
 			text-align:left;
-			width: calc(100% - 24px);
+			width: calc(50% - 12px);
 
 			img {
 				margin: 16px;
-				height: $card_image_size;
+				height: $card_image_size - 12px;
 				display: inline-block;
 			}
 
@@ -186,7 +170,8 @@ $card_width:23%;
 	}
 }
 
-@media only screen and (max-width:400px) {
+
+@media only screen and (max-width:720px) {
 	.cards {
 		a.card {
 			display: block;
