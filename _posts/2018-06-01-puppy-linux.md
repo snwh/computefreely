@@ -11,7 +11,6 @@ category: [intermediate]
 notes:
   homepage: http://puppylinux.com/
   version: "7.5"
-  install: graphical
   install: live
   developers:
     - name: Barry Kauler
