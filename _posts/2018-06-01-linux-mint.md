@@ -12,7 +12,7 @@ notes:
   homepage: https://www.linuxmint.com/
   version: "18.3"
   based-on: ["Ubuntu", "Debian"]
-  desktops: [Cinnamon, KDE, MATE, Xfce]
+  desktops: [Cinnamon, KDE Plasma, MATE, Xfce]
   install: graphical
   developers:
     - name: Linux Mint Team
@@ -22,6 +22,6 @@ notes:
 
 The Linux Mint Project has always aimed to provide a desktop experience that is both elegant and user-focused. 
 
-The Mint team is a primary developer of the Cinnamon desktop environments, which serves as this distribution's default desktop environment. However you can download variations with the MATE, Xfce or KDE desktop environments.
+The Mint team is a primary developer of the Cinnamon desktop environments, which serves as this distribution's default desktop environment. However you can download variations with the MATE, Xfce or KDE Plasma desktop environments.
 
 As an Ubuntu-based distribution whose goal is to provide a more complete out-of-the-box experience by including browser plugins, media codecs, support for DVD playback, Java and other components. It also adds a custom desktop and menus, several unique configuration tools, and a web-based package installation interface. Linux Mint is compatible with Ubuntu software repositories. 

@@ -5,13 +5,13 @@ title: "Slackware"
 date: "2018-06-02"
 logo: "slackware"
 image: "slackware-14.2.jpg"
-caption: "Slackware 14.2 with the KDE desktop"
+caption: "Slackware 14.2 with the KDE Plasma desktop"
 tags: [desktop, cli]
 category: [advanced]
 notes:
   homepage: http://www.slackware.com/
   version: "14.2"
-  desktops: [KDE, Xfce]
+  desktops: [KDE Plasma, Xfce]
   install: command line
   developers:
     - name: Patrick Volkerding
