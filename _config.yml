@@ -64,6 +64,7 @@ markdown: kramdown
 include: ["_pages"]
 exclude: ["*.git*", "README*", "LICENSE*", "*.scss", AUTHORS, CONTRIBUT*, Gemfile, Gemfile.*]
 
+# Collections (specifically used for the desktops pages)
 collections:
   desktops:
     output: true

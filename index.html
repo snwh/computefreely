@@ -32,15 +32,16 @@ title: "Free your computer. Use Linux."
 <div class="row narrow">
 	<section class="text-center">
 		<h3>Freedom of Choice</h3>
-		<p>There is a virtually endless number of Linux distributions, each with its own purpose, look and feel, and out-of-the-box experience. The following is a curated selection, ranging from the beginner-friendly to the super technical.</p>
+		<p>There is a virtually endless number of Free and Open Source Software-based operating systems, each with its own philosophy and purpose, look and feel, and out-of-the-box experience. This site distills the thousands available into a curated selection, ranging from the beginner-friendly to the super technical.</p>
 	</section>
 </div>
 
 <!-- Row -->
 <div class="row">
-	<section class="cards">
+	<section>
+		<p class="footnote text-center">These cards are shuffled when the page refreshes.</p>
 		<!-- distro list -->
-		<div id="distro-list">
+		<div id="distro-list" class="cards">
 		{% for post in site.posts %}
 			<a href="{{ post.url }}" class="card">
 				<img src="{{ site.dirs.logos }}{{ post.logo }}.svg">
@@ -52,8 +53,7 @@ title: "Free your computer. Use Linux."
 			</a>
 		{% endfor %}
 		</div>
-		<p class="footnote right">This list is randomly ordered upon each viewing.</p>
-		<!-- Randomize list -->
+		<!-- Shuffle list -->
 		<script type="text/javascript">
 		// For those who may say "This is biased!"
 		var list = document.getElementById('distro-list');

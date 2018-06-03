@@ -2,7 +2,7 @@
 
 $notes_bg_color: #fff;
 $notes_accent_color: $brand_color;
-$notes_width: 600px;
+$notes_width: $row_width - 300px;
 
 // Overall table style
 table.notes {
@@ -12,7 +12,7 @@ table.notes {
 	// text styles
 	> tbody {
 		background-color: $notes_bg_color;
-		border-radius: 0 5px 5px 0;
+		border-radius: 0 6px 6px 0;
 		border:1px solid rgba(0,0,0,0.08);
 		border-left-width: 0;
 		box-shadow: -5px 0 0 0 $notes_accent_color, inset 0 1px 0 0 rgba(255,255,255,0.4),0 1px 2px 0 rgba(0,0,0,0.05);
@@ -43,22 +43,23 @@ table.notes {
 				border: none;
 				padding: 6px 0 4px 0;
 				vertical-align: top;
-				padding-right: 8px;
 
 				> a {font-family: inherit;}
 
 				&:nth-child(odd) {
-					width: $notes_width * 0.33;
+					width: calc((#{$notes_width} * 0.40) - (24px));
 					color: lighten($fg_color, 20%);
 					text-align: right;
+					padding-left: 24px;
 
 					// add a separator
 					&:after {content: ":"}
 				}
 
 				&:nth-child(even) {
-					width: $notes_width * 0.66 - 32px;
-					padding-right: 32px;
+					width: calc((#{$notes_width} * 0.60) - (12px + 8px));
+					padding-right: 12px;
+					padding-left: 8px;
 				}
 			}
 		}

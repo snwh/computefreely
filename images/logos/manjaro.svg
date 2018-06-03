@@ -25,10 +25,10 @@
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      id="namedview10"
-     showgrid="true"
+     showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="100"
-     inkscape:cy="100"
+     inkscape:cx="112.2153"
+     inkscape:cy="79.164811"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -52,7 +52,8 @@
   <defs
      id="defs10434" />
   <g
-     id="g827">
+     id="g827"
+     transform="translate(-1)">
     <path
        d="M 25,10 V 85 H 70 V 62.5 h 52.5 V 10 Z"
        style="fill:#35bf5c;stroke-width:0.99999994"
