@@ -4,7 +4,7 @@ title: "LXDE"
 logo: "desktop-lxde"
 tag: "lxde"
 image: "desktop-lxde.png"
-caption: "The desktop of LXDE variant of Ubuntu, Xubuntu"
+caption: "The LXDE desktop on Lubuntu"
 category: [desktop]
 notes:
   homepage: https://lxde.org/

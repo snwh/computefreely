@@ -40,6 +40,7 @@ table.notes {
 			&:last-child {border:none;}
 
 			> td {
+				word-break: break-all; // to break long urls
 				border: none;
 				padding: 6px 0 4px 0;
 				vertical-align: top;
