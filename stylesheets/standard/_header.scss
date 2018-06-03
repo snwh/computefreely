@@ -1,7 +1,6 @@
 // Header
 $header_bg_color: $brand_color;
 $header_fg_color: $base_color;
-$header_height: 80px;
 $header_title_font_size: 40px;
 $header_subtitle_font_size: 16px;
 
@@ -18,20 +17,23 @@ header {
 		white-space: wrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		text-shadow: 0 -1px rgba(0,0,0,0.4);;
+		text-shadow: 0 -1px darken($header_bg_color, 10%);
+		> * {
+			color:inherit;
+		}
 	}
 
 	span {
-		> span {opacity:0.5;}
+		width:100%;
 		&.title {
 			font-size: $header_title_font_size;
-			line-height: $header_height;
+			line-height: $header_title_font_size * 2;
 		}
 
 		&.subtitle {
 			font-size: $header_subtitle_font_size;
 			width: 100%;
-			margin: 4px;
+			margin: 6px 0;
 			display: inline-block;
 			> a {
 				font-size: inherit;
@@ -40,22 +42,17 @@ header {
 	}
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:600px) {
 	header {
 		span {
 			&.title {
-				font-size: $header_title_font_size * 0.75;
-				line-height: $header_height * 0.75 - 12px;
+				font-size: $header_title_font_size - 6px;
+				line-height: $header_title_font_size + 12px;
+				margin-bottom: 12px;
 			}
 
 			&.subtitle {
-				font-size: $header_subtitle_font_size;
-				width: 100%;
-				display: inline-block;
-				margin-top: 16px;
-				> a {
-					font-size: inherit;
-				}
+				font-size: $header_subtitle_font_size - 2px;
 			}
 		}
 	}

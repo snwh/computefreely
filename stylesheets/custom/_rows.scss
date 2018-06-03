@@ -14,7 +14,8 @@
 
 @media only screen and (max-width:$row_width + 24px) {
 	.row {
-		width:90%;margin:0 5%;
+		width:calc(100% - 32px);
+		margin:0 16px;
 		&.wide,
 		&.narrow {
 			width:inherit;
@@ -23,6 +24,7 @@
 }
 @media only screen and (max-width:$row_width + 200px + 24px) {
 	.row.wide {
-		width:90%;margin:0 5%;
+		width:calc(100% - 32px);
+		margin:0 16px;
 	}
 }

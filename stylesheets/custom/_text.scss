@@ -16,23 +16,27 @@
 }
 
 // page title
-$title_size:50px;
+$page_title_size:50px;
 
 .page-title {
+	display:inline-block;
 	width:100%;
-	display: inline-block;
-	margin: 12px 0;
-	max-height: $title_size;
-	> * {
-		margin:0;
-		line-height: $title_size - 4px;
+	margin: 16px 0;
+	height: $page_title_size;
+	max-height: $page_title_size;
+
+	> h2 {
+		margin: 0 12px;
+		width: auto;
 		display:inline-block;
 		vertical-align:middle;
 	}
 
 	> img {
-		max-height: $title_size - 10px;
-		margin-right:12px;
+		display:inline-block;
+		height: $page_title_size - 10px;
+		margin:5px;
+		vertical-align:middle;
 	}
 }
 
@@ -51,7 +55,7 @@ small.category {
 
 // Published
 .published {
-	margin: 6px 0;
+	margin: 12px 0;
 	color:lighten($fg_color, 30%);
 	display:block;
 	font-size:$font_size - 4px;

@@ -43,9 +43,9 @@ table.notes {
 				border: none;
 				padding: 6px 0 4px 0;
 				vertical-align: top;
+				word-break: break-all; // to break long urls
 
 				> a {
-					word-break: break-all; // to break long urls
 					font-family: inherit;
 				}
 
