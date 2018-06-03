@@ -42,7 +42,7 @@ layout: minimal
 		</ul>
 		{% if page.notes %}<!-- Notes -->
 		<table class="notes">
-			<style type="text/css">tbody:before{content:"About {{ page.title }}</style>
+			<style type="text/css">tbody:before{content:"{{ page.title | strip_html }} Details"</style>
 			<tbody>
 				{% if page.notes.homepage %}<!-- Homepage --><tr>
 					<td>Homepage</td>
@@ -54,7 +54,7 @@ layout: minimal
 				</tr>{% else %}{% endif %}
 				{% if page.notes.desktops %}<!-- Desktop --><tr>
 					<td>Desktop Environment(s)</td>
-					<td>{% for desktop in page.notes.desktops %}<a href="{{ site.dirs.desktops }}{{ desktop | downcase | replace: ' ','-'}}">{{ desktop }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
+					<td>{% for desktop in page.notes.desktops %}<a href="{{ site.dirs.desktops }}{{ desktop | downcase | slugify }}">{{ desktop }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
 				</tr>{% else %}{% endif %}
 				{% if page.notes.install %}<!-- Installation Type --><tr>
 					<td>Installation type</td>
@@ -62,7 +62,7 @@ layout: minimal
 				</tr>{% else %}{% endif %}
 				{% if page.notes.based-on %}<!-- Based On --><tr>
 					<td>Based On</td>
-					<td>{% for distro in page.notes.based-on %}<a href="{{ site.dirs.distro }}{{ distro | downcase | replace: ' ','-' }}">{{ distro | capitalize}}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
+					<td>{% for distro in page.notes.based-on %}<a href="{{ site.dirs.distro }}{{ distro | downcase | slugify }}">{{ distro | capitalize }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
 				</tr>{% else %}{% endif %}
 				{% if page.notes.developers %}<!-- Developer --><tr>
 					<td>Developer(s)</td>

@@ -56,7 +56,7 @@ layout: minimal
 		<h4>Distributions offering {{ page.title }}</h4>
 		<!-- tagged posts -->
 		<div class="cards">
-			{% for post in site.posts %}{% for item in post.notes.desktops %}{% assign desktop = item | downcase | replace: ' ','-' %}{% if desktop == page.tag %}<!-- Distro -->
+			{% for post in site.posts %}{% for item in post.notes.desktops %}{% assign desktop = item | downcase | slugify %}{% if desktop == page.tag %}<!-- Distro -->
 			<a href="{{ post.url }}" class="card small">
 				<img src="{{ site.dirs.logos }}{{ post.logo }}.svg">
 				<div class="card-text">
