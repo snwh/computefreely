@@ -40,12 +40,14 @@ table.notes {
 			&:last-child {border:none;}
 
 			> td {
-				word-break: break-all; // to break long urls
 				border: none;
 				padding: 6px 0 4px 0;
 				vertical-align: top;
 
-				> a {font-family: inherit;}
+				> a {
+					word-break: break-all; // to break long urls
+					font-family: inherit;
+				}
 
 				&:nth-child(odd) {
 					width: calc((#{$notes_width} * 0.40) - (24px));

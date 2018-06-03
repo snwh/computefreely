@@ -6,7 +6,7 @@ $card_corner_radius: 5px;
 $card_font_size:24px;
 $card_image_size:100px;
 $card_height:64px;
-$card_width:23%;
+$card_width:20%;
 
 // Card container
 .cards {
@@ -22,12 +22,12 @@ $card_width:23%;
 		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 		color: $card_fg_color;
 		display: inline-block;
-		margin: 6px 0.5%; // 0.5 to sum with the width of 4 cards
+		margin: 6px;
 		padding: 24px 0;
 		text-align: center;
 		text-decoration:none;
 		text-shadow:none;
-		width:$card_width;
+		width:calc(100% * 0.2 - 12px);
 
 		.card-text {
 			vertical-align:middle;
@@ -102,15 +102,15 @@ $card_width:23%;
 	}
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1120px) {
 	.cards {
 		a.card {
-			width: calc(33% - 18px);
+			width: calc(100% * 0.25 - 24px);
 			margin: 6px;
 		}
 
 		a.card.small {
-			width: calc(33% - 32px);
+			width: calc(100% * 0.33 - 12px);
 			margin: 6px;
 			.card-text > span {
 				font-size:$card_font_size - 6px;

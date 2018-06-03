@@ -21,3 +21,8 @@
 		}
 	}
 }
+@media only screen and (max-width:$row_width + 200px + 24px) {
+	.row.wide {
+		width:90%;margin:0 5%;
+	}
+}
