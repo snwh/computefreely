@@ -20,10 +20,10 @@ description: "A friendly place to start for the Free &amp; Open Source Software 
 keywords: "Linux, distribution, choose distro, which linux distro, Windows alternative, Mac alternative, free software, open source, best linux distro"
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://computefreely.org
+url: https://computefreely.org
 
 # Images
-image: "/images/promo.png"
+image: "/images/promo.jpg"
 icon: "/images/icon.png"
 favicon: "/images/favicon.png"
 color: "#0099ee"
