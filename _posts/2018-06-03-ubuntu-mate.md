@@ -10,7 +10,7 @@ tags: [desktop]
 category: [beginner]
 notes:
   homepage: https://ubuntu-mate.org/
-  version: "18.04"
+  version: "18.10"
   based-on: ["Ubuntu"]
   desktops: [MATE]
   install: graphical
