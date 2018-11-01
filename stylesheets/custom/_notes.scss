@@ -43,7 +43,6 @@ table.notes {
 				border: none;
 				padding: 6px 0 4px 0;
 				vertical-align: top;
-				word-break: break-all; // to break long urls
 
 				> a {
 					font-family: inherit;
@@ -64,6 +63,17 @@ table.notes {
 					padding-right: 12px;
 					padding-left: 8px;
 				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width:600px) {
+	table.notes {
+		> tbody {
+			> tr > td {
+				> a {word-break: break-all;}// to break long urls
 			}
 		}
 	}
