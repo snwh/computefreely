@@ -19,4 +19,4 @@ notes:
       url: https://elementary.io/
 ---
 
-elementary puts design first to ensure that it is not compromising on quality, usability or speed.With a custom-built set of applications and desktop, elementary boasts a unique and cohesive experience.
+elementary puts design first to ensure that it is not compromising on quality, usability or speed. With a custom-built set of applications and desktop, elementary boasts a unique and cohesive experience. The unique pay-what-you-want AppCenter model aims to create a sustainable open source ecosystem of quality apps that people love.
