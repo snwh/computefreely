@@ -11,6 +11,7 @@ span.icon {
 	}
 	&.large {
 		margin: 48px auto;
+		>img{display:block;height: 96px;width: 96px;}
 		>i{font-size: 96px;}
 	}
 }
@@ -46,6 +47,46 @@ img.screenshot {
 
 	&:active {
 		@include transition(100ms);
+	}
+}
+
+.logos {
+	margin: 2em auto;
+	vertical-align: middle;
+
+	img {
+		display:inline-block;
+		height: 64px;
+		width: 64px;
+		margin: 12px;
+		&.arrow {
+			vertical-align: middle;
+			margin: 12px 0;
+			height:48px;
+			width:48px;
+		}
+
+		&.large {
+			height: 128px;
+			width: 128px;
+		}
+	}
+
+	a {
+		display: inline-block;
+		border:none;
+		border-radius: 4px;
+		padding: 0;
+
+		&:hover {
+			background-color: transparentize($fg_color, 0.9);
+			transition:all 100ms;
+			-webkit-transition:all 100ms;
+		}
+
+		&:active {
+			background-color: transparentize($link_color, 0.6);
+		}
 	}
 }
 
