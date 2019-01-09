@@ -60,10 +60,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.7.3)
+  jekyll
   jekyll-sass
   sass
   tzinfo-data
 
 BUNDLED WITH
-   1.16.1
+   1.17.1
