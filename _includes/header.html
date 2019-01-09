@@ -25,11 +25,10 @@
 	<link rel="apple-touch-icon" type="image/png" href="{{ site.icon }}">
 
 	<!-- Twitter Optimization  -->
-	<meta name="twitter:card" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="twitter:image" content="{{ site.url }}{% if page.image %}{{ site.dirs.screenshots }}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
-	<meta name="twitter:card" content="{{ site.url }}{% if page.image %}{{ site.dirs.screenshots }}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+	<meta name="twitter:card" content="summary">
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 
 	<!-- Facebook Optimization -->
