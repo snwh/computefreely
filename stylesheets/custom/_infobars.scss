@@ -3,7 +3,7 @@
 $infobar_bg_color:$base_color;
 $infobar_fg_color:mix($infobar_bg_color, black, 30%);
 $infobar_border_radius: 5px;
-$infobar_font_size: 14px;
+$infobar_font_size: $font_size - 2px;
 $infobar_height: 56px;
 
 $info_color: $blue_color;

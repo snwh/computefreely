@@ -21,7 +21,7 @@ nav {
 	a,span {
 		display: inline-block;
 		font-family: $monospace;
-		font-size: $font_size;
+		font-size: $font_size - 2px;
 		font-weight: 400;
 		line-height: $nav_height;
 		max-height:$nav_height;
