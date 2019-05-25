@@ -1,12 +1,17 @@
-﻿/*
+---
+---
+
+/*
 DESCRIPTION:Stylesheet for computefreely.org.
 AUTHOR:Sam Hewitt
 AUTHOR URI:http://samuelhewitt.com/
 */
 
 // imports
-@import 'common';
-@import 'mixins';
+@import
+  'common',
+  'mixins'
+;
 
 // reset
 %reset {

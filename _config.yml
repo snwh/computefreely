@@ -20,11 +20,12 @@ description: "A friendly place to start for the Free &amp; Open Source Software 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: https://computefreely.org
+baseurl: /
 
 # Images
-image: "/images/promo.jpg"
-icon: "/images/icon.png"
-favicon: "/images/favicon.png"
+image: "/img/promo.jpg"
+icon: "/img/icon.png"
+favicon: "/img/favicon.png"
 color: "#0099ee"
 
 # Posts
@@ -32,8 +33,8 @@ permalink: /distro/:title
 
 # Directories
 dirs:
-  logos: "/images/logos/"
-  screenshots: "/images/screenshots/"
+  logos: "/img/logos/"
+  screenshots: "/img/screenshots/"
   tags: "/tags/"
   distro: "/distro/"
   categories: "/categories/"
@@ -61,7 +62,7 @@ markdown: kramdown
 
 # Include list
 include: ["_pages"]
-exclude: ["*.git*", "README*", "LICENSE*", "*.scss", AUTHORS, CONTRIBUT*, Gemfile, Gemfile.*]
+exclude: ["*.git*", "README*", "LICENSE*", AUTHORS, CONTRIBUT*, Gemfile, Gemfile.*]
 
 # Collections (specifically used for the desktops pages)
 collections:

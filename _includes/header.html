@@ -11,7 +11,7 @@
 	<meta name="theme-color" content="{% if page.color %}{{ page.color }}{% else %}{{ site.color }}{% endif %}">
 
 	<!-- Root -->
-	<base href="/">
+	<base href="{{ site.baseurl }}">
 
 	<!-- Title -->
 	<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -42,7 +42,7 @@
 	<meta itemprop="image" content="{{ site.url }}{% if page.image %}{{ site.dirs.screenshots }}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<link rel="stylesheet" type="text/css" href="{{ '/css/style.css' | relative_url }}">
 
 	<!-- TypeKit -->
 	<link rel="stylesheet" href="https://use.typekit.net/ant5nnz.css">
@@ -51,7 +51,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 	<!-- JavaScripts -->
-	<script type="text/javascript" src="/js/simple-jekyll-search.min.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}js/simple-jekyll-search.min.js"></script>
 
 </head>
 <!-- End Head -->
