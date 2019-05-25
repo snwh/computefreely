@@ -21,7 +21,7 @@ $error_color: lighten($red_color, 10%);
 	margin: 12px 10%;
 	padding: 6px 12px;
 	text-align: center;
-	width: 80%;
+	width: calc(80% - 24px);
 	z-index: 10;
 	border:1px solid $border_color;
 
@@ -51,6 +51,11 @@ $error_color: lighten($red_color, 10%);
 		}
 	}
 
+	&.wide {
+		width: calc(100% - 24px);
+		margin: 0;
+	}
+
 	a {
 		font-family:inherit;
 		font-size:inherit;
@@ -61,21 +66,20 @@ $error_color: lighten($red_color, 10%);
 	&.coloured {
 		background-color:inherit;
 		font-weight: bold;
+		border: none;
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
 		span a {color:inherit;}
 		&.error {
-			border-color: mix($error_color, black, 80%);
-			color: mix($error_color, black, 80%);
-			background-color: lighten($error_color, 25%);
+			color:$base_color;
+			background-color: $error_color;
 		}
 		&.info {
-			border-color: mix($info_color, black, 80%);
-			color: mix($info_color, black, 80%);
-			background-color: lighten($info_color, 25%);
+			color:$base_color;
+			background-color: $info_color;
 		}
 		&.warning{
-			border-color: mix($warning_color, black, 80%);
-			color: mix($warning_color, black, 80%);
-			background-color: lighten($warning_color, 25%);
+			color: $base_color;
+			background-color: $warning_color;
 		}
 	}
 }
