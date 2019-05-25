@@ -23,7 +23,7 @@ url: https://computefreely.org
 baseurl: /
 
 # Images
-image: "/img/promo.jpg"
+image: "/img/promo.png"
 icon: "/img/icon.png"
 favicon: "/img/favicon.png"
 color: "#0099ee"
