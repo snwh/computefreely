@@ -33,8 +33,8 @@ layout: minimal
 		<!-- Published -->
 		{% if page.date %}<small class="published">Page last updated <span class="date">{{ page.date | date_to_string }}</span>{% if page.author %} by <span class="author">{{ page.author }}</span>{% else %}{% endif %}</small>{% else %}{% endif %}
 		<!-- Date Warning -->
-		{% capture now %}{{'now' | date: '%s' | minus: 15552000 %}}{% endcapture %}
-		{% capture date %}{{ page.date | date: '%s' | plus: 0 %}}{% endcapture %}
+		{% capture now %}{{'now' | date: '%s' | minus: 15552000 }}{% endcapture %}
+		{% capture date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
 		{% if date < now %}
 			<div class="infobar wide coloured warning">This page is more than 6 months old, some information may be out of date.</div>
 		{% endif %}
