@@ -16,7 +16,7 @@
 
 # Site Info
 title: "Compute Freely"
-description: "A friendly place to start for the Free &amp; Open Source Software and Linux curious."
+description: "A friendly place to start for the Free &amp; Open Source Software and GNU/Linux curious."
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: https://computefreely.org
@@ -61,7 +61,7 @@ sass:
 markdown: kramdown
 
 # Include list
-include: ["_pages", "_posts"]
+include: ["_pages"]
 exclude: ["*.git*", "README*", "LICENSE*", AUTHORS, CONTRIBUT*, Gemfile, Gemfile.*]
 
 # Collections (specifically used for the desktops pages)
