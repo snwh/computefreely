@@ -2,7 +2,9 @@
 
 ## Submitting Distributions
 
-Submitting a new distribution pages is simply a matter of writing a new post and adding it to the `_posts` folder. When writing a post for a distribution you would like to submit, you are free to editorialize, but if you gather information from the project's website to fill out the post paraphrase as best you can. 
+Submitting a new distribution pages is simply a matter of writing a new post and adding it to the `_posts` folder. When writing a post for a distribution you would like to submit, you are free to editorialize, but if you gather information from the project's website to fill out the post paraphrase as best you can opposed to copying straight from it.
+
+For your convenience a template is included in the `_drafts` folder.
 
 ### Metadata
 
@@ -12,7 +14,7 @@ Each post has "frontmatter" that contains metadata for the post and about the di
 layout: post
 author: Sam Hewitt
 title: "Ubuntu"
-date: "2017-03-02 11:00 am"
+date: "2017-03-02"
 logo: "distro-ubuntu"
 image: "desktop-ubuntu-16.10.png"
 caption: "ubuntu 16.10 desktop"
@@ -69,6 +71,17 @@ An acceptable version of the project logo must:
  - be in SVG format, a PNG or other file format will not display
  - follow the name convention of the other included logos that is `distro-<name>`
  - be 200x200 pixels and the logo is at most 160x160 within that
+
+## Updating An Existing Post
+
+If you're simply updating an existing post, make the changes to the post as necessary but don't remove the original author's name from `author` or change the `date:` field (this is to keep track of the original), simply add the following lines:
+
+```yaml
+updated: "YYYY-MM-DD"
+updater: "Your Name"
+```
+
+Then rename the post file with the `updated:` date.
 
 ## Other contributions
 
