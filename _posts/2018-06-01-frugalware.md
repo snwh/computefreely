@@ -2,7 +2,8 @@
 layout: post
 author: "Sam Hewitt"
 title: "Frugalware"
-date: "2018-06-01"
+date: "2017-03-02"
+updated: "2018-06-01"
 logo: "frugalware"
 image: "frugalware-2.1.png"
 caption: "Frugalware 2.1 with the Plasma desktop"

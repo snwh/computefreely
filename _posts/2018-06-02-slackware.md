@@ -2,7 +2,8 @@
 layout: post
 author: "Sam Hewitt"
 title: "Slackware"
-date: "2018-06-02"
+date: "2017-03-02"
+updated: "2018-06-02"
 logo: "slackware"
 image: "slackware-14.2.jpg"
 caption: "Slackware 14.2 with the KDE Plasma desktop"

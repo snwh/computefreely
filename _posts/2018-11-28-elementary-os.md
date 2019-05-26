@@ -1,8 +1,10 @@
 ---
 layout: post
-author: "Cassidy James Blaede"
+author: "Sam Hewitt"
 title: "elementary OS"
-date: "2018-11-28"
+date: "2017-03-02"
+updated: "2018-11-28"
+updater: "Cassidy James Blaede"
 logo: "elementary"
 image: "elementary-os-5.png"
 caption: 'elementary OS 5 Juno desktop'

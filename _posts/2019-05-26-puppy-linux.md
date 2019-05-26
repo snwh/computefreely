@@ -2,7 +2,8 @@
 layout: post
 author: "Sam Hewitt"
 title: "Puppy Linux"
-date: "2019-05-26"
+date: "2018-06-01"
+updated: "2019-05-26"
 logo: "puppylinux"
 image: "puppy-linux-8.png"
 caption: 'Puppy Linux 8 "BionicPup"'

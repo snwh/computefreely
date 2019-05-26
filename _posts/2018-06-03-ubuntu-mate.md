@@ -2,7 +2,8 @@
 layout: post
 author: "Sam Hewitt"
 title: "Ubuntu MATE"
-date: "2018-06-03"
+date: "2018-06-01"
+updated: "2018-06-03"
 logo: "ubuntu-mate"
 image: "ubuntu-mate-18.04.png"
 caption: "Ubuntu MATE 18.04 desktop"

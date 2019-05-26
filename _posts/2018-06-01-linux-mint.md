@@ -1,8 +1,10 @@
 ---
 layout: post
-author: "Dan Arel"
+author: "Sam Hewitt"
 title: "Linux Mint"
-date: "2019-01-08"
+date: "2018-06-01"
+updated: "2019-01-08"
+updater: "Dan Arel"
 logo: "linux-mint"
 image: "linux-mint-19.1.png"
 caption: "Linux Mint 19.1 with Cinnamon desktop"

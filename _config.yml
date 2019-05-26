@@ -61,7 +61,7 @@ sass:
 markdown: kramdown
 
 # Include list
-include: ["_pages"]
+include: ["_pages", "_posts"]
 exclude: ["*.git*", "README*", "LICENSE*", AUTHORS, CONTRIBUT*, Gemfile, Gemfile.*]
 
 # Collections (specifically used for the desktops pages)
