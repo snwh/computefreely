@@ -31,7 +31,7 @@ layout: minimal
 			{%- if page.logo -%}<img class="logo" src="{{ site.dirs.logos }}{{ page.logo }}.svg">{%- endif -%}<h2>{{ page.title }}</h2>
 		</div>
 		<!-- Published -->
-		{%- if page.date -%}<small class="published">{%- if page.updated -%}Page last updated <span class="date">{{ page.updated | date_to_string }}{%- else -%}Page posted on <span class="date">{{ page.date | date_to_string }}&nbsp;</span>{%- endif -%}{%- if page.author -%} by <span class="author">{%- if page.updater -%}{{ page.updater }}{%- else -%}{{ page.author }}{%- endif -%}</span>{%- endif -%}</small>{%- endif -%}
+		{%- if page.date -%}<small class="published">{%- if page.updated -%}Page last updated <span class="date">{{ page.updated | date_to_string }}{%- else -%}Page posted on <span class="date">{{ page.date | date_to_string }}{%- endif -%}&nbsp;</span>{%- if page.author -%} by <span class="author">{%- if page.updater -%}{{ page.updater }}{%- else -%}{{ page.author }}{%- endif -%}</span>{%- endif -%}</small>{%- endif -%}
 		<!-- Date Warning -->
 		{%- capture now -%}{{'now' | date: '%s' | minus: 15552000 }}{%- endcapture -%}
 		{%- if page.updated -%}{%- capture date -%}{{ page.updated | date: '%s' | plus: 0 }}{%- endcapture -%}{%- else -%}{%- capture date -%}{{ page.date | date: '%s' | plus: 0 }}{%- endcapture -%}{%- endif -%}
