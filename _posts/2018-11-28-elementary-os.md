@@ -6,13 +6,13 @@ date: "2017-03-02"
 updated: "2018-11-28"
 updater: "Cassidy James Blaede"
 logo: "elementary"
-image: "elementary-os-5.png"
-caption: 'elementary OS 5 Juno desktop'
+image: "elementary-os-5.1.4.png"
+caption: 'elementary OS 5.1.4 Hera desktop'
 tags: [desktop]
 category: [beginner]
 notes:
   homepage: https://elementary.io/
-  version: "5 Juno"
+  version: "5.1.4 Hera"
   based-on: ["Ubuntu"]
   desktops: [Pantheon]
   install: graphical
