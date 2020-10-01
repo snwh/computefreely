@@ -18,4 +18,4 @@ This site is built using the static site generator [Jekyll](https://jekyllrb.com
 
 Contributions are obviously welcome! If you would like to contribute to this project, please have [read this](/CONTRIBUTING.md) regarding contributions.
 
-Alternatively, if you would like to support development by making a donation you can do so anytime .here](https://snwh.org/donate).
+Alternatively, if you would like to support development by making a donation you can do so anytime [here](https://snwh.org/donate).
