@@ -1,12 +1,12 @@
 # Compute Freely
 
-Compute Freely is a website that's meant to be a friendly place to start for the Free & Open Source Software and Linux curious.
+Compute Freely is a website that's meant to be friendly place to start for the Free and Open Source Software and Linux curious.
 
 ## Copying & Reuse
 
 All original copy (written text) and images on this site are licensed under the Creative Commons Attribution-ShareAlike 4.0, unless otherwise noted.
 
-Any unique source code is free software, licensed under the terms of the Apache License v2.0, unless otherwise noted. Any non-unique elements (such as bundled JavaScript resources) are licensed under the terms of their accompanying licenses, or stated within their source code.
+Any unique source code is a free software, licensed under the terms of the Apache License v2.0, unless otherwise noted. Any non-unique elements (such as bundled JavaScript resources) are licensed under the terms of their accompanying licenses, or stated within their source code.
 
 ## Local Development
 
