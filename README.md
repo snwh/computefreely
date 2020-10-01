@@ -14,7 +14,7 @@ This site is built using the static site generator [Jekyll](https://jekyllrb.com
 
 	bundle exec jekyll serve
 
-## Contributing
+## Contribution
 
 Contributions are obviously welcome! If you would like to contribute to this project, please have [read this](/CONTRIBUTING.md) regarding contributions.
 
