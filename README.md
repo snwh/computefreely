@@ -1,6 +1,6 @@
 # Compute Freely
 
-Compute Freely is a website that's meant to be a friendly place to start for the Free & Open Source Software and Linux curious.
+Compute Freely is a website that's mean to be a friendly place to start for the Free & Open Source Software and Linux curious.
 
 ## Copying & Reuse
 
