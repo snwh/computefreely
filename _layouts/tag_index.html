@@ -7,7 +7,7 @@ row: narrow
 <!-- tagged posts -->
 <section>
 	<h4>All site tags</h4>
-	<ul class="tags">{% for tag in site.tags %} 
+	<ul class="tags">{% for all tag in site.tags %} 
 		<li><a href="{{ site.dirs.tags }}{{ tag[0] }}">{{ tag[0] }}<span>({{ tag[1].size }})</span></a></li>{% endfor %}
 	</ul>
 	<img class="center" style="width:80px;margin: 96px auto;" src="{{ site.baseurl }}img//favicon.svg">
