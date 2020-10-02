@@ -1,4 +1,4 @@
-# Compute Freely
+# Compute Freely An Amazing Project
 
 Compute Freely is a website that's meant to be a friendly place to start for the Free & Open Source Software and Linux curious.
 
