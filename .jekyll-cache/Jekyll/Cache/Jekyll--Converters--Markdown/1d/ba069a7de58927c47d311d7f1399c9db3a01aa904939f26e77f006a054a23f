@@ -1,4 +1,0 @@
-I"f<p>Qubes OS is a privacy and security oriented operating system that allows you to compartmentalize (literally) your digital life by isolating applications through virtualization. Qubes OS creates virtual machines on the system, called “qubes”, to run applications on to securely silo off various parts of your workflow.</p>
-
-<p>Applications running on Qubes OS can be grouped in different “domains”, such as “Personal”, “Work”, “Shopping”, “Banking”, etc. and to keep the system from being exposed to network attacks Qubes OS also isolates all networking activity into its own domain.</p>
-:ET
