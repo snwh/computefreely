@@ -3,10 +3,10 @@ layout: post
 author: "Sam Hewitt"
 title: "elementary OS"
 date: "2017-03-02"
-updated: "2019-12-23"
+updated: "2020-05-11"
 updater: "Dan Arel"
 logo: "elementary"
-image: "elementary-os-5.1.4.png"
+image: "elementary-os-5.1.png"
 caption: 'elementary OS 5.1.4 Hera desktop'
 tags: [desktop]
 category: [beginner]
