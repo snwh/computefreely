@@ -3,16 +3,16 @@ layout: post
 author: "Sam Hewitt"
 title: "Linux Mint"
 date: "2018-06-01"
-updated: "2019-01-08"
-updater: "Dan Arel"
+updated: "2020-12-15"
+updater: "Tomasz Pocztowski"
 logo: "linux-mint"
-image: "linux-mint-19.1.png"
-caption: "Linux Mint 19.1 with Cinnamon desktop"
+image: "linux-mint-20.png"
+caption: "Linux Mint 20 with Cinnamon desktop"
 tags: [desktop]
 category: [beginner]
 notes:
   homepage: https://www.linuxmint.com/
-  version: "19.1"
+  version: "20"
   based-on: ["Ubuntu", "Debian"]
   desktops: [Cinnamon, KDE Plasma, MATE, Xfce]
   install: graphical
