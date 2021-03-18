@@ -5,7 +5,7 @@ title: "Kali Linux"
 date: "2019-05-26"
 updated: "2021-03-18"
 logo: "kali-linux"
-image: "kali-linux-2021.1.png"
+image: "kali-linux-2021.1.jpg"
 caption: "Kali Linux 2021.1 with XFCE desktop"
 tags: [desktop, security, live]
 category: [advanced]
