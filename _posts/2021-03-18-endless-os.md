@@ -1,7 +1,7 @@
 ---
 layout: post
 author: "Sam Hewitt"
-updater: "luke2m
+updater: "luke2m"
 title: "Endless OS"
 date: "2018-06-01"
 updated: "2021-03-18"
