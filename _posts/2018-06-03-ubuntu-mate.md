@@ -3,15 +3,16 @@ layout: post
 author: "Sam Hewitt"
 title: "Ubuntu MATE"
 date: "2018-06-01"
-updated: "2018-06-03"
+updated: "2021-03-18"
+updater: "luke2m"
 logo: "ubuntu-mate"
-image: "ubuntu-mate-18.04.png"
-caption: "Ubuntu MATE 18.04 desktop"
+image: "ubuntumate-20.04.png"
+caption: "Ubuntu MATE 20.04 desktop"
 tags: [desktop]
 category: [beginner]
 notes:
   homepage: https://ubuntu-mate.org/
-  version: "18.04"
+  version: "20.04"
   based-on: ["Ubuntu"]
   desktops: [MATE]
   install: graphical
