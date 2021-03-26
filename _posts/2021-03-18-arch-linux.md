@@ -3,13 +3,14 @@ layout: post
 author: "Sam Hewitt"
 title: "Arch Linux"
 date: "2017-03-02"
-updated: "2019-05-26"
+updated: "2021-03-18"
+updater: "luke2m"
 logo: "arch-linux"
 tags: [desktop, minimal, cli]
 category: [advanced]
 notes:
   homepage: http://www.archlinux.org/
-  version: 2019.05.02
+  version: 2019.03.01
   install: command line
   developers:
     - name: Arch Linux Devlopers
